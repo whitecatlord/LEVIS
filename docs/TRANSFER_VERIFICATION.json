@@ -1,0 +1,42 @@
+{
+  "transfer_verification": {
+    "LEVIS_COMPLETE_RECOVERED_SOURCE_AND_LINEAGE.txt": {
+      "embedded_blobs": 10955,
+      "decoded_bytes": 348202010,
+      "archive_maps": 553,
+      "blob_sha256": "all matched",
+      "meaning": "transfer integrity; not runtime qualification"
+    },
+    "LEVIS_CURRENT_BUILD_AND_ENGINEERING_HANDOFF.txt": {
+      "embedded_blobs": 520,
+      "decoded_bytes": 21362324,
+      "archive_maps": 15,
+      "blob_sha256": "all matched",
+      "meaning": "transfer integrity; not runtime qualification"
+    }
+  },
+  "restoration": {
+    "LEVIS_COMPLETE_RECOVERED_SOURCE_AND_LINEAGE.txt": {
+      "candidate_members_compared_byte_for_byte": 83,
+      "root_manifest_entries_verified": 82,
+      "historical_candidate_sha256": "cb14b9eb60502d2a13d7cf95ef0298e98587c9b95fb31eab7925d6b9539e4101",
+      "application_code_executed": false
+    },
+    "LEVIS_CURRENT_BUILD_AND_ENGINEERING_HANDOFF.txt": {
+      "candidate_members_compared_byte_for_byte": 83,
+      "root_manifest_entries_verified": 82,
+      "historical_candidate_sha256": "cb14b9eb60502d2a13d7cf95ef0298e98587c9b95fb31eab7925d6b9539e4101",
+      "application_code_executed": false
+    }
+  },
+  "ledger_checks": {
+    "status": "PASS",
+    "proposal_append_and_count": "PASS",
+    "reject_finish_without_gate_evidence": "PASS",
+    "reject_evidence_hash_mismatch_without_appending": "PASS",
+    "record_scoped_assessment": "PASS",
+    "detect_hash_chain_tampering": "PASS",
+    "scope": "transfer helper only; no LEVIS acceptance implied"
+  },
+  "scope": "New transfer and ledger helper verification. Prior LEVIS test results are inherited evidence, not rerun here."
+}
