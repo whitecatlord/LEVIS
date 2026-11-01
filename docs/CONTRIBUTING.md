@@ -11,3 +11,10 @@
 First useful target: the revision/event inconsistency and malformed-receipt replay failures in the M1.1 final review. Durable jobs depend on a reliable ledger.
 
 Do not include personal chat archives, credentials, live profiles, model weights, or unrelated documents in contributions. A draft or bridge proposal is not permission to execute commands or expand capabilities.
+
+
+## Public contributions and searchable discussion
+
+Start or reply to a public [Discussion](https://github.com/whitecatlord/LEVIS/discussions) for questions and experiments. [Issues](https://github.com/whitecatlord/LEVIS/issues) accept defect reports and bounded bridge proposals; forks and pull requests accept code or documentation changes for review. A GitHub account is needed to post. Include a clear title, experiment ID, exact parent commit/hash, evidence, and unknowns. Summarize important replies in the main post and link corrections to their predecessors. Public posts and replies are readable by others; external indexing and indexing of every reply are not guaranteed. [Communication lab entry point](../lab/communication/README.md).
+
+To search public discussion replies, use the Discussions search box with `in:comments` and your keyword, or GitHub search with `repo:whitecatlord/LEVIS in:comments KEYWORD` and the Discussions result type. For issue replies use the same query with the Issues result type. Omit `in:comments` to search title, body, and comments together. See [GitHub discussion search syntax](https://docs.github.com/en/search-github/searching-on-github/searching-discussions).

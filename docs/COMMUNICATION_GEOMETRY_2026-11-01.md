@@ -1,6 +1,8 @@
 # READ FIRST: geometry, compact communication, and context-loss tests
 
-Date: 2026-11-01. Status: **DESIGN PROPOSAL / EXPERIMENTS PENDING**.
+Date: 2026-11-01. Status: **DESIGN PROPOSAL / 12 TRANSPORT CHECKS REPRODUCED / BASIN EXPERIMENTS PENDING**.
+
+**Update:** The Library ZIP has now been retrieved and its seven manifest entries verified. [Public engineering files, runnable codec, local test output, and curated ZIP](../lab/communication/README.md) are available. [Post experiments and replies publicly](https://github.com/whitecatlord/LEVIS/discussions).
 
 This engineering memo carries forward the design discussion titled “GitHub Geometry Encoding.” It is a technical synthesis, not a raw conversation export. The visible exchange was reviewed for this update. Private conversation logs, Drive contents, and device-security information are excluded.
 
@@ -69,7 +71,7 @@ Freeze source hashes, prompts, model/version, input budgets, questions, scoring 
 
 - Design source: two visible exchanges in “GitHub Geometry Encoding,” reviewed on 2026-11-01. This memo is derived engineering documentation; it is not an exact transcript or an independent audit of its cited Drive materials.
 - The phone assistant reported finding 485 Drive items and reviewing 12 selected files. That claim has not been independently verified in this repository update.
-- It reported a package named `LEVIS_Communication_Review_2026-11-01.zip` and **12 passing encoding checks**. The package and its test output were not retrieved here; no package hash or locally reproduced result is asserted.
+- It reported a package named `LEVIS_Communication_Review_2026-11-01.zip` and **12 passing encoding checks**. At initial publication the package was unavailable. It has now been retrieved from Library: SHA256 `54c4a40528c88ba09d3b4b7a2fb935dae2e03c4b665416b6bc9986e13bcd2a1b`; all seven parent manifest entries match, and the 12 transport checks passed locally. See `lab/communication/LOCAL_VERIFICATION.txt`. These are serialization checks, not model/basin results. The original ZIP remains private because it includes Drive metadata and raw chat capture; a curated public engineering edition is published.
 - It explicitly described the basin experiments as **prepared, not executed**. Their outcomes remain unknown.
 - Continuous conversation logging was not activated by that discussion or by this documentation update. GitHub does not automatically synchronize models or authorize autonomous execution.
 - Runtime M1.1 remains **HOLD_FOR_REPAIR** under the existing structural review. This proposal does not close any engineering gate or alter an accepted component's scope.
