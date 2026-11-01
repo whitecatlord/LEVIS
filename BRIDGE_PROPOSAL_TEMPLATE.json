@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "level_id": "runtime/M1.1",
+  "proposer": "LEVIS transfer compiler; new proposal, not a repair",
+  "gap": "Revision/event inconsistency and malformed stored receipt accepted by the current candidate",
+  "source_artifacts": [
+    {
+      "sha256": "cb14b9eb60502d2a13d7cf95ef0298e98587c9b95fb31eab7925d6b9539e4101",
+      "role": "repair candidate on hold"
+    },
+    {
+      "source": "C:\\Users\\white\\Documents\\Codex\\2026-10-24\\phone-has-a-different-setup-now-3\\outputs\\LEVIS_M1_1_FINAL_STRUCTURAL_REVIEW.md",
+      "sha256": "e635a22996cc9d4547cbb936d2fb418d8afd87f6a446d285fdce66eb794852a0"
+    }
+  ],
+  "target_interfaces": [
+    "LEVIS_STARTER/runtime_store.py startup content validation",
+    "durable historical response envelope and replay path"
+  ],
+  "dependencies": [
+    "retain exact historical candidate and final-review evidence",
+    "agree supported content invariants before mutation"
+  ],
+  "implementation_steps": [
+    "work in a separate candidate",
+    "validate revision against committed history",
+    "validate persisted receipt identity and response shape",
+    "return explicit integrity refusal without mutation",
+    "preserve original failing controls and add regressions"
+  ],
+  "acceptance_tests": [
+    "both final-review controls fail before repair and pass after",
+    "retained supplied suite passes",
+    "fresh structural review finds no unresolved blocker in scope"
+  ],
+  "negative_controls": [
+    "schema-valid revision rollback",
+    "response {}",
+    "unknown response version",
+    "valid historical outcome replay"
+  ],
+  "rollback": "discard new candidate and isolated profiles; original artifacts remain unchanged",
+  "authority_effect": "NONE"
+}

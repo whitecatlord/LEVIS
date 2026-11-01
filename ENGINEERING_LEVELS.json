@@ -1,0 +1,1914 @@
+{
+  "schema_version": 1,
+  "compiled_date": "2026-10-31",
+  "authority_effect": "NONE",
+  "interpretation": "Engineering synthesis of preserved source records. A finished scoped floor is not completion of the whole system. Historical test results were not rerun during compilation.",
+  "namespaces": {
+    "runtime": "October desktop runtime extraction",
+    "modular": "September reconciled capability blueprint",
+    "base": "pinned bounded floor and its component status",
+    "compiler": "historical plate compiler"
+  },
+  "levels": [
+    {
+      "id": "base/R0.2",
+      "title": "Accepted bounded development floor",
+      "implementation": "IMPLEMENTED",
+      "verification": "HISTORICAL_REVIEW_AND_TEST_RECORDS",
+      "acceptance": "EXPLICIT_ACCEPTANCE_RECORDED",
+      "completion": "FINISHED_FOR_RECORDED_BOUNDED_SCOPE",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "0337e4549030dee474561232d8ef48e05b0009ed3057562e54e5dae2094bec79",
+          "artifact_sha256": "51d1c276caac42b185eee22927c6cee2376bdd16a1b70df18e1b7bb6503f1aab",
+          "claim": "Operator acceptance of exact bytes as bounded development floor; inspect recorded limitations"
+        }
+      ],
+      "scope": "Linux/protected-path bounded development floor; not all later architecture or lab integration"
+    },
+    {
+      "id": "worker/R1.1",
+      "title": "Adopted fixed stock worker",
+      "implementation": "IMPLEMENTED",
+      "verification": "HISTORICAL_BOUNDED_REVIEW_PASS",
+      "acceptance": "EXPLICIT_ACCEPTANCE_RECORDED",
+      "completion": "FINISHED_FOR_RECORDED_BOUNDED_SCOPE",
+      "depends_on": [
+        "base/R0.2"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "26285b5c903661031d7a041943b67ec0561c80f4959d048e00f46dbed59c6a51",
+          "runner_sha256": "6fb64647ed7da767774b58b8b1ca0cc9e34813ba6c618277facf8c66a07145ce",
+          "claim": "Adopted one fixed pure-computation worker; no general executor or exactly-once guarantee"
+        }
+      ],
+      "scope": "Adopted fixed stock worker"
+    },
+    {
+      "id": "compiler/lane1-v0.1.0",
+      "title": "Historical plate compiler completion",
+      "implementation": "HISTORICALLY_REPORTED_COMPLETE",
+      "verification": "297_TEST_PASS_CLAIM_NOT_RERUN",
+      "acceptance": "READY_FOR_PROMOTION_CLAIM_NOT_EQUIVALENT_TO_ACCEPTANCE",
+      "completion": "HISTORICAL_COMPLETION_CLAIM",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "2f0c20b2a308b7e4dce18812c26581d824e256d07e383b6551e88acb7d703c84",
+          "claim": "Completion memo reports 297 tests; signing and runtime-validation checklist remain deferred"
+        }
+      ],
+      "scope": "Historical plate compiler completion"
+    },
+    {
+      "id": "desktop/RC2",
+      "title": "Desktop app and source-grounded ZIP review",
+      "implementation": "IMPLEMENTED",
+      "verification": "HISTORICAL_TESTS_PLUS_RC2_SYNTAX_AND_PACKAGE_CHECKS",
+      "acceptance": "NOT_RECORDED",
+      "completion": "PARTIAL",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_CODE_REVIEW_RC2.zip",
+          "sha256": "8e0d45eacef2815b592d96d01fa072f48efec1b59431520150edcff3d656f786"
+        },
+        {
+          "source": "LEVIS_CODE_REVIEW_RC2.zip",
+          "sha256": "8e0d45eacef2815b592d96d01fa072f48efec1b59431520150edcff3d656f786"
+        },
+        {
+          "source": "README.md",
+          "sha256": "5244ab0750419b0cea8434ed8908d20c8e939cebf4de789536b9505d6efff8b8"
+        },
+        {
+          "source": "README.md",
+          "sha256": "0e362abbcdd6c14da2e6c68f3d4a6d9510313290801c60690a37c4d1187d3081"
+        },
+        {
+          "source": "README.md",
+          "sha256": "125b4fd9e309fa4f954f44f501c5957399fb97d0ca7977df13c4e4dd4f19df6d"
+        },
+        {
+          "source": "README.md",
+          "sha256": "92f2d158663463464544da40a3ba03a4ea6e8d5b4dedc0f2f357ba58aa127303"
+        }
+      ],
+      "scope": "Local-model chat, bounded tools, snapshots and GUI-hosted draft queue; no autonomous executor"
+    },
+    {
+      "id": "runtime/M0.1",
+      "title": "Chat-input integrity candidate",
+      "implementation": "IMPLEMENTED",
+      "verification": "HISTORICAL_31_TESTS_REPORTED_PASS",
+      "acceptance": "CANDIDATE",
+      "completion": "PARTIAL",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [],
+      "scope": "Preserve complete original input and refuse oversized model requests explicitly"
+    },
+    {
+      "id": "runtime/M1.0",
+      "title": "Persistent-runtime extraction design",
+      "implementation": "DESIGN_DOCUMENT",
+      "verification": "DESIGN_REVIEW_ONLY",
+      "acceptance": "IMPLEMENTATION_DIRECTION_NOT_RELEASE_ACCEPTANCE",
+      "completion": "DESIGN_COMPLETE_IMPLEMENTATION_OPEN",
+      "depends_on": [
+        "runtime/M0.1"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Persistent-runtime extraction design"
+    },
+    {
+      "id": "runtime/M1.1",
+      "title": "Coordinator ownership, native IPC and lifecycle",
+      "implementation": "IMPLEMENTED",
+      "verification": "64_SUPPLIED_PASS_BUT_2_FINAL_REVIEW_CONTROLS_FAIL",
+      "acceptance": "HOLD_FOR_REPAIR",
+      "completion": "HOLD_FOR_REPAIR",
+      "depends_on": [
+        "runtime/M1.0"
+      ],
+      "required_gates": [
+        "exact_parent_and_manifest",
+        "single_writer_lifetime",
+        "native_ipc_identity_and_authentication",
+        "ledger_content_integrity",
+        "receipt_envelope_integrity",
+        "lifecycle_crash_recovery",
+        "no_executor_or_model_route",
+        "structural_review",
+        "qualification_limits"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_1_FINAL_STRUCTURAL_REVIEW.md",
+          "sha256": "e635a22996cc9d4547cbb936d2fb418d8afd87f6a446d285fdce66eb794852a0"
+        },
+        {
+          "source": "LEVIS_M1_1_REPAIR_CANDIDATE.zip",
+          "sha256": "cb14b9eb60502d2a13d7cf95ef0298e98587c9b95fb31eab7925d6b9539e4101"
+        },
+        {
+          "source": "LEVIS_M1_1_REPAIR_CANDIDATE.zip",
+          "sha256": "cb14b9eb60502d2a13d7cf95ef0298e98587c9b95fb31eab7925d6b9539e4101"
+        }
+      ],
+      "scope": "Coordinator ownership, native IPC and lifecycle"
+    },
+    {
+      "id": "runtime/M1.2",
+      "title": "Durable headless draft lane",
+      "implementation": "NOT_ESTABLISHED",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "runtime/M1.1"
+      ],
+      "required_gates": [
+        "client_detach_continuity",
+        "job_authorization_and_attempts",
+        "single_inference_lane",
+        "durable_outcome_before_reply",
+        "restart_paused_and_unknown_outcomes",
+        "negative_controls",
+        "structural_review"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Durable headless draft lane"
+    },
+    {
+      "id": "runtime/M1.3",
+      "title": "Chat and copied-state migration",
+      "implementation": "NOT_ESTABLISHED",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "runtime/M1.2"
+      ],
+      "required_gates": [
+        "exact_input_preservation",
+        "ipc_budget_refusals",
+        "31_inherited_regressions",
+        "migration_mapping_and_rollback",
+        "single_writer",
+        "structural_review"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Chat and copied-state migration"
+    },
+    {
+      "id": "runtime/M1.4",
+      "title": "Tkinter becomes an IPC client",
+      "implementation": "NOT_ESTABLISHED",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "runtime/M1.3"
+      ],
+      "required_gates": [
+        "no_legacy_writer_or_scheduler",
+        "detach_vs_stop",
+        "reconnect_event_cursor",
+        "real_job_and_chat_close_reopen",
+        "structural_review"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Tkinter becomes an IPC client"
+    },
+    {
+      "id": "runtime/M1.5",
+      "title": "Reference ownership and lifecycle",
+      "implementation": "NOT_ESTABLISHED",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "runtime/M1.4"
+      ],
+      "required_gates": [
+        "reference_write_owner",
+        "no_gui_startup_download",
+        "fixed_catalog_and_tool_controls",
+        "slow_client_and_shutdown",
+        "structural_review"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Reference ownership and lifecycle"
+    },
+    {
+      "id": "runtime/M1.6",
+      "title": "Windows target-hardware qualification",
+      "implementation": "NOT_ESTABLISHED",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "runtime/M1.5"
+      ],
+      "required_gates": [
+        "real_model",
+        "overnight_detach",
+        "sleep",
+        "logout_policy",
+        "crash_restore",
+        "migration_rehearsal",
+        "review_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        },
+        {
+          "source": "LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+          "sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a"
+        }
+      ],
+      "scope": "Windows target-hardware qualification"
+    },
+    {
+      "id": "modular/M0",
+      "title": "Boundary and truth conditions",
+      "implementation": "IN_PROCESS_PROTOTYPE",
+      "verification": "ACCEPTANCE_TESTS_NOT_RUN",
+      "acceptance": "NOT_RECORDED",
+      "completion": "PARTIAL",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "ACCEPTANCE_STATUS.md",
+          "sha256": "8789da61e428a64740d6a8a5bcada83f89db75d80456de769985eccf9446f512"
+        }
+      ],
+      "scope": "Boundary and truth conditions"
+    },
+    {
+      "id": "modular/M1",
+      "title": "Separate-process module ABI and supervisor floor",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M0"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Separate-process module ABI and supervisor floor"
+    },
+    {
+      "id": "modular/M2",
+      "title": "Adversarial dummy modules",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M1"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Adversarial dummy modules"
+    },
+    {
+      "id": "modular/M3",
+      "title": "First low-authority real module",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M2"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "First low-authority real module"
+    },
+    {
+      "id": "modular/M4",
+      "title": "Workspace and bounded execution",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M3"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Workspace and bounded execution"
+    },
+    {
+      "id": "modular/M5",
+      "title": "Test and red-team",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M4"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Test and red-team"
+    },
+    {
+      "id": "modular/M6",
+      "title": "Simulation and replay",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M5"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Simulation and replay"
+    },
+    {
+      "id": "modular/M7",
+      "title": "World mechanics and residue admission",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M6"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "World mechanics and residue admission"
+    },
+    {
+      "id": "modular/M8",
+      "title": "Multimodal capabilities",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M7"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Multimodal capabilities"
+    },
+    {
+      "id": "modular/M9",
+      "title": "Network and connectors",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M8"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Network and connectors"
+    },
+    {
+      "id": "modular/M10",
+      "title": "Deployment lab",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M9"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Deployment lab"
+    },
+    {
+      "id": "modular/M11",
+      "title": "Hot Base cutover and state rollback",
+      "implementation": "NOT_ESTABLISHED_FOR_THIS_ROADMAP",
+      "verification": "NOT_ESTABLISHED",
+      "acceptance": "NOT_RECORDED",
+      "completion": "OPEN",
+      "depends_on": [
+        "modular/M10"
+      ],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        },
+        {
+          "source": "LEVIS_POST_LLM_MODULAR_CAPABILITY_ARCHITECTURE_RECONCILED_v0_2_2026-09-12.txt",
+          "sha256": "023a03da350b7a6536770ec78436b9bed086ada7c31082742a1f20f5fe869618"
+        }
+      ],
+      "scope": "Hot Base cutover and state rollback"
+    },
+    {
+      "id": "base/component/base_state_store",
+      "title": "base state store",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/base_state_store",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "base state store"
+    },
+    {
+      "id": "base/component/canonical_evidence_proposal_ir",
+      "title": "canonical evidence proposal ir",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/canonical_evidence_proposal_ir",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "canonical evidence proposal ir"
+    },
+    {
+      "id": "base/component/claim_provenance_catalog",
+      "title": "claim provenance catalog",
+      "implementation": "CANDIDATE_REFERENCE_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/claim_provenance_catalog",
+          "historical_status": "CANDIDATE_REFERENCE_ONLY"
+        }
+      ],
+      "scope": "claim provenance catalog"
+    },
+    {
+      "id": "base/component/composition_runtime",
+      "title": "composition runtime",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/composition_runtime",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "composition runtime"
+    },
+    {
+      "id": "base/component/durable_admission_gate",
+      "title": "durable admission gate",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/durable_admission_gate",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "durable admission gate"
+    },
+    {
+      "id": "base/component/earned_evidence_classification_gate",
+      "title": "earned evidence classification gate",
+      "implementation": "CANDIDATE_IMPORTED_DOCUMENT_AND_OPERATOR_ATTESTED_HUMAN_PROOFS",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/earned_evidence_classification_gate",
+          "historical_status": "CANDIDATE_IMPORTED_DOCUMENT_AND_OPERATOR_ATTESTED_HUMAN_PROOFS"
+        }
+      ],
+      "scope": "earned evidence classification gate"
+    },
+    {
+      "id": "base/component/experiment_event_ledger",
+      "title": "experiment event ledger",
+      "implementation": "CANDIDATE_TRANSACTION_SERIALIZED_HASH_CHAIN",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/experiment_event_ledger",
+          "historical_status": "CANDIDATE_TRANSACTION_SERIALIZED_HASH_CHAIN"
+        }
+      ],
+      "scope": "experiment event ledger"
+    },
+    {
+      "id": "base/component/external_operator_trust_root",
+      "title": "external operator trust root",
+      "implementation": "REQUIRED_PUBLIC_ONLY_HASH_PINNED_V1_COMPAT_V2_LIFECYCLE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/external_operator_trust_root",
+          "historical_status": "REQUIRED_PUBLIC_ONLY_HASH_PINNED_V1_COMPAT_V2_LIFECYCLE"
+        }
+      ],
+      "scope": "external operator trust root"
+    },
+    {
+      "id": "base/component/federation",
+      "title": "federation",
+      "implementation": "FUTURE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/federation",
+          "historical_status": "FUTURE"
+        }
+      ],
+      "scope": "federation"
+    },
+    {
+      "id": "base/component/future_organ_exploration_plan",
+      "title": "future organ exploration plan",
+      "implementation": "PROPOSAL_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/future_organ_exploration_plan",
+          "historical_status": "PROPOSAL_ONLY"
+        }
+      ],
+      "scope": "future organ exploration plan"
+    },
+    {
+      "id": "base/component/ghmp",
+      "title": "ghmp",
+      "implementation": "FENCED",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/ghmp",
+          "historical_status": "FENCED"
+        }
+      ],
+      "scope": "ghmp"
+    },
+    {
+      "id": "base/component/governed_reasoning_render_out",
+      "title": "governed reasoning render out",
+      "implementation": "CANDIDATE_DETERMINISTIC_READ_ONLY_NO_LLM",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/governed_reasoning_render_out",
+          "historical_status": "CANDIDATE_DETERMINISTIC_READ_ONLY_NO_LLM"
+        }
+      ],
+      "scope": "governed reasoning render out"
+    },
+    {
+      "id": "base/component/isolated_candidate_workspace",
+      "title": "isolated candidate workspace",
+      "implementation": "DEVELOPMENT_SKETCH_RETAINED_FOR_NONEXECUTION_STAGING",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/isolated_candidate_workspace",
+          "historical_status": "DEVELOPMENT_SKETCH_RETAINED_FOR_NONEXECUTION_STAGING"
+        }
+      ],
+      "scope": "isolated candidate workspace"
+    },
+    {
+      "id": "base/component/language_geometry_v0_12",
+      "title": "language geometry v0 12",
+      "implementation": "CANDIDATE_REPLACEABLE_MODEL_PROPOSAL_AND_RENDERING_BOUNDARY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_geometry_v0_12",
+          "historical_status": "CANDIDATE_REPLACEABLE_MODEL_PROPOSAL_AND_RENDERING_BOUNDARY"
+        }
+      ],
+      "scope": "language geometry v0 12"
+    },
+    {
+      "id": "base/component/language_geometry_v0_12_1",
+      "title": "language geometry v0 12 1",
+      "implementation": "CANDIDATE_EXACT_BINDING_DATA_ONLY_MODEL_PORT_PROPOSER_PROVENANCE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_geometry_v0_12_1",
+          "historical_status": "CANDIDATE_EXACT_BINDING_DATA_ONLY_MODEL_PORT_PROPOSER_PROVENANCE"
+        }
+      ],
+      "scope": "language geometry v0 12 1"
+    },
+    {
+      "id": "base/component/language_geometry_v0_2",
+      "title": "language geometry v0 2",
+      "implementation": "DONOR_INTEGRATED_AS_V0_12_BOUNDED_LANGUAGE_GEOMETRY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_geometry_v0_2",
+          "historical_status": "DONOR_INTEGRATED_AS_V0_12_BOUNDED_LANGUAGE_GEOMETRY"
+        }
+      ],
+      "scope": "language geometry v0 2"
+    },
+    {
+      "id": "base/component/language_model_execution",
+      "title": "language model execution",
+      "implementation": "EXTERNAL_OR_SEPARATELY_ISOLATED_DATA_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_model_execution",
+          "historical_status": "EXTERNAL_OR_SEPARATELY_ISOLATED_DATA_ONLY"
+        }
+      ],
+      "scope": "language model execution"
+    },
+    {
+      "id": "base/component/language_proposal_port",
+      "title": "language proposal port",
+      "implementation": "COMPATIBILITY_CANDIDATE_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_proposal_port",
+          "historical_status": "COMPATIBILITY_CANDIDATE_ONLY"
+        }
+      ],
+      "scope": "language proposal port"
+    },
+    {
+      "id": "base/component/language_reasoning_ingest",
+      "title": "language reasoning ingest",
+      "implementation": "CANDIDATE_COMPILE_IN_ASSERTS_ONLY_EXACT_SPAN_CUSTODY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/language_reasoning_ingest",
+          "historical_status": "CANDIDATE_COMPILE_IN_ASSERTS_ONLY_EXACT_SPAN_CUSTODY"
+        }
+      ],
+      "scope": "language reasoning ingest"
+    },
+    {
+      "id": "base/component/lineage_reconciliation_gate",
+      "title": "lineage reconciliation gate",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/lineage_reconciliation_gate",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "lineage reconciliation gate"
+    },
+    {
+      "id": "base/component/locality_v3_10",
+      "title": "locality v3 10",
+      "implementation": "FENCED",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/locality_v3_10",
+          "historical_status": "FENCED"
+        }
+      ],
+      "scope": "locality v3 10"
+    },
+    {
+      "id": "base/component/m2_2a",
+      "title": "m2 2a",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/m2_2a",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "m2 2a"
+    },
+    {
+      "id": "base/component/m3a",
+      "title": "m3a",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/m3a",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "m3a"
+    },
+    {
+      "id": "base/component/m4_os_isolation",
+      "title": "m4 os isolation",
+      "implementation": "CANDIDATE_LINUX_CHROOT_SECCOMP_RLIMIT",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/m4_os_isolation",
+          "historical_status": "CANDIDATE_LINUX_CHROOT_SECCOMP_RLIMIT"
+        }
+      ],
+      "scope": "m4 os isolation"
+    },
+    {
+      "id": "base/component/m5_bounded_executor",
+      "title": "m5 bounded executor",
+      "implementation": "FUTURE_PORTABLE_BACKEND_AND_NATIVE_WORKER_ASSURANCE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/m5_bounded_executor",
+          "historical_status": "FUTURE_PORTABLE_BACKEND_AND_NATIVE_WORKER_ASSURANCE"
+        }
+      ],
+      "scope": "m5 bounded executor"
+    },
+    {
+      "id": "base/component/multi_room_v0_3",
+      "title": "multi room v0 3",
+      "implementation": "SOURCE UNAVAILABLE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/multi_room_v0_3",
+          "historical_status": "SOURCE UNAVAILABLE"
+        }
+      ],
+      "scope": "multi room v0 3"
+    },
+    {
+      "id": "base/component/operator_authenticity_verifier",
+      "title": "operator authenticity verifier",
+      "implementation": "CANDIDATE_PUBLIC_KEY_VERIFY_WITH_ROOT_LIFECYCLE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/operator_authenticity_verifier",
+          "historical_status": "CANDIDATE_PUBLIC_KEY_VERIFY_WITH_ROOT_LIFECYCLE"
+        }
+      ],
+      "scope": "operator authenticity verifier"
+    },
+    {
+      "id": "base/component/operator_authorization_replay_ledger",
+      "title": "operator authorization replay ledger",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/operator_authorization_replay_ledger",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "operator authorization replay ledger"
+    },
+    {
+      "id": "base/component/operator_signature_registry",
+      "title": "operator signature registry",
+      "implementation": "REMOVED_FROM_LIVE_SOURCE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/operator_signature_registry",
+          "historical_status": "REMOVED_FROM_LIVE_SOURCE"
+        }
+      ],
+      "scope": "operator signature registry"
+    },
+    {
+      "id": "base/component/operator_trust_root_lifecycle",
+      "title": "operator trust root lifecycle",
+      "implementation": "CANDIDATE_EPOCH_ROTATION_REVOCATION_RECOVERY_ROLLBACK_REFUSAL",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/operator_trust_root_lifecycle",
+          "historical_status": "CANDIDATE_EPOCH_ROTATION_REVOCATION_RECOVERY_ROLLBACK_REFUSAL"
+        }
+      ],
+      "scope": "operator trust root lifecycle"
+    },
+    {
+      "id": "base/component/outbound_language_renderer",
+      "title": "outbound language renderer",
+      "implementation": "CANDIDATE_RENDERING_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/outbound_language_renderer",
+          "historical_status": "CANDIDATE_RENDERING_ONLY"
+        }
+      ],
+      "scope": "outbound language renderer"
+    },
+    {
+      "id": "base/component/persistent_job_queue",
+      "title": "persistent job queue",
+      "implementation": "CANDIDATE_GENERATION_BOUND_CRASH_RECOVERY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/persistent_job_queue",
+          "historical_status": "CANDIDATE_GENERATION_BOUND_CRASH_RECOVERY"
+        }
+      ],
+      "scope": "persistent job queue"
+    },
+    {
+      "id": "base/component/persistent_room_registry",
+      "title": "persistent room registry",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/persistent_room_registry",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "persistent room registry"
+    },
+    {
+      "id": "base/component/process_isolation_gate",
+      "title": "process isolation gate",
+      "implementation": "CANDIDATE_FAIL_CLOSED_LINUX_CHROOT_SECCOMP_RLIMIT",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/process_isolation_gate",
+          "historical_status": "CANDIDATE_FAIL_CLOSED_LINUX_CHROOT_SECCOMP_RLIMIT"
+        }
+      ],
+      "scope": "process isolation gate"
+    },
+    {
+      "id": "base/component/proposer_provenance",
+      "title": "proposer provenance",
+      "implementation": "DURABLE_ATTRIBUTED_CLAIM_FIELD",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/proposer_provenance",
+          "historical_status": "DURABLE_ATTRIBUTED_CLAIM_FIELD"
+        }
+      ],
+      "scope": "proposer provenance"
+    },
+    {
+      "id": "base/component/reasoning_asserts_edge",
+      "title": "reasoning asserts edge",
+      "implementation": "CANDIDATE_NON_EVIDENTIARY_SEPARATE_TABLE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/reasoning_asserts_edge",
+          "historical_status": "CANDIDATE_NON_EVIDENTIARY_SEPARATE_TABLE"
+        }
+      ],
+      "scope": "reasoning asserts edge"
+    },
+    {
+      "id": "base/component/reasoning_engine",
+      "title": "reasoning engine",
+      "implementation": "CANDIDATE_DETERMINISTIC_NO_LLM_NO_EXECUTION",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/reasoning_engine",
+          "historical_status": "CANDIDATE_DETERMINISTIC_NO_LLM_NO_EXECUTION"
+        }
+      ],
+      "scope": "reasoning engine"
+    },
+    {
+      "id": "base/component/reasoning_geometry_types",
+      "title": "reasoning geometry types",
+      "implementation": "CANDIDATE_TYPED_NO_GENERIC_EDGE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/reasoning_geometry_types",
+          "historical_status": "CANDIDATE_TYPED_NO_GENERIC_EDGE"
+        }
+      ],
+      "scope": "reasoning geometry types"
+    },
+    {
+      "id": "base/component/reasoning_query_projection",
+      "title": "reasoning query projection",
+      "implementation": "CANDIDATE_FOUR_OUTCOME",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/reasoning_query_projection",
+          "historical_status": "CANDIDATE_FOUR_OUTCOME"
+        }
+      ],
+      "scope": "reasoning query projection"
+    },
+    {
+      "id": "base/component/reasoning_supersession",
+      "title": "reasoning supersession",
+      "implementation": "DEFERRED_CHILD_2",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/reasoning_supersession",
+          "historical_status": "DEFERRED_CHILD_2"
+        }
+      ],
+      "scope": "reasoning supersession"
+    },
+    {
+      "id": "base/component/root_core_v2_4_5_20",
+      "title": "root core v2 4 5 20",
+      "implementation": "SOURCE UNAVAILABLE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/root_core_v2_4_5_20",
+          "historical_status": "SOURCE UNAVAILABLE"
+        }
+      ],
+      "scope": "root core v2 4 5 20"
+    },
+    {
+      "id": "base/component/runtime_durability_manager",
+      "title": "runtime durability manager",
+      "implementation": "CANDIDATE_LOCAL_BACKUP_RESTORE_INTEGRITY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/runtime_durability_manager",
+          "historical_status": "CANDIDATE_LOCAL_BACKUP_RESTORE_INTEGRITY"
+        }
+      ],
+      "scope": "runtime durability manager"
+    },
+    {
+      "id": "base/component/semantic_resolution_evidence_registry",
+      "title": "semantic resolution evidence registry",
+      "implementation": "CANDIDATE_FORMAL_EXACT_BINDING_CLARIFICATION_OPERATOR_SIGNED",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/semantic_resolution_evidence_registry",
+          "historical_status": "CANDIDATE_FORMAL_EXACT_BINDING_CLARIFICATION_OPERATOR_SIGNED"
+        }
+      ],
+      "scope": "semantic resolution evidence registry"
+    },
+    {
+      "id": "base/component/semantic_type_policy",
+      "title": "semantic type policy",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/semantic_type_policy",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "semantic type policy"
+    },
+    {
+      "id": "base/component/shell2_v12",
+      "title": "shell2 v12",
+      "implementation": "SUPERSEDED",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/shell2_v12",
+          "historical_status": "SUPERSEDED"
+        }
+      ],
+      "scope": "shell2 v12"
+    },
+    {
+      "id": "base/component/source_clarification",
+      "title": "source clarification",
+      "implementation": "EXACT_CANDIDATE_BINDING_ONLY",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/source_clarification",
+          "historical_status": "EXACT_CANDIDATE_BINDING_ONLY"
+        }
+      ],
+      "scope": "source clarification"
+    },
+    {
+      "id": "base/component/supervisor_lifecycle",
+      "title": "supervisor lifecycle",
+      "implementation": "CANDIDATE",
+      "verification": "COMPONENT_CLAIM_FROM_PINNED_STATUS_NOT_SEPARATELY_REQUALIFIED",
+      "acceptance": "INHERITED_WITHIN_BOUNDED_FLOOR_ONLY",
+      "completion": "NOT_ASSESSED_FOR_FURTHER_INTEGRATION",
+      "depends_on": [],
+      "required_gates": [
+        "requirements_to_code_map",
+        "positive_tests",
+        "negative_controls",
+        "structural_review",
+        "scope_and_residuals"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "blob_sha256": "78be00adbb0e34312df75a63ff19f5eb79c7a6553fd53122ca371bd0aa353207",
+          "json_pointer": "/components/supervisor_lifecycle",
+          "historical_status": "CANDIDATE"
+        }
+      ],
+      "scope": "supervisor lifecycle"
+    }
+  ],
+  "publication_scope": "Code, design memos and engineering lineage only; historical account chat exports excluded. Source path labels normalized to artifact filenames; artifact hashes unchanged."
+}

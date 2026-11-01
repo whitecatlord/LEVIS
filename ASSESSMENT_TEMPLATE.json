@@ -1,0 +1,27 @@
+{
+  "level_id": "runtime/M1.1",
+  "assessor": "REPLACE_WITH_ACTUAL_ASSESSOR",
+  "artifact_sha256": "REPLACE_WITH_64_LOWERCASE_HEX",
+  "implementation": "IMPLEMENTED",
+  "verification": "REPLACE_WITH_ACTUAL_SCOPED_RESULT",
+  "acceptance": "REPLACE_WITH_ACTUAL_DECISION",
+  "completion": "HOLD_FOR_REPAIR",
+  "scope": "REPLACE_WITH_EXACT_TESTED_SCOPE",
+  "gate_results": [
+    {
+      "gate": "ledger_content_integrity",
+      "result": "REPLACE_WITH_PASS_OR_FAIL",
+      "evidence_indices": [
+        0
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "REPLACE_WITH_LOCAL_EVIDENCE_FILE",
+      "expected_sha256": "REPLACE_WITH_64_LOWERCASE_HEX",
+      "claim": "REPLACE_WITH_SUPPORTED_CLAIM",
+      "scope": "REPLACE_WITH_ACTUAL_ENVIRONMENT_AND_LIMITS"
+    }
+  ]
+}
