@@ -1,0 +1,104 @@
+{
+  "scope": "Engineering provenance labels only; private mixed-topic transcript S12 and all Drive URLs/provider metadata excluded; source originals not audited in this update.",
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "LEVIS — Independent AI Structural Review.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "5ef95d4c0fe15341703c74c626b295378d7354a998aa63540609856af95ac09a",
+      "fetched_text_characters": 13450,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S02",
+      "title": "Levis appendix.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "e2f9edf95928c284691fc76479c5f0399eeb65f51eb1b4bdadeb0e99eb6b7215",
+      "fetched_text_characters": 12447,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S03",
+      "title": "LEVIS_CORE_CHARTER_v0_2.md",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "076a691dca54c44684c056ebcae0a62659600b1f1392672d4f8e5d3b2e493ac8",
+      "fetched_text_characters": 26439,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S04",
+      "title": "CLINICAL BUILD REQUEST — LEVIS DESCENT PATH TEST PACKET v0.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "535f742efe18b230b82917c40a251d7f66e57b1540ccfc5aa602752991286aed",
+      "fetched_text_characters": 8952,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S05",
+      "title": "Updated test please run and return.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "188760c6e09b194c22bb1a44b386fdb9f51be95f2beddac2473e6fe0fe027cd4",
+      "fetched_text_characters": 13888,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S06",
+      "title": "Distributed Semantic Memory Poisoning Test.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "0df8c1ec46ff2c55882baea06826bee6978b27e8ccf6e5df65352d9a41d29bc3",
+      "fetched_text_characters": 10952,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S07",
+      "title": "LLM Memory Regulation Protocol — LEVIS-Inspired Outline.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "17b864b1beded0326e0106e1fe1d082352f0867764ae0090861edb4ace77e08a",
+      "fetched_text_characters": 10206,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S08",
+      "title": "LEVIS Consensus Geometry White Paper.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "118812cef810f2f18c18f1267e02a6403129e3a64dba65340076fed31cbf9641",
+      "fetched_text_characters": 18010,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S09",
+      "title": "Title- Recursive Symbolic Anchoring as a Context Compression Protocol in Large Language Models.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "47a113311db57753bd2abbc730b72e4755827a6d80ebba6b2ba1cc80a586323f",
+      "fetched_text_characters": 4829,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S10",
+      "title": "Bridging DIE-SLUG into the Vayulith Architecture.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "4edcca375fab0ad7472623f07af37822b5e24665abd84709f4e619778b3a2bb7",
+      "fetched_text_characters": 17100,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    },
+    {
+      "source_id": "S11",
+      "title": "💠 -The Mycelial Brainframe pulses with the dual-entry system, Chief.txt",
+      "inspection": "focused text inspection",
+      "fetched_text_sha256": "fbf833ee82757d241865939ce6095034162bd4d3bd6a4a99d969c4161ff677c5",
+      "fetched_text_characters": 12093,
+      "fingerprint_scope": "connector-extracted UTF-8 text; NOT original file bytes",
+      "original_bytes_verified": false
+    }
+  ]
+}

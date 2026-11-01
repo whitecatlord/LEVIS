@@ -1,0 +1,25 @@
+{
+  "parent_archive_name": "LEVIS_Communication_Review_2026-11-01.zip",
+  "parent_archive_sha256": "54c4a40528c88ba09d3b4b7a2fb935dae2e03c4b665416b6bc9986e13bcd2a1b",
+  "parent_manifest_verified_entries": 7,
+  "unchanged_files": {
+    "codec.py": "7e7d6c7b0c9f94c6508f8a8e500c14fb0b6d8d69f02debc3c41792dc50262155",
+    "trial-template.json": "1abb2a8322884a40f149833648b35612afba82b6eca5287133bbefccb561a72c",
+    "transport-results.txt": "27ef38fb734122631d257e27c8a1ad41bff0fa4bf2e132f5f30c3d5b1530ecc7"
+  },
+  "derived_files": [
+    "REVIEW.md",
+    "PUBLIC_SOURCE_REGISTER.json",
+    "README.md",
+    "LOCAL_VERIFICATION.txt"
+  ],
+  "excluded": [
+    "discovery.json",
+    "sources.json (private original; replaced by selected public provenance labels)",
+    "visible_exchange.jsonl",
+    "original manifest.json (replaced by this provenance record and public checksums)"
+  ],
+  "verification": "12 transport checks reproduced locally; model/basin trials NOT_RUN",
+  "authority_effect": "NONE",
+  "engineering_gate_effect": "NONE"
+}

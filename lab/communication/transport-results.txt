@@ -1,0 +1,7 @@
+Executed: python3 codec.py
+Date: 2026-11-01
+Exit code: 0
+Ran 12 tests in 0.001s
+OK
+
+Transport serialization checks only. No model/basin trials executed.

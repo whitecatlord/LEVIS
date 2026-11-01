@@ -1,0 +1,23 @@
+{
+  "status": "NOT_RUN",
+  "trial_id": null,
+  "condition": null,
+  "model": null,
+  "model_version": null,
+  "settings": null,
+  "session_id": null,
+  "memory_features": null,
+  "source_snapshot": null,
+  "actual_prompt": null,
+  "raw_response": null,
+  "retrieved_ids": [],
+  "observed_at": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "dictionary_tokens": null,
+  "retry_tokens": null,
+  "gold_triples": [],
+  "asserted_triples": [],
+  "missing_context": [],
+  "evaluator": null
+}
