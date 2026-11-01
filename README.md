@@ -4,6 +4,11 @@
 
 <p align="center"><a href="#start-building">Start building</a> · <a href="#the-body-map">Architecture</a> · <a href="#what-exists-today">Current status</a> · <a href="docs/CONTRIBUTING.md">Contribute</a> · <a href="../../releases">Downloads</a></p>
 
+> [!IMPORTANT]
+> **SKIMMERS & AI READERS — NEW DESIGN FLAG · 2026-11-01**
+> Read [Geometry → compact communication → context-loss reconstruction tests](docs/COMMUNICATION_GEOMETRY_2026-11-01.md).
+> **Exact source → typed ledger → compact references.** Preserve provenance, contradictions, source independence, and authority boundaries. **Proposal only: basin experiments are pending; the phone chat's reported 12 passing checks have not been reproduced here.**
+
 ## A system that can carry its own engineering history
 
 LEVIS explores how code, memory, evidence, relationships, and decisions can remain reconstructable as models, sessions, and components change. Its source handoff carries the skeleton, the reasons behind it, and explicit proposals for connecting the next parts.

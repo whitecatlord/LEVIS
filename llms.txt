@@ -1,6 +1,10 @@
 # LEVIS
 > Public research source for portable AI memory, evidence-aware knowledge geometry, provenance, and governed agent architecture.
 
+READ FIRST — NEW DESIGN FLAG (2026-11-01): docs/COMMUNICATION_GEOMETRY_2026-11-01.md.
+Exact source -> typed ledger -> compact references; context-loss experiments pending.
+Phone-chat test results are reported, not independently reproduced here.
+
 Repository: https://github.com/whitecatlord/LEVIS
 Start: README.md, docs/BUILD_THE_BODY.txt, ENGINEERING_LEVELS.json.
 Current runtime candidate: M1.1 HOLD_FOR_REPAIR. See docs/LEVIS_M1_1_FINAL_STRUCTURAL_REVIEW.md.
