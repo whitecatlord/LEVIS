@@ -1,0 +1,35 @@
+{
+  "status": "CANDIDATE_ONLY",
+  "authority_effect": "NONE",
+  "source_parent_sha256": "f9d785042c770492526db5fd4010846687586fd8fd4a9ff6a224d4ca9b4353a2",
+  "design_sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a",
+  "preserved_parent_files": 59,
+  "modified_parent_files": [],
+  "removed_parent_files": [],
+  "added_files": [
+    "DESIGN_PARENT.md",
+    "IMPLEMENTATION_NOTES.md",
+    "LEVIS_STARTER/runtime_cli.py",
+    "LEVIS_STARTER/runtime_client.py",
+    "LEVIS_STARTER/runtime_coordinator.py",
+    "LEVIS_STARTER/runtime_ipc_windows.py",
+    "LEVIS_STARTER/runtime_profile.py",
+    "LEVIS_STARTER/runtime_protocol.py",
+    "LEVIS_STARTER/runtime_store.py",
+    "LEVIS_STARTER/test_runtime_windows.py",
+    "M1_1_CHANGED_FILES.json",
+    "MANIFEST_SHA256.txt",
+    "START_HERE_M1_1.md",
+    "evidence/M1_1_ALL_TESTS.log"
+  ],
+  "test_counts": {
+    "passed": 52,
+    "inherited_rerun": 31,
+    "new_runtime_tests": 21
+  },
+  "executed_environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "sqlite": "3.49.1"
+  }
+}

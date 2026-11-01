@@ -1,0 +1,134 @@
+{
+  "disposition": "CANDIDATE",
+  "authority_effect": "NONE",
+  "approval": "PENDING_SEPARATE_STRUCTURAL_REVIEW",
+  "parent_name": "LEVIS_M1_1_COORDINATOR_CANDIDATE.zip",
+  "parent_sha256": "cbb165fa52b1c79c7a249c34b17a05e52b468ee4bbfbf01a402ca62f350f874c",
+  "review_sha256": "d02c6baf7754c62e59caaa36282bc32c880a547ca1f06c8c6b77674e4009c503",
+  "changes": [
+    {
+      "path": "evidence/M1_1_REPAIR_BEFORE.log",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "980bbd975fe03f158d658f27285094979fbfcfb86d20022a9bb3e2d917987f34",
+      "output_bytes": 427
+    },
+    {
+      "path": "evidence/M1_1_REPAIR_PARENT_REPRO.py",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "190b05f8c2f1a9c7b88ac4860951daaf4fdc72af5b0843ffd9a1021beb9708b5",
+      "output_bytes": 4483
+    },
+    {
+      "path": "evidence/M1_1_REPAIR_TESTS_FINAL.log",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "c56c154a025360f19d732b73a4d56e5c770f48befc6f078b10c5fbdb350328fb",
+      "output_bytes": 9266
+    },
+    {
+      "path": "evidence/M1_1_REPAIR_TESTS_FIRST.log",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "2c80e578b7dcd22565d704504061a87b299c3874c9870c4a1b96fc7d37f9f9d4",
+      "output_bytes": 8924
+    },
+    {
+      "path": "LEVIS_M1_1_STRUCTURAL_REVIEW.md",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "d02c6baf7754c62e59caaa36282bc32c880a547ca1f06c8c6b77674e4009c503",
+      "output_bytes": 8387
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_coordinator.py",
+      "change": "modified",
+      "parent_sha256": "2a1569de0564fae42198a91fd99d6d48604dddafa4f5f2fdbdc12c0dc3771164",
+      "output_sha256": "1611db48f2432e69bd1defa66a964308622ed4f094eaad848007b5a7e28537a6",
+      "output_bytes": 5403
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_profile.py",
+      "change": "modified",
+      "parent_sha256": "ffe5a960d67c4ed70169356022ce1edbfdb90e138969c2c0272bc9df1a4b6954",
+      "output_sha256": "f6a480c28e0cadbb29c8b25300f1d791a0a3b9c1d73d33f6a74fabc896e84f8c",
+      "output_bytes": 4765
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_store.py",
+      "change": "modified",
+      "parent_sha256": "4db9df62c1c536cac3f499093c499c906da5d5ad95dd247261cfc2f6c87ee474",
+      "output_sha256": "ae80ea0e2d56267dbb48bafe450be334b8199b9bf9d2c97e39b6a8c2a40353dc",
+      "output_bytes": 13364
+    },
+    {
+      "path": "LEVIS_STARTER/test_runtime_repairs.py",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "d198078787cc4c07f7ddb94b6b3b0a6a549b3733e3c23c76ea2aac967c8ea105",
+      "output_bytes": 12111
+    },
+    {
+      "path": "LEVIS_STARTER/test_runtime_windows.py",
+      "change": "modified",
+      "parent_sha256": "4d89e4e680d0c6cae4cf62ba62b418b0714aab8606831b5749bd2257901b5210",
+      "output_sha256": "8c8e0bfd028aba1f05303a9bf3b1d55698e74d716e37673df82f2586d1c10c0e",
+      "output_bytes": 19967
+    },
+    {
+      "path": "M1_1_REPAIR_PATCH.diff",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "63bf7dd6bcd5cf20fb173cd5b94d218680ff796a67a0d9637fe6e94fffe09c3d",
+      "output_bytes": 22829
+    },
+    {
+      "path": "REPAIR_IMPLEMENTATION_NOTES.md",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "7125a793b55cc3a6efb8019a72b015b0952651213de2f87e95d48b388b004dea",
+      "output_bytes": 9424
+    },
+    {
+      "path": "START_HERE_REPAIR.md",
+      "change": "added",
+      "parent_sha256": null,
+      "output_sha256": "4832831096447dab520037353c7dcb134131fb1f40a86cc51e270e3b3018578c",
+      "output_bytes": 4186
+    },
+    {
+      "path": "MANIFEST_SHA256.txt",
+      "change": "regenerated",
+      "parent_sha256": "64603e28056b87bbdbc8fd2d079facba28c81e0f2f2d852ecf4b5329924fc9c6",
+      "note": "Final bytes hashed by external archive checksum; not recursively in own manifest."
+    },
+    {
+      "path": "M1_1_REPAIR_CHANGED_FILES.json",
+      "change": "added",
+      "note": "Self-reference excluded; file covered by root manifest."
+    }
+  ],
+  "removed_files": [],
+  "test_results": {
+    "total_passed": 64,
+    "unchanged_inherited_application_tests": 31,
+    "retained_runtime_tests_adapted": 21,
+    "added_repair_tests": 12
+  },
+  "cross_logon_policy": "SAME_LOGON_ONLY_UNQUALIFIED",
+  "cross_logon_windows_qualified": false,
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "sqlite": "3.49.1"
+  },
+  "scope_exclusions": [
+    "executor",
+    "model invocation",
+    "filesystem authority expansion",
+    "production GUI migration",
+    "Base promotion",
+    "Operator seal"
+  ]
+}

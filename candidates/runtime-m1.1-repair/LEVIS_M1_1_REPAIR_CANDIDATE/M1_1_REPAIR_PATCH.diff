@@ -1,0 +1,427 @@
+--- parent/LEVIS_STARTER/runtime_coordinator.py
++++ repair/LEVIS_STARTER/runtime_coordinator.py
+@@ -11,8 +11,9 @@
+ 
+ 
+ class Coordinator:
+-    def __init__(self, profile, who, secret):
++    def __init__(self, profile, who, secret, *, initialize=False):
+         self.profile, self.who, self.secret = profile, who, secret
++        self.initialize = initialize
+         self.generation = uuid.uuid4().hex
+         self.stopping = threading.Event()
+         self.failure = threading.Event()
+@@ -23,11 +24,18 @@
+     def serve(self):
+         try:
+             self.lock = win.ProfileLock(self.profile)
++            # Revalidate phase/identity while owning the profile. Initialization
++            # and established-profile reopening are separate, explicit paths.
++            profile_api.load(self.profile, allow_initializing=self.initialize)
+             # Establish both exclusive endpoints before opening the DB. A
+             # squatted pipe cannot cause lifecycle mutations before refusal.
+             for control in (False, True):
+                 self.pipes.append(win.new_pipe(win.pipe_name(self.profile, self.who, control), self.who))
+-            self.store = Store(self.profile / 'runtime.sqlite3', self.generation)
++            self.store = Store(self.profile / 'runtime.sqlite3', self.generation,
++                               create=self.initialize, autostart=False)
++            self.store.start()
++            if self.initialize:
++                profile_api.mark_ready(self.profile, self.who)
+             profile_api.publish(self.profile, self.who, self.generation)
+             for h, control in zip(self.pipes, (False, True)):
+                 t = threading.Thread(target=self._listen, args=(h, control), name='LEVIS-control' if control else 'LEVIS-data')
+@@ -42,8 +50,10 @@
+                 raise RuntimeError('IPC listener failure')
+         finally:
+             self.stopping.set()
++            if self.store:
++                self.store.cancel.set()
+             for t in self.workers:
+-                t.join(8)
++                t.join()
+             for h in self.pipes:
+                 win.close(h)
+             if self.store:
+@@ -93,7 +103,7 @@
+     args = parser.parse_args()
+     try:
+         profile, who, secret = (profile_api.initialize if args.init else profile_api.load)(args.profile)
+-        Coordinator(profile, who, secret).serve()
++        Coordinator(profile, who, secret, initialize=args.init).serve()
+         return 0
+     except (OSError, ValueError, RuntimeError, TimeoutError) as error:
+         print(f'STOP: {type(error).__name__}: {error}', file=sys.stderr)
+--- parent/LEVIS_STARTER/runtime_profile.py
++++ repair/LEVIS_STARTER/runtime_profile.py
+@@ -6,7 +6,8 @@
+ from runtime_protocol import encode, decode, fields
+ 
+ ALLOWED = {'profile.json', 'secret.dpapi', 'writer.lock', 'runtime.sqlite3',
+-           'runtime.sqlite3-wal', 'runtime.sqlite3-shm', 'discovery.json', 'discovery.tmp'}
++           'runtime.sqlite3-wal', 'runtime.sqlite3-shm', 'discovery.json', 'discovery.tmp', 'profile.tmp'}
++CONTINUITY_POLICY = 'SAME_LOGON_ONLY_UNQUALIFIED'
+ 
+ 
+ def bounded_read(path, maximum=8192):
+@@ -17,7 +18,7 @@
+     return value
+ 
+ 
+-def load(path):
++def load(path, *, allow_initializing=False):
+     profile, who = win.canonical_profile(path), win.process_identity()
+     win.verify_private(profile, who, protected=True)
+     for child in profile.iterdir():
+@@ -27,9 +28,20 @@
+             raise ValueError('Profile child reparse point refused')
+         win.verify_private(child, who)
+     metadata = decode(bounded_read(profile / 'profile.json'))
+-    fields(metadata, 'kind version profile_id identity')
+-    if metadata['kind'] != 'LEVIS-M1.1-isolated' or metadata['version'] != 1 or metadata['identity'] != who:
+-        raise PermissionError('Profile version/user/logon mismatch')
++    fields(metadata, 'kind version profile_id identity phase continuity_policy')
++    if metadata['kind'] != 'LEVIS-M1.1-repair-isolated' or metadata['version'] != 2:
++        raise PermissionError('Unsupported profile version; no implicit migration')
++    if metadata['continuity_policy'] != CONTINUITY_POLICY:
++        raise PermissionError('Unsupported cross-logon policy')
++    if metadata['identity'] != who:
++        raise PermissionError('Cross-logon continuity disabled; profile preserved without rekeying')
++    permitted_phase = 'INITIALIZING' if allow_initializing else 'READY'
++    if metadata['phase'] != permitted_phase:
++        raise RuntimeError('Profile initialization incomplete or incompatible with startup mode')
++    if not allow_initializing:
++        ledger = profile / 'runtime.sqlite3'
++        if not ledger.is_file() or ledger.stat().st_size < 4096:
++            raise RuntimeError('Established profile ledger missing or truncated; recovery required')
+     if uuid.UUID(metadata['profile_id']).hex != metadata['profile_id']:
+         raise ValueError('Profile identity invalid')
+     secret = win.dpapi(bounded_read(profile / 'secret.dpapi'), decrypt=True)
+@@ -44,10 +56,27 @@
+     profile.mkdir()
+     win.private_path(profile, who)
+     win.verify_private(profile, who, protected=True)
+-    (profile / 'profile.json').write_bytes(encode({'kind': 'LEVIS-M1.1-isolated', 'version': 1,
+-                                                'profile_id': uuid.uuid4().hex, 'identity': who}))
++    write_metadata(profile, {'kind': 'LEVIS-M1.1-repair-isolated', 'version': 2,
++                            'profile_id': uuid.uuid4().hex, 'identity': who,
++                            'phase': 'INITIALIZING', 'continuity_policy': CONTINUITY_POLICY})
+     (profile / 'secret.dpapi').write_bytes(win.dpapi(secrets.token_bytes(32)))
+-    return load(profile)
++    return load(profile, allow_initializing=True)
++
++
++def write_metadata(profile, value):
++    temp = profile / 'profile.tmp'
++    with temp.open('wb') as f:
++        f.write(encode(value));f.flush();os.fsync(f.fileno())
++    os.replace(temp, profile / 'profile.json')
++
++
++def mark_ready(profile, who):
++    # Called only with the OS writer lock held, after initialized store startup.
++    metadata = decode(bounded_read(profile / 'profile.json'))
++    if metadata['phase'] != 'INITIALIZING' or metadata['identity'] != who:
++        raise RuntimeError('Invalid profile initialization phase')
++    metadata['phase'] = 'READY'
++    write_metadata(profile, metadata)
+ 
+ 
+ def publish(profile, who, generation):
+--- parent/LEVIS_STARTER/runtime_store.py
++++ repair/LEVIS_STARTER/runtime_store.py
+@@ -2,6 +2,7 @@
+ from concurrent.futures import Future
+ import hashlib
+ import json
++import os
+ from pathlib import Path
+ import queue
+ import sqlite3
+@@ -9,30 +10,111 @@
+ import time
+ import runtime_protocol as protocol
+ 
++STATES = ('STARTING', 'RECOVERING', 'PAUSED', 'READY', 'STOPPING', 'STOPPED', 'ERROR')
++STATE_SQL = "('STARTING','RECOVERING','PAUSED','READY','STOPPING','STOPPED','ERROR')"
++SCHEMA_VERSION = 2
++DDL = (
++    f"CREATE TABLE runtime(id INTEGER PRIMARY KEY CHECK(id=1),state TEXT NOT NULL CHECK(state IN {STATE_SQL}),"
++    "revision INTEGER NOT NULL CHECK(typeof(revision)='integer' AND revision>=0),generation TEXT NOT NULL,"
++    "clean INTEGER NOT NULL CHECK(clean IN (0,1) AND clean=(state='STOPPED')))",
++    f"CREATE TABLE events(cursor INTEGER PRIMARY KEY AUTOINCREMENT,generation TEXT,state TEXT CHECK(state IN {STATE_SQL}),revision INTEGER,at REAL)",
++    "CREATE TABLE requests(client TEXT,id TEXT,body_hash TEXT,response TEXT,PRIMARY KEY(client,id))",
++    "CREATE TABLE controls(client TEXT,id TEXT,command TEXT CHECK(command IN ('pause','resume','stop')),revision INTEGER)",
++)
++
++
++def schema_inventory(db):
++    # Include all objects, including generated indices and sqlite_sequence.
++    return [(kind, name, table, ' '.join(sql.split()) if sql else None)
++            for kind, name, table, sql in db.execute(
++                'SELECT type,name,tbl_name,sql FROM sqlite_master ORDER BY type,name')]
++
++
++def expected_schema():
++    db = sqlite3.connect(':memory:')
++    try:
++        for sql in DDL:
++            db.execute(sql)
++        return schema_inventory(db)
++    finally:
++        db.close()
++
+ 
+ class Store:
+-    def __init__(self, path, generation):
++    def __init__(self, path, generation, *, create=False, autostart=True):
+         self.path, self.generation = Path(path), generation
++        self.create = create
+         self.queue = queue.Queue(maxsize=32)
+         self.ready = Future()
+         self.failed = threading.Event()
++        self.cancel = threading.Event()
+         self.thread = threading.Thread(target=self._run, name='LEVIS-database-actor')
++        if autostart:
++            try:
++                self.start()
++            except BaseException:
++                self.close()
++                raise
++
++    def start(self, timeout=10):
+         self.thread.start()
+         try:
+-            self.ready.result(timeout=10)
++            self.ready.result(timeout=timeout)
+         except Exception as error:
+-            self.thread.join(2)
++            # Caller retains this Store before starting it. Cleanup MUST wait
++            # for the actor to exit before relinquishing profile ownership.
++            self.cancel.set()
+             raise RuntimeError('Runtime storage startup refused') from error
+ 
++    def _check_cancel(self):
++        if self.cancel.is_set():
++            raise RuntimeError('Runtime storage startup cancelled')
++
+     def _event(self, state):
++        self._check_cancel()
++        previous = self.db.execute('SELECT state FROM runtime WHERE id=1').fetchone()[0]
++        exits = {'STARTING': {'RECOVERING'}, 'RECOVERING': {'PAUSED'},
++                 'PAUSED': {'READY', 'STOPPING'}, 'READY': {'PAUSED', 'STOPPING'},
++                 'STOPPING': {'STOPPED'}, 'STOPPED': set(), 'ERROR': set()}
++        if state not in STATES or (state != 'STARTING' and state not in exits[previous]):
++            raise ValueError('Prohibited M1.1 lifecycle transition')
+         self.db.execute('UPDATE runtime SET state=?, revision=revision+1, clean=?', (state, int(state == 'STOPPED')))
+         revision = self.db.execute('SELECT revision FROM runtime').fetchone()[0]
+         self.db.execute('INSERT INTO events(generation,state,revision,at) VALUES(?,?,?,?)', (self.generation, state, revision, time.time()))
+ 
+     def _run(self):
+         try:
+-            self.db = sqlite3.connect(self.path, timeout=.25, isolation_level=None)
++            self._check_cancel()
++            if self.create:
++                # Exclusive creation is only allowed by explicit profile init.
++                fd = os.open(self.path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
++                os.close(fd)
++            # mode=rw never fabricates a missing established ledger.
++            self.db = sqlite3.connect(self.path.resolve().as_uri() + '?mode=rw', uri=True, timeout=.25, isolation_level=None)
+             self.db.execute('PRAGMA busy_timeout=250')
++            self.db.execute('PRAGMA trusted_schema=OFF')
++            self._check_cancel()
++            if self.create:
++                self.db.execute('BEGIN IMMEDIATE')
++                for sql in DDL:
++                    self.db.execute(sql)
++                self.db.execute("INSERT INTO runtime VALUES(1,'STOPPED',0,'',1)")
++                self.db.execute(f'PRAGMA user_version={SCHEMA_VERSION}')
++                self._check_cancel()
++                self.db.execute('COMMIT')
++            # Reject valid-SQLite but unsupported structure before any lifecycle
++            # UPDATE or journaling-mode change can invoke its schema objects.
++            if (self.db.execute('PRAGMA user_version').fetchone()[0] != SCHEMA_VERSION or
++                    schema_inventory(self.db) != expected_schema()):
++                raise RuntimeError('Unsupported runtime schema')
++            if self.db.execute('PRAGMA quick_check').fetchone()[0] != 'ok':
++                raise RuntimeError('Runtime integrity check failed')
++            rows = self.db.execute('SELECT id,state,revision,generation,clean FROM runtime').fetchall()
++            if (len(rows) != 1 or rows[0][0] != 1 or rows[0][1] not in STATES or
++                    type(rows[0][2]) is not int or rows[0][2] < 0 or
++                    rows[0][4] != int(rows[0][1] == 'STOPPED')):
++                raise RuntimeError('Invalid runtime singleton')
++            self._check_cancel()
+             if self.db.execute('PRAGMA journal_mode=WAL').fetchone()[0].lower() != 'wal':
+                 raise RuntimeError('WAL unavailable')
+             self.db.execute('PRAGMA synchronous=FULL')
+@@ -45,20 +127,6 @@
+             self.db.execute('PRAGMA journal_size_limit=4194304')
+             if self.db.execute('PRAGMA synchronous').fetchone()[0] != 2:
+                 raise RuntimeError('FULL synchronous unavailable')
+-            tables = {r[0] for r in self.db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'")}
+-            expected = {'runtime', 'events', 'requests', 'controls'}
+-            if tables and (tables != expected or self.db.execute('PRAGMA user_version').fetchone()[0] != 1):
+-                raise RuntimeError('Unknown runtime schema')
+-            if not tables:
+-                self.db.executescript('''BEGIN IMMEDIATE;
+-                CREATE TABLE runtime(state TEXT NOT NULL,revision INTEGER NOT NULL,generation TEXT NOT NULL,clean INTEGER NOT NULL);
+-                INSERT INTO runtime VALUES('STOPPED',0,'',1);
+-                CREATE TABLE events(cursor INTEGER PRIMARY KEY AUTOINCREMENT,generation TEXT,state TEXT,revision INTEGER,at REAL);
+-                CREATE TABLE requests(client TEXT,id TEXT,body_hash TEXT,response TEXT,PRIMARY KEY(client,id));
+-                CREATE TABLE controls(client TEXT,id TEXT,command TEXT,revision INTEGER);
+-                PRAGMA user_version=1; COMMIT;''')
+-            if self.db.execute('PRAGMA quick_check').fetchone()[0] != 'ok':
+-                raise RuntimeError('Runtime integrity check failed')
+             self.db.execute('BEGIN IMMEDIATE')
+             previous = self.db.execute('SELECT state,clean FROM runtime').fetchone()
+             if previous is None or self.db.execute('SELECT count(*) FROM runtime').fetchone()[0] != 1:
+@@ -67,10 +135,14 @@
+             self.db.execute('UPDATE runtime SET generation=?', (self.generation,))
+             for state in ('STARTING', 'RECOVERING', 'PAUSED'):
+                 self._event(state)
++            self._check_cancel()
+             self.db.execute('COMMIT')
+             self.ready.set_result(True)
+-            while True:
+-                item = self.queue.get()
++            while not self.cancel.is_set():
++                try:
++                    item = self.queue.get(timeout=.1)
++                except queue.Empty:
++                    continue
+                 if item is None:
+                     break
+                 request, future = item
+@@ -95,9 +167,19 @@
+         finally:
+             if hasattr(self, 'db'):
+                 self.db.close()
++            # A cancelled startup cannot leave admitted callers waiting forever.
++            while True:
++                try:
++                    item = self.queue.get_nowait()
++                except queue.Empty:
++                    break
++                if item is not None and not item[1].done():
++                    item[1].set_exception(RuntimeError('Database actor stopped'))
+ 
+     def _view(self):
+-        state, revision, generation, clean = self.db.execute('SELECT * FROM runtime').fetchone()
++        state, revision, generation, clean = self.db.execute('SELECT state,revision,generation,clean FROM runtime WHERE id=1').fetchone()
++        if state not in STATES or clean != int(state == 'STOPPED'):
++            raise RuntimeError('Invalid lifecycle observation')
+         cursor = self.db.execute('SELECT coalesce(max(cursor),0) FROM events').fetchone()[0]
+         return {'state': state, 'revision': revision, 'runtime_generation': generation, 'event_cursor': cursor,
+                 'clean_shutdown': bool(clean), 'startup_reason': self.startup_reason, 'executor_enabled': False, 'model_enabled': False}
+@@ -153,6 +235,8 @@
+         protocol.validate_request(request)
+         if threading.current_thread() is self.thread:
+             raise RuntimeError('Actor cannot call itself')
++        if self.cancel.is_set() or not self.thread.is_alive():
++            raise RuntimeError('Database actor is not available')
+         if self.failed.is_set():
+             return {'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation}
+         future = Future()
+@@ -162,8 +246,10 @@
+         return future.result(timeout=5)
+ 
+     def close(self):
+-        if self.thread.is_alive():
+-            self.queue.put(None, timeout=5)
+-            self.thread.join(10)
+-        if self.thread.is_alive():
+-            raise RuntimeError('Database actor failed to stop')
++        if threading.current_thread() is self.thread:
++            raise RuntimeError('Actor cannot join itself')
++        self.cancel.set()
++        if self.thread.ident is not None:
++            # Deliberately no timeout: a hung native operation retains the
++            # writer lock until this thread exits or the OS ends the process.
++            self.thread.join()
+--- parent/LEVIS_STARTER/test_runtime_windows.py
++++ repair/LEVIS_STARTER/test_runtime_windows.py
+@@ -177,15 +177,20 @@
+ 
+     def test_IPC02_squatted_namespace_before_database_start(self):
+         path,who,secret = profiles.initialize(self.base/'profile')
++        store=Store(path/'runtime.sqlite3',uuid.uuid4().hex,create=True);store.close()
++        profiles.mark_ready(path,who)
++        before=(path/'runtime.sqlite3').read_bytes()
+         h=win.new_pipe(win.pipe_name(path,who),who)
+         try:
+             other=subprocess.run([sys.executable,str(ROOT/'runtime_coordinator.py'),'--profile',str(path)],capture_output=True,text=True,timeout=10)
+             self.assertEqual(other.returncode,2)
+-            self.assertFalse((path/'runtime.sqlite3').exists())
++            self.assertEqual((path/'runtime.sqlite3').read_bytes(),before)
+         finally:win.close(h)
+ 
+     def test_IPC02_wrong_server_proof_native_pipe(self):
+         profile,who,secret = profiles.initialize(self.base/'profile')
++        store=Store(profile/'runtime.sqlite3',uuid.uuid4().hex,create=True);store.close()
++        profiles.mark_ready(profile,who)
+         generation=uuid.uuid4().hex;profiles.publish(profile,who,generation)
+         h=win.new_pipe(win.pipe_name(profile,who),who)
+         stop=threading.Event();errors=[]
+@@ -284,7 +289,7 @@
+         run.stop()
+ 
+     def test_DB03_actor_validates_worker_and_stale_generation_fields(self):
+-        store=Store(self.base/'actor.db',uuid.uuid4().hex);self.addCleanup(store.close)
++        store=Store(self.base/'actor.db',uuid.uuid4().hex,create=True);self.addCleanup(store.close)
+         with self.assertRaises(sqlite3.ProgrammingError):
+             store.db.execute("UPDATE runtime SET state='READY'")
+         for bad in ({**request(),'runtime_generation':'stale'}, request('finalize')):
+@@ -292,7 +297,7 @@
+         self.assertEqual(store.call(request())['state'],'PAUSED')
+ 
+     def test_DB04_locked_database_no_success_and_error_gate(self):
+-        store=Store(self.base/'actor.db',uuid.uuid4().hex);self.addCleanup(store.close)
++        store=Store(self.base/'actor.db',uuid.uuid4().hex,create=True);self.addCleanup(store.close)
+         locked=sqlite3.connect(self.base/'actor.db',isolation_level=None)
+         try:
+             locked.execute('BEGIN IMMEDIATE')
+@@ -314,7 +319,7 @@
+                 if state=='READY':
+                     self.db.set_authorizer(lambda code,a,b,c,d: sqlite3.SQLITE_DENY
+                         if code==sqlite3.SQLITE_TRANSACTION and a=='COMMIT' else sqlite3.SQLITE_OK)
+-        path=self.base/'actor.db';store=DenyCommit(path,uuid.uuid4().hex);self.addCleanup(store.close)
++        path=self.base/'actor.db';store=DenyCommit(path,uuid.uuid4().hex,create=True);self.addCleanup(store.close)
+         result=store.call(request('resume',3))
+         self.assertEqual(result['status'],'ERROR')
+         db=sqlite3.connect(path)
+@@ -330,10 +335,15 @@
+                 if state=='READY':
+                     pages=self.db.execute('PRAGMA page_count').fetchone()[0]
+                     self.db.execute(f'PRAGMA max_page_count={pages}')
+-                    self.db.execute("INSERT INTO events(state) VALUES(zeroblob(1048576))")
+-        path=self.base/'quota.db';store=FillStore(path,uuid.uuid4().hex);self.addCleanup(store.close)
++                    try:
++                        self.db.execute("INSERT INTO requests VALUES('quota','quota','hash',zeroblob(1048576))")
++                    except sqlite3.OperationalError as error:
++                        self.quota_error_code=error.sqlite_errorcode
++                        raise
++        path=self.base/'quota.db';store=FillStore(path,uuid.uuid4().hex,create=True);self.addCleanup(store.close)
+         result=store.call(request('resume',3))
+         self.assertEqual(result['status'],'ERROR')
++        self.assertEqual(store.quota_error_code,sqlite3.SQLITE_FULL)
+         db=sqlite3.connect(path)
+         try:
+             self.assertEqual(db.execute('SELECT state FROM runtime').fetchone()[0],'PAUSED')
+@@ -359,13 +369,16 @@
+ 
+     def test_corrupt_schema_refused(self):
+         path,who,secret=profiles.initialize(self.base/'profile')
+-        (path/'runtime.sqlite3').write_bytes(b'not a SQLite database')
++        profiles.mark_ready(path,who)
++        (path/'runtime.sqlite3').write_bytes(b'not a SQLite database'.ljust(4096,b'!'))
+         proc=subprocess.run([sys.executable,str(ROOT/'runtime_coordinator.py'),'--profile',str(path)],capture_output=True,text=True,timeout=10)
+         self.assertNotEqual(proc.returncode,0)
+         self.assertFalse((path/'discovery.json').exists())
+ 
+     def test_secret_corruption_and_existing_init_refused(self):
+         path,who,secret=profiles.initialize(self.base/'profile')
++        store=Store(path/'runtime.sqlite3',uuid.uuid4().hex,create=True);store.close()
++        profiles.mark_ready(path,who)
+         with self.assertRaises(FileExistsError):profiles.initialize(path)
+         (path/'secret.dpapi').write_bytes(b'broken')
+         with self.assertRaises(OSError):profiles.load(path)
