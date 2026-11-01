@@ -1,0 +1,2293 @@
+{
+  "schema": "levis.collegium.catalog/0.1",
+  "status": "PINNED_67_SOURCE_REFERENCE_SNAPSHOT_WITH_EXPLICIT_GAPS",
+  "authority_effect": "NONE",
+  "catalog_source_sha256": "3d402f23786a990140d990fe6946c3575b2fcdd7cffb31fd47769a78663d8c73",
+  "historical_table_sha256": "ae8dd6c57a9ff67955fc69aff2f2bacbf3181e3e387ddeac75508ee0d2514f54",
+  "historical_archive_sha256": "5615f7d6442f0de47bd93f6ab9efcc4a10dba5369cd83a0507d203c9d651e6d3",
+  "entries": [
+    {
+      "id": "pg-26",
+      "title": "Paradise Lost",
+      "authors": "Milton, John, 1608-1674",
+      "language": "en",
+      "subjects": "Fall of man -- Poetry; Adam (Biblical figure) -- Poetry; Eve (Biblical figure) -- Poetry; Bible. Genesis -- History of Biblical events -- Poetry",
+      "catalog_date": "1992-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/26",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/26/pg26.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:9"
+      ],
+      "historical_labels": [
+        "John Milton — Paradise Lost"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "aeedc9f33e0c2a6422d2f557462fb87cd2430974c6aed30a26803be5394a741a",
+      "bytes": 491461,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-61",
+      "title": "The Communist Manifesto",
+      "authors": "Marx, Karl, 1818-1883; Engels, Friedrich, 1820-1895",
+      "language": "en",
+      "subjects": "Socialism; Communism",
+      "catalog_date": "2005-01-25",
+      "source_url": "https://www.gutenberg.org/ebooks/61",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/61/pg61.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:19"
+      ],
+      "historical_labels": [
+        "Karl Marx & Friedrich Engels — Manifesto of the Communist Party"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "ba4623f09e411351ad4f34488289c70eceda8fb9d7977c1db64f0f01ed80cb59",
+      "bytes": 94315,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-131",
+      "title": "The Pilgrim's Progress from this world to that which is to come\nDelivered under the similitude of a dream, by John Bunyan",
+      "authors": "Bunyan, John, 1628-1688",
+      "language": "en",
+      "subjects": "Christian fiction; Christian pilgrims and pilgrimages -- Fiction",
+      "catalog_date": "1994-05-01",
+      "source_url": "https://www.gutenberg.org/ebooks/131",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/131/pg131.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "12:15"
+      ],
+      "historical_labels": [
+        "John Bunyan — The Pilgrim's Progress"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "13188e0d8cdc003befb5f70a41234c7b619c142cbbe4871564fd06406bda94bb",
+      "bytes": 331509,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-228",
+      "title": "The Aeneid",
+      "authors": "Virgil, 71 BCE-20 BCE; Dryden, John, 1631-1700 [Translator]",
+      "language": "en",
+      "subjects": "Aeneas (Legendary character) -- Poetry; Legends -- Rome -- Poetry; Epic poetry, Latin -- Translations into English",
+      "catalog_date": "1995-03-01",
+      "source_url": "https://www.gutenberg.org/ebooks/228",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/228/pg228.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:3"
+      ],
+      "historical_labels": [
+        "Virgil — Aeneid"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "398117fc34d7876e681e1feae1ebabfc72485be17f819779796d3dcfe886a504",
+      "bytes": 746759,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-57913",
+      "title": "Women and Economics\nA Study of the Economic Relation Between Men and Women as a Factor in Social Evolution",
+      "authors": "Gilman, Charlotte Perkins, 1860-1935",
+      "language": "en",
+      "subjects": "Women -- Social and moral questions; Women -- Employment; Women -- Economic conditions",
+      "catalog_date": "2018-09-16",
+      "source_url": "https://www.gutenberg.org/ebooks/57913",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/57913/pg57913.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "13:12"
+      ],
+      "historical_labels": [
+        "Charlotte Perkins Gilman — Women and Economics"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "daa02c73f76773e833a0a5c0da8660a69dd44fe0d2db8529da786bb64b8ac5ce",
+      "bytes": 515733,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-408",
+      "title": "The Souls of Black Folk",
+      "authors": "Du Bois, W. E. B. (William Edward Burghardt), 1868-1963",
+      "language": "en",
+      "subjects": "African Americans",
+      "catalog_date": "1996-01-01",
+      "source_url": "https://www.gutenberg.org/ebooks/408",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/408/pg408.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "7:19",
+        "13:R3"
+      ],
+      "historical_labels": [
+        "W.E.B. Du Bois — The Souls of Black Folk",
+        "W.E.B. Du Bois — The Souls of Black Folk (same as 7:19)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "87f8e832484792b761a510b953d67e3835fa46a9f4231a508bfeb914a98559ca",
+      "bytes": 428742,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-621",
+      "title": "The Varieties of Religious Experience: A Study in Human Nature",
+      "authors": "James, William, 1842-1910",
+      "language": "en",
+      "subjects": "Religion; Psychology, Religious; Philosophy and religion; Conversion; Experience (Religion)",
+      "catalog_date": "1996-08-01",
+      "source_url": "https://www.gutenberg.org/ebooks/621",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/621/pg621.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "12:17"
+      ],
+      "historical_labels": [
+        "William James — The Varieties of Religious Experience"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "bcfadbaeb796fdd8a721909409d27e42a81a9beed814b60d708a9f4559712bf2",
+      "bytes": 1171335,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-674",
+      "title": "Plutarch: Lives of the noble Grecians and Romans",
+      "authors": "Plutarch, 46-120?; Clough, Arthur Hugh, 1819-1861 [Editor]",
+      "language": "en",
+      "subjects": "Greece -- Biography -- Early works to 1800; Rome -- Biography -- Early works to 1800",
+      "catalog_date": "1996-10-01",
+      "source_url": "https://www.gutenberg.org/ebooks/674",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/674/pg674.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:7"
+      ],
+      "historical_labels": [
+        "Plutarch — Parallel Lives"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "e849186d3483c1779053a5f70c8ae477316c019907c740f878de0d2c788975f8",
+      "bytes": 4324016,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-815",
+      "title": "Democracy in America — Volume 1",
+      "authors": "Tocqueville, Alexis de, 1805-1859; Reeve, Henry, 1813-1895 [Translator]",
+      "language": "en",
+      "subjects": "United States -- Politics and government; United States -- Social conditions; Democracy -- United States",
+      "catalog_date": "2006-01-21",
+      "source_url": "https://www.gutenberg.org/ebooks/815",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/815/pg815.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:17"
+      ],
+      "historical_labels": [
+        "Alexis de Tocqueville — Democracy in America"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "734b3b0352dc2ec312a6b2b9e9165aac054439eee2d6e8d83d1fd9a35d1c9e2d",
+      "bytes": 1151189,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-833",
+      "title": "The Theory of the Leisure Class",
+      "authors": "Veblen, Thorstein, 1857-1929",
+      "language": "en",
+      "subjects": "Sociology; Leisure class",
+      "catalog_date": "1997-03-01",
+      "source_url": "https://www.gutenberg.org/ebooks/833",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/833/pg833.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "9:14",
+        "13:9"
+      ],
+      "historical_labels": [
+        "Thorstein Veblen — The Theory of the Leisure Class",
+        "Thorstein Veblen — The Theory of the Leisure Class (same as 9:14)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "84ee65366e377e9c087171c2286d28d74e6c860b83c01175ad5f863f09666bca",
+      "bytes": 672277,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-852",
+      "title": "Democracy and Education: An Introduction to the Philosophy of Education",
+      "authors": "Dewey, John, 1859-1952",
+      "language": "en",
+      "subjects": "Education -- Social aspects; Education -- Philosophy",
+      "catalog_date": "1997-03-01",
+      "source_url": "https://www.gutenberg.org/ebooks/852",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/852/pg852.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "7:20"
+      ],
+      "historical_labels": [
+        "John Dewey — Democracy and Education"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "d5a9c7515dbb2059ab5cf9da3d2a57a759944ccde9cb8a86a2a92d290b08024d",
+      "bytes": 862383,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-944",
+      "title": "The Voyage of the Beagle",
+      "authors": "Darwin, Charles, 1809-1882",
+      "language": "en",
+      "subjects": "Natural history; Beagle Expedition (1831-1836); Geology; Voyages around the world -- History -- 19th century; South America -- Discovery and exploration",
+      "catalog_date": "1997-06-01",
+      "source_url": "https://www.gutenberg.org/ebooks/944",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/944/pg944.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "18:10"
+      ],
+      "historical_labels": [
+        "Charles Darwin — Voyage of the Beagle"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "e13d57170a6dd9f7d97ddbc14cbde961dffbd95e8861ed199e5f00a525e7e52a",
+      "bytes": 1227345,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-996",
+      "title": "Don Quixote",
+      "authors": "Cervantes Saavedra, Miguel de, 1547-1616; Ormsby, John, 1829-1895 [Translator]",
+      "language": "en",
+      "subjects": "Spain -- Social life and customs -- 16th century -- Fiction; Knights and knighthood -- Spain -- Fiction; Picaresque literature; Romances",
+      "catalog_date": "2004-07-27",
+      "source_url": "https://www.gutenberg.org/ebooks/996",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/996/pg996.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:6"
+      ],
+      "historical_labels": [
+        "Miguel de Cervantes — Don Quixote"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "2864143e9addf498c1c5fd585db4a1ff3e06651c344cddf0931342f1a0ce24d4",
+      "bytes": 2391678,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1039",
+      "title": "Missionary Travels and Researches in South Africa",
+      "authors": "Livingstone, David, 1813-1873",
+      "language": "en",
+      "subjects": "Missions -- South Africa; South Africa -- Description and travel",
+      "catalog_date": "2006-02-11",
+      "source_url": "https://www.gutenberg.org/ebooks/1039",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1039/pg1039.txt.utf8",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "18:5",
+        "18:R4"
+      ],
+      "historical_labels": [
+        "David Livingstone — Missionary Travels and Researches in South Africa",
+        "David Livingstone — Missionary Travels (alt. slot; same as 18:5)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "c2f49d7ad16fcb7d1af14e804f4ff5b4856ac104c5b0db985f6d6a68daf5bcf7",
+      "bytes": 1770372
+    },
+    {
+      "id": "pg-1128",
+      "title": "King Lear",
+      "authors": "Shakespeare, William, 1564-1616",
+      "language": "en",
+      "subjects": "Tragedies (Drama); Fathers and daughters -- Drama; Inheritance and succession -- Drama; Lear, King (Legendary character) -- Drama; Britons -- Drama; Kings and rulers -- Drama; Aging parents -- Drama",
+      "catalog_date": "1997-12-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1128",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1128/pg1128.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:8"
+      ],
+      "historical_labels": [
+        "William Shakespeare — King Lear"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "36e391d480a2b6dfc97afdd06a83fc506ecdf08add13ba9f7f09b25b94de16a3",
+      "bytes": 165175,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1170",
+      "title": "Anabasis",
+      "authors": "Xenophon, 432 BCE-351? BCE; Dakyns, Henry Graham, 1838-1911 [Translator]",
+      "language": "en",
+      "subjects": "Classical literature; Iran -- History -- To 640; Cyrus, the Younger, approximately 423 B.C.-401 B.C.; Greece -- History -- Expedition of Cyrus, 401 B.C.",
+      "catalog_date": "1998-01-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1170",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1170/pg1170.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:3"
+      ],
+      "historical_labels": [
+        "Xenophon — Anabasis"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "48785a24a81d7aacd7a59593d2846ed2208e30242f5fe2e7f0a596282d710b87",
+      "bytes": 558580,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1228",
+      "title": "On the Origin of Species By Means of Natural Selection\nOr, the Preservation of Favoured Races in the Struggle for Life",
+      "authors": "Darwin, Charles, 1809-1882",
+      "language": "en",
+      "subjects": "Evolution (Biology); Natural selection",
+      "catalog_date": "1998-03-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1228",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1228/pg1228.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "14:7"
+      ],
+      "historical_labels": [
+        "Charles Darwin — On the Origin of Species"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "362142cb7c6f90850477520cfe2a62fe423ae92ea8eb6d9cd8b30ddb39de60b9",
+      "bytes": 970611,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1301",
+      "title": "The French Revolution: A History",
+      "authors": "Carlyle, Thomas, 1795-1881",
+      "language": "en",
+      "subjects": "France -- History -- Revolution, 1789-1799; France -- History -- Louis XVI, 1774-1793",
+      "catalog_date": "2006-02-15",
+      "source_url": "https://www.gutenberg.org/ebooks/1301",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1301/pg1301.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:15"
+      ],
+      "historical_labels": [
+        "Thomas Carlyle — The French Revolution"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "23300127cf8cc23c05e49dc324feaba81d44a4f80a014386464f726fda7c0018",
+      "bytes": 2131756,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1404",
+      "title": "The Federalist Papers",
+      "authors": "Hamilton, Alexander, 1757-1804; Jay, John, 1745-1829; Madison, James, 1751-1836",
+      "language": "en",
+      "subjects": "Constitutional history -- United States -- Sources; Constitutional law -- United States",
+      "catalog_date": "1998-07-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1404",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1404/pg1404.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:15"
+      ],
+      "historical_labels": [
+        "Hamilton, Madison, Jay — The Federalist Papers"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "0b92fadc9d7afd767eefd27805a20e44417ff26d1fb2f964229f39dcc7b2a65d",
+      "bytes": 1186849,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1497",
+      "title": "The Republic",
+      "authors": "Plato, 428? BCE-348? BCE; Jowett, Benjamin, 1817-1893 [Translator]",
+      "language": "en",
+      "subjects": "Classical literature; Political science -- Early works to 1800; Utopias -- Early works to 1800; Justice -- Early works to 1800",
+      "catalog_date": "1998-10-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1497",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1497/pg1497.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:1",
+        "4:2",
+        "19:1"
+      ],
+      "historical_labels": [
+        "Plato — Republic",
+        "Plato — Republic (cross-list: Ethics)",
+        "Plato — Republic Books II–III (same as 3:1)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "3d2e397122881d7737a48fb80e71cddf4c78cda54ceac7e0905fe945dfab48fd",
+      "bytes": 1244165,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1653",
+      "title": "The Imitation of Christ",
+      "authors": "Thomas, à Kempis, 1380-1471; Benham, William, 1831-1910 [Translator]",
+      "language": "en",
+      "subjects": "Catholic Church -- Doctrines -- Early works to 1800; Spiritual life -- Catholic Church -- Early works to 1800; Meditations -- Early works to 1800",
+      "catalog_date": "1999-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1653",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1653/pg1653.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "12:9"
+      ],
+      "historical_labels": [
+        "Thomas à Kempis — The Imitation of Christ"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "7631799607b0ede62f1bd7ed2a8eb62d89524451a3c41e9ad2b5cbf4c2aa5383",
+      "bytes": 374954,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1658",
+      "title": "Phaedo",
+      "authors": "Plato, 428? BCE-348? BCE; Jowett, Benjamin, 1817-1893 [Translator]",
+      "language": "en",
+      "subjects": "Classical literature; Immortality (Philosophy) -- Early works to 1800",
+      "catalog_date": "1999-03-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1658",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1658/pg1658.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:2",
+        "12:4"
+      ],
+      "historical_labels": [
+        "Plato — Phaedo",
+        "Plato — Phaedo (cross-list: Ethics)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "164533dde5628e7cd2e51442c29367a132fc470271f0d7e77a2ef06170a008ca",
+      "bytes": 257103,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1727",
+      "title": "The Odyssey\nRendered into English prose for the use of those who cannot read the original",
+      "authors": "Homer, 751? BCE-651? BCE; Butler, Samuel, 1835-1902 [Translator]",
+      "language": "en",
+      "subjects": "Homer -- Translations into English; Epic poetry, Greek -- Translations into English; Odysseus, King of Ithaca (Mythological character)",
+      "catalog_date": "1999-04-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1727",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1727/pg1727.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:2"
+      ],
+      "historical_labels": [
+        "Homer — Odyssey"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "ffbdb29c3dda284b65c11243db1a98167826a70c81bca2ed4b6232f86c905fb9",
+      "bytes": 717784,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-1787",
+      "title": "Hamlet",
+      "authors": "Shakespeare, William, 1564-1616",
+      "language": "en",
+      "subjects": "Tragedies (Drama); Hamlet (Legendary character) -- Drama; Kings and rulers -- Succession -- Drama; Murder victims' families -- Drama; Fathers -- Death -- Drama; Revenge -- Drama; Princes -- Drama; Denmark -- Drama",
+      "catalog_date": "1999-06-01",
+      "source_url": "https://www.gutenberg.org/ebooks/1787",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/1787/pg1787.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:7"
+      ],
+      "historical_labels": [
+        "William Shakespeare — Hamlet"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "4fb40469a3f0b8482b47c61c109c9f69cf55fc858cbe5a9b0fdee0d47069a9a0",
+      "bytes": 230833,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2130",
+      "title": "Utopia",
+      "authors": "More, Thomas, Saint, 1478-1535; Morley, Henry, 1822-1894 [Editor]",
+      "language": "en",
+      "subjects": "Utopias -- Early works to 1800",
+      "catalog_date": "2000-04-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2130",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2130/pg2130.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:6"
+      ],
+      "historical_labels": [
+        "Thomas More — Utopia"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "9a07cd3fd858e085aa5229b13214c52dba0f0c2ddd0b62bae47b7e29490ce19e",
+      "bytes": 261748,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2199",
+      "title": "The Iliad",
+      "authors": "Homer, 751? BCE-651? BCE; Butler, Samuel, 1835-1902 [Translator]",
+      "language": "en",
+      "subjects": "Classical literature; Epic poetry, Greek -- Translations into English; Achilles (Mythological character); Trojan War",
+      "catalog_date": "2000-06-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2199",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2199/pg2199.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:1"
+      ],
+      "historical_labels": [
+        "Homer — Iliad"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "72673dcefeaa5d302b4ac1cc9ce6fd0b236831e816de41391e5cfe138ab5b077",
+      "bytes": 928957,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2376",
+      "title": "Up from Slavery: An Autobiography",
+      "authors": "Washington, Booker T., 1856-1915",
+      "language": "en",
+      "subjects": "Tuskegee Institute; Washington, Booker T., 1856-1915; African Americans -- Biography; Educators -- United States -- Biography",
+      "catalog_date": "2000-10-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2376",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2376/pg2376.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "7:R2"
+      ],
+      "historical_labels": [
+        "Booker T. Washington — Up from Slavery"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "084e7f54e60b9ae26ecf2ab23f1789db44d926c3b02106a984f475f9ccc7bdbe",
+      "bytes": 449257,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2383",
+      "title": "The Canterbury Tales, and Other Poems",
+      "authors": "Chaucer, Geoffrey, 1343?-1400; Purves, David Laing, 1838-1873 [Editor]",
+      "language": "en",
+      "subjects": "Chaucer, Geoffrey, -1400; Christian pilgrims and pilgrimages -- Poetry; English poetry -- Middle English, 1100-1500",
+      "catalog_date": "2000-11-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2383",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2383/pg2383.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:5"
+      ],
+      "historical_labels": [
+        "Geoffrey Chaucer — The Canterbury Tales"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "f09db338d8dce9aacab56b00a340cf14d0d34399cba991bc055e3385ef199709",
+      "bytes": 1729267,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2388",
+      "title": "The Song Celestial; Or, Bhagavad-Gîtâ (from the Mahâbhârata)\nBeing a discourse between Arjuna, Prince of India, and the Supreme Being under the form of Krishna",
+      "authors": "Arnold, Edwin, Sir, 1832-1904 [Translator]",
+      "language": "en",
+      "subjects": "Epic poetry; Sanskrit poetry -- Translations into English; Hinduism -- Sacred books",
+      "catalog_date": "2000-11-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2388",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2388/pg2388.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "12:1"
+      ],
+      "historical_labels": [
+        "Bhagavad Gītā"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0",
+      "bytes": 147501,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2449",
+      "title": "The Common Law",
+      "authors": "Holmes, Oliver Wendell, 1841-1935",
+      "language": "en",
+      "subjects": "Common law",
+      "catalog_date": "2000-12-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2449",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2449/pg2449.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "15:14"
+      ],
+      "historical_labels": [
+        "Oliver Wendell Holmes Jr. — The Common Law"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "4601269e0899582836bf617577eab8de2062ea5590ec016a468ffb85b4bfb3fa",
+      "bytes": 765083,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2456",
+      "title": "The History of Herodotus — Volume 2",
+      "authors": "Herodotus, 481? BCE-421? BCE; Macaulay, G. C. (George Campbell), 1852-1915 [Translator]",
+      "language": "en",
+      "subjects": "History, Ancient; Greece -- History -- To 146 B.C.",
+      "catalog_date": "2001-01-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2456",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2456/pg2456.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:1",
+        "13:1",
+        "18:1"
+      ],
+      "historical_labels": [
+        "Herodotus — Histories",
+        "Herodotus — Histories (ethnographic sections) (same as 5:1)",
+        "Herodotus — Histories (geographical sections) (same as 5:1)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "7b28f25dbed0064cd8f66c662eaa776cccd535cdeb6e3ff94c37dd1cc2a752db",
+      "bytes": 856296,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2530",
+      "title": "The Malay Archipelago, Volume 1\nThe Land of the Orang-utan and the Bird of Paradise; A Narrative of Travel, with Studies of Man and Nature",
+      "authors": "Wallace, Alfred Russel, 1823-1913",
+      "language": "en",
+      "subjects": "Natural history -- Malay Archipelago; Ethnology -- Malay Archipelago; Malay Archipelago -- Description and travel; Wallace, Alfred Russel, 1823-1913 -- Travel -- Malay Archipelago",
+      "catalog_date": "2001-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2530",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2530/pg2530.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "18:11"
+      ],
+      "historical_labels": [
+        "Alfred Russel Wallace — The Malay Archipelago"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "d4b343bde8af87ea34810f86d64743f0d75de78617ab12fe95e04157a7efa206",
+      "bytes": 676092,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-2680",
+      "title": "Meditations",
+      "authors": "Marcus Aurelius, Emperor of Rome, 121-180",
+      "language": "en",
+      "subjects": "Stoics; Ethics; Life",
+      "catalog_date": "2001-06-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2680/pg2680.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:8",
+        "12:5"
+      ],
+      "historical_labels": [
+        "Marcus Aurelius — Meditations",
+        "Marcus Aurelius — Meditations (cross-list: Ethics)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "6977474f82a39dd88a4af31a59504821658174d33c177732c54357e4d680b96c",
+      "bytes": 425304,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-3207",
+      "title": "Leviathan",
+      "authors": "Hobbes, Thomas, 1588-1679",
+      "language": "en",
+      "subjects": "Political science -- Early works to 1800; State, The -- Early works to 1800",
+      "catalog_date": "2002-05-01",
+      "source_url": "https://www.gutenberg.org/ebooks/3207",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/3207/pg3207.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:11",
+        "4:10"
+      ],
+      "historical_labels": [
+        "Thomas Hobbes — Leviathan",
+        "Thomas Hobbes — Leviathan (cross-list: Ethics)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "3de1e492641d939567a8b0de827fb13e1ad992324f9ac8b204f60475009b7294",
+      "bytes": 1254939,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-3420",
+      "title": "A Vindication of the Rights of Woman\nWith Strictures on Political and Moral Subjects",
+      "authors": "Wollstonecraft, Mary, 1759-1797",
+      "language": "en",
+      "subjects": "Feminism; Women's rights -- Great Britain; Women -- Education -- Great Britain; Women -- History -- 19th century",
+      "catalog_date": "2002-09-01",
+      "source_url": "https://www.gutenberg.org/ebooks/3420",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/3420/pg3420.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:16",
+        "13:R4"
+      ],
+      "historical_labels": [
+        "Mary Wollstonecraft — A Vindication of the Rights of Woman",
+        "Mary Wollstonecraft — A Vindication of the Rights of Woman (same as 4:16)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "7d79652f43541759d8ff0ce467372fa4a534d3f9dc32013e01ca99ea04b286a8",
+      "bytes": 538225,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-3742",
+      "title": "The Writings of Thomas Paine — Volume 2 (1779-1792): The Rights of Man",
+      "authors": "Paine, Thomas, 1737-1809; Conway, Moncure Daniel, 1832-1907 [Editor]",
+      "language": "en",
+      "subjects": "France -- History -- Revolution, 1789-1799 -- Causes; Political science; Great Britain -- Politics and government -- 1760-1820; Burke, Edmund, 1729-1797. Reflections on the revolution in France",
+      "catalog_date": "2003-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/3742",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/3742/pg3742.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:R1"
+      ],
+      "historical_labels": [
+        "Thomas Paine — Rights of Man"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "f91f21ae2d016baca518e73d2db4a4d2a37b40cf537be053777b863258dbe1ca",
+      "bytes": 572608,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-3743",
+      "title": "The Writings of Thomas Paine — Volume 4 (1794-1796): The Age of Reason",
+      "authors": "Paine, Thomas, 1737-1809; Conway, Moncure Daniel, 1832-1907 [Editor]",
+      "language": "en",
+      "subjects": "Philosophy and religion; Political science; Rationalism",
+      "catalog_date": "2003-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/3743",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/3743/pg3743.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:R3"
+      ],
+      "historical_labels": [
+        "Thomas Paine — The Age of Reason"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "343c8743a5b354a39a87bd1801b52dd801ed0a983d4e11cc8946980111e5a80f",
+      "bytes": 435270,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-4341",
+      "title": "Mutual Aid: A Factor of Evolution",
+      "authors": "Kropotkin, Petr Alekseevich, kniaz, 1842-1921",
+      "language": "en",
+      "subjects": "Cooperation; Social groups; Social institutions",
+      "catalog_date": "2003-08-01",
+      "source_url": "https://www.gutenberg.org/ebooks/4341",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/4341/pg4341.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:20",
+        "18:R5"
+      ],
+      "historical_labels": [
+        "Peter Kropotkin — Mutual Aid: A Factor of Evolution",
+        "Peter Kropotkin — Mutual Aid (same as 4:20)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "8397bb704142c9740e28b7f7a64142890233df8d572ed29d417fcc87b38ab464",
+      "bytes": 597012,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-5740",
+      "title": "Tractatus Logico-Philosophicus",
+      "authors": "Wittgenstein, Ludwig, 1889-1951; Russell, Bertrand, 1872-1970 [Contributor]; Ogden, C. K. (Charles Kay), 1889-1957 [Translator]",
+      "language": "de; en",
+      "subjects": "Logic, Symbolic and mathematical; Language and languages -- Philosophy",
+      "catalog_date": "2010-10-22",
+      "source_url": "https://www.gutenberg.org/ebooks/5740",
+      "download_url": "https://gutenberg.pglaf.org/5/7/4/5740/5740-t/5740-t.tex",
+      "format": "tex",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "1:20"
+      ],
+      "historical_labels": [
+        "Ludwig Wittgenstein — Tractatus Logico-Philosophicus"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery. Mathematical TeX source retained, never executed; external figures are not part of this text-only installation.",
+      "sha256": "52158eed80f03552c257e22dca26e1684588814554481242be94063ce9c6061f",
+      "bytes": 380896
+    },
+    {
+      "id": "pg-2044",
+      "title": "The Education of Henry Adams",
+      "authors": "Adams, Henry, 1838-1918; Lodge, Henry Cabot, 1850-1924 [Editor]",
+      "language": "en",
+      "subjects": "Adams, Henry, 1838-1918; Historians -- United States -- Biography",
+      "catalog_date": "2000-01-01",
+      "source_url": "https://www.gutenberg.org/ebooks/2044",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/2044/pg2044.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:18",
+        "20:18"
+      ],
+      "historical_labels": [
+        "Henry Adams — The Education of Henry Adams",
+        "Henry Adams — The Dynamo and the Virgin (same as 5:18)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "512eb06e74482bff4df27073501c0bca62a2ef49038999c3360a6b5553d3ca73",
+      "bytes": 1060996,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-6400",
+      "title": "The Lives of the Twelve Caesars, Complete",
+      "authors": "Suetonius, 69?-122?; Forester, Thomas [Editor]; Thomson, Alexander, M.D. [Translator]",
+      "language": "en",
+      "subjects": "Rome -- History -- Empire, 30 B.C.-284 A.D.; Emperors -- Rome -- Biography -- Early works to 1800",
+      "catalog_date": "2004-11-10",
+      "source_url": "https://www.gutenberg.org/ebooks/6400",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/6400/pg6400.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:R5"
+      ],
+      "historical_labels": [
+        "Suetonius — The Twelve Caesars"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "ce62a16afa01bbf5c597788d8c73290ad7bc8ac09a5c87ed9b5c8010c1a9687f",
+      "bytes": 1423035,
+      "acquisition_review": "Supplier catalog ID and fetched header match; raw bytes pinned. Reference acquisition, not truth verification."
+    },
+    {
+      "id": "pg-6435",
+      "title": "The Principles of Scientific Management",
+      "authors": "Taylor, Frederick Winslow, 1856-1915",
+      "language": "en",
+      "subjects": "Industrial management; Industrial engineering; Management",
+      "catalog_date": "2004-09-01",
+      "source_url": "https://www.gutenberg.org/ebooks/6435",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/6435/pg6435.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "20:16"
+      ],
+      "historical_labels": [
+        "Frederick Winslow Taylor — The Principles of Scientific Management"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "1f504a9abe674ee616f13bf1db66ec25cbb1be0ff5fd9bfe70ab8593aa08a3b2",
+      "bytes": 231049
+    },
+    {
+      "id": "pg-7142",
+      "title": "The History of the Peloponnesian War",
+      "authors": "Thucydides, 456? BCE-396 BCE; Crawley, Richard, 1840-1893 [Translator]",
+      "language": "en",
+      "subjects": "Greece -- History -- Peloponnesian War, 431-404 B.C.",
+      "catalog_date": "2004-12-01",
+      "source_url": "https://www.gutenberg.org/ebooks/7142",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/7142/pg7142.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:1",
+        "5:2"
+      ],
+      "historical_labels": [
+        "Thucydides — History of the Peloponnesian War (cross-list: History)",
+        "Thucydides — History of the Peloponnesian War"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "b7df28eabde17b252e38e808c5d9c287ac69d9503e2958ba74bd316922963b14",
+      "bytes": 1217310
+    },
+    {
+      "id": "pg-8800",
+      "title": "The divine comedy",
+      "authors": "Dante Alighieri, 1265-1321; Doré, Gustave, 1832-1883 [Illustrator]; Cary, Henry Francis, 1772-1844 [Translator]",
+      "language": "en",
+      "subjects": "Epic poetry, Italian -- Translations into English; Italian poetry -- To 1400 -- Translations into English",
+      "catalog_date": "2005-09-01",
+      "source_url": "https://www.gutenberg.org/ebooks/8800",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/8800/pg8800.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "16:4"
+      ],
+      "historical_labels": [
+        "Dante Alighieri — The Divine Comedy"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "3a7dd97b5fec82456c58237b33383a593480c2bfe088aeaaa4a519de2a10d39c",
+      "bytes": 656728
+    },
+    {
+      "id": "pg-10615",
+      "title": "An Essay Concerning Humane Understanding, Volume 1\nMDCXC, Based on the 2nd Edition, Books 1 and 2",
+      "authors": "Locke, John, 1632-1704",
+      "language": "en",
+      "subjects": "Knowledge, Theory of -- Early works to 1800",
+      "catalog_date": "2004-01-01",
+      "source_url": "https://www.gutenberg.org/ebooks/10615",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/10615/pg10615.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "6:4"
+      ],
+      "historical_labels": [
+        "John Locke — An Essay Concerning Human Understanding"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "a12707722f72598adffbe3a211403ff9351b3c24db44d009c5debefb10cbc5e2",
+      "bytes": 869788
+    },
+    {
+      "id": "pg-11224",
+      "title": "Utilitarianism",
+      "authors": "Mill, John Stuart, 1806-1873",
+      "language": "en",
+      "subjects": "Utilitarianism",
+      "catalog_date": "2004-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/11224",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/11224/pg11224.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:18"
+      ],
+      "historical_labels": [
+        "John Stuart Mill — Utilitarianism"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "2b2e413b8df7d42790546a6c636802f10da3ee472cc94a85d3e12204b6385241",
+      "bytes": 183521
+    },
+    {
+      "id": "pg-15114",
+      "title": "An Investigation of the Laws of Thought\nOn which are founded the mathematical theories of logic and probabilities",
+      "authors": "Boole, George, 1815-1864",
+      "language": "en",
+      "subjects": "Logic, Symbolic and mathematical; Probabilities; Thought and thinking",
+      "catalog_date": "2005-02-16",
+      "source_url": "https://www.gutenberg.org/ebooks/15114",
+      "download_url": "https://gutenberg.pglaf.org/1/5/1/1/15114/15114-t/15114-t.tex",
+      "format": "tex",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "1:12"
+      ],
+      "historical_labels": [
+        "George Boole — Laws of Thought"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery. Mathematical TeX source retained, never executed; external figures are not part of this text-only installation.",
+      "sha256": "79868898c24ed3a9cc05ce3c602ff0e84eb763735e0bed4c55675838c224c641",
+      "bytes": 939635
+    },
+    {
+      "id": "pg-17384",
+      "title": "The Foundations of Geometry",
+      "authors": "Hilbert, David, 1862-1943; Townsend, E. J. (Edgar Jerome), 1864-1955 [Translator]",
+      "language": "en",
+      "subjects": "Geometry -- Foundations",
+      "catalog_date": "2005-12-23",
+      "source_url": "https://www.gutenberg.org/ebooks/17384",
+      "download_url": "https://gutenberg.pglaf.org/1/7/3/8/17384/17384-t/17384-t.tex",
+      "format": "tex",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "2:19"
+      ],
+      "historical_labels": [
+        "David Hilbert — The Foundations of Geometry"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery. Mathematical TeX source retained, never executed; external figures are not part of this text-only installation.",
+      "sha256": "5332dc0dc88db30a9a0b5edd07c0baea34e08598812f512bca5d380c4ab5eddd",
+      "rights_review": {
+        "status": "SUPPLIER_PUBLIC_DOMAIN_USA_CONFIRMED",
+        "source": "https://www.gutenberg.org/ebooks/17384",
+        "reviewed_on": "2026-10-22",
+        "supplier_assertion": "Public domain in the USA",
+        "notice_context": "Translation copyrighted by The Open Court Publishing Co. 1902; original notice retained. Supplier catalog explicitly lists this ebook as US public domain. No worldwide status assertion."
+      },
+      "bytes": 272498
+    },
+    {
+      "id": "pg-22994",
+      "title": "The Frontier in American History",
+      "authors": "Turner, Frederick Jackson, 1861-1932",
+      "language": "en",
+      "subjects": "United States -- Territorial expansion; United States -- History; Frontier and pioneer life -- United States; Frontier thesis",
+      "catalog_date": "2007-10-14",
+      "source_url": "https://www.gutenberg.org/ebooks/22994",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/22994/pg22994.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "5:R4"
+      ],
+      "historical_labels": [
+        "Frederick Jackson Turner — The Frontier in American History"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "9fe1790a6bc5b6c7a174db7368019d916b0c26544304000465e3eea1723dd57d",
+      "bytes": 751552
+    },
+    {
+      "id": "pg-28696",
+      "title": "Symbolic Logic",
+      "authors": "Carroll, Lewis, 1832-1898",
+      "language": "en",
+      "subjects": "Logic, Symbolic and mathematical",
+      "catalog_date": "2009-05-05",
+      "source_url": "https://www.gutenberg.org/ebooks/28696",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/28696/pg28696.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "1:14"
+      ],
+      "historical_labels": [
+        "Lewis Carroll — Symbolic Logic, Part I"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "4fce7eb0b7049ab49f3692cfd64adf169765b386140e04213f65fe889436ee15",
+      "bytes": 474569
+    },
+    {
+      "id": "pg-39863",
+      "title": "The Montessori Method\nScientific Pedagogy as Applied to Child Education in 'The Children's Houses' with Additions and Revisions by the Author",
+      "authors": "Montessori, Maria, 1870-1952; Holmes, Henry W. (Henry Wyman), 1880-1960 [Author of introduction, etc.]; George, Anne E., 1882- [Translator]",
+      "language": "en",
+      "subjects": "Montessori method of education",
+      "catalog_date": "2012-05-31",
+      "source_url": "https://www.gutenberg.org/ebooks/39863",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/39863/pg39863.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "7:R3"
+      ],
+      "historical_labels": [
+        "Maria Montessori — The Montessori Method"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "0427eeb7443e62b65a5a9e2c5364a9e94548fb3cc3bceef7952ddc20d2243261",
+      "bytes": 736646
+    },
+    {
+      "id": "pg-33504",
+      "title": "Opticks",
+      "authors": "Newton, Isaac, 1642-1727",
+      "language": "en",
+      "subjects": "Optics -- Early works to 1800",
+      "catalog_date": "2010-08-23",
+      "source_url": "https://www.gutenberg.org/ebooks/33504",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/33504/pg33504.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "8:11"
+      ],
+      "historical_labels": [
+        "Isaac Newton — Opticks"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "1e25ec2c54fc6e9fa05d7f0a663e05cf2ee671231c65731f4845df2539dfb217",
+      "bytes": 596325
+    },
+    {
+      "id": "pg-66048",
+      "title": "The Interpretation of Dreams",
+      "authors": "Freud, Sigmund, 1856-1939; Brill, A. A. (Abraham Arden), 1874-1948 [Translator]",
+      "language": "en",
+      "subjects": "Dream interpretation; Psychoanalysis",
+      "catalog_date": "2021-08-12",
+      "source_url": "https://www.gutenberg.org/ebooks/66048",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/66048/pg66048.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "6:17"
+      ],
+      "historical_labels": [
+        "Sigmund Freud — The Interpretation of Dreams"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "8973b83e306ba0baeec4c4e60395d9f990a3c81a7354b618cb82a61800dde34a",
+      "bytes": 1273335
+    },
+    {
+      "id": "pg-34901",
+      "title": "On Liberty",
+      "authors": "Mill, John Stuart, 1806-1873",
+      "language": "en",
+      "subjects": "Liberty",
+      "catalog_date": "2011-01-10",
+      "source_url": "https://www.gutenberg.org/ebooks/34901",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/34901/pg34901.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "3:R4"
+      ],
+      "historical_labels": [
+        "John Stuart Mill — On Liberty"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "9ecc51191d7ba36f99b0f17b2f60ed54c3929577856f47f0616d8f198422b657",
+      "bytes": 331030
+    },
+    {
+      "id": "pg-36884",
+      "title": "The Mathematical Analysis of Logic\nBeing an Essay Towards a Calculus of Deductive Reasoning",
+      "authors": "Boole, George, 1815-1864",
+      "language": "en",
+      "subjects": "Logic",
+      "catalog_date": "2011-07-28",
+      "source_url": "https://www.gutenberg.org/ebooks/36884",
+      "download_url": "https://gutenberg.pglaf.org/3/6/8/8/36884/36884-t/36884-t.tex",
+      "format": "tex",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "1:10",
+        "1:R3"
+      ],
+      "historical_labels": [
+        "George Boole — Mathematical Analysis of Logic",
+        "George Boole — Mathematical Analysis of Logic (alt. slot)"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery. Mathematical TeX source retained, never executed; external figures are not part of this text-only installation.",
+      "sha256": "dc371fba028eb91000162ec3379ef5573efb886d19b1bc64a207b5caaf967a4e",
+      "bytes": 221229
+    },
+    {
+      "id": "pg-41654",
+      "title": "Introduction to Mathematical Philosophy",
+      "authors": "Russell, Bertrand, 1872-1970",
+      "language": "en",
+      "subjects": "Mathematics -- Philosophy",
+      "catalog_date": "2012-12-18",
+      "source_url": "https://www.gutenberg.org/ebooks/41654",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/41654/pg41654-images.html",
+      "format": "html",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "1:19"
+      ],
+      "historical_labels": [
+        "Bertrand Russell — Introduction to Mathematical Philosophy"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": "d01b499efc3d455624e763b6b2201eb91d7bd952d22d2c031c35b82dcd3ace76",
+      "bytes": 909486
+    },
+    {
+      "id": "python-appetite",
+      "title": "Python 3.12 tutorial: appetite",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/appetite.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/appetite.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "c5766ddd864601b50b54a1882f2fbec67945d421339ddea67cd545d3b0ffad55",
+      "bytes": 4507
+    },
+    {
+      "id": "python-interpreter",
+      "title": "Python 3.12 tutorial: interpreter",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/interpreter.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/interpreter.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "aad98b0071949d2b97ca2a93a898c5cb1e64347b67b8c7b16053f6a8f3cd87af",
+      "bytes": 6503
+    },
+    {
+      "id": "python-introduction",
+      "title": "Python 3.12 tutorial: introduction",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/introduction.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/introduction.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "db919b049a48e7acd17869e2cabeec71060f552fa041a99fc3bf527b7da36a25",
+      "bytes": 18959
+    },
+    {
+      "id": "python-controlflow",
+      "title": "Python 3.12 tutorial: controlflow",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/controlflow.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/controlflow.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "1e589edc233e3654a8a64073e1cce668304453c1d64e163955df8e08dec73f66",
+      "bytes": 40828
+    },
+    {
+      "id": "python-datastructures",
+      "title": "Python 3.12 tutorial: datastructures",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/datastructures.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "c83633cfaa116c223eb4eacaf454f444591257f5340bae4f741726335029cf48",
+      "bytes": 24809
+    },
+    {
+      "id": "python-modules",
+      "title": "Python 3.12 tutorial: modules",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/modules.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/modules.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "5103a4f1a7571e79382299c36e77fddaffc6744c232616438f8678e123aaac03",
+      "bytes": 25544
+    },
+    {
+      "id": "python-inputoutput",
+      "title": "Python 3.12 tutorial: inputoutput",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "210f867a77f007c622ca3b268c0962fb49550adec8bedea5f7bb2926a6443795",
+      "bytes": 20798
+    },
+    {
+      "id": "python-errors",
+      "title": "Python 3.12 tutorial: errors",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/errors.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "5abcceab4358053665c35497a23772773718a54325af861bb0640a9efba00f7e",
+      "bytes": 23111
+    },
+    {
+      "id": "python-classes",
+      "title": "Python 3.12 tutorial: classes",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/classes.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/classes.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "fd28b82a81acda33c4997dc931ab63d5a4fea4ef65d820b579dcf2d4bf7304a4",
+      "bytes": 37042
+    },
+    {
+      "id": "python-stdlib",
+      "title": "Python 3.12 tutorial: stdlib",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/stdlib.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/stdlib.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "b21e1b4adf2f2cd0c0c7b218a8562d1a7b3a6a17e06453e246b09d5d6ab7030c",
+      "bytes": 11407
+    },
+    {
+      "id": "python-venv",
+      "title": "Python 3.12 tutorial: venv",
+      "authors": "Python Software Foundation and contributors",
+      "language": "en",
+      "subjects": "Programming; Python; software engineering",
+      "source_url": "https://docs.python.org/3.12/tutorial/venv.html",
+      "download_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/venv.rst",
+      "format": "rst",
+      "license": "Python documentation license (PSF license agreement and documentation terms)",
+      "license_url": "https://docs.python.org/3.12/license.html",
+      "temporal_status": "VERSIONED_TECHNICAL_REFERENCE_PYTHON_3_12_10",
+      "origin": "builder_selected_modern_reference",
+      "scope_note": "Source reStructuredText; not rendered images or complete Python documentation. Runtime versions may differ.",
+      "sha256": "f9dac36833979e1e2885ea9bdb1975548b6ff6fca7f57bb3ba6a77810c93d7ac",
+      "bytes": 7416
+    }
+  ],
+  "unresolved_historical_items": [
+    {
+      "item_key": "1:1",
+      "label": "Aristotle — Prior Analytics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:2",
+      "label": "Aristotle — Posterior Analytics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:3",
+      "label": "Aristotle — Topics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:8",
+      "label": "Francis Bacon — Novum Organum",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:11",
+      "label": "John Stuart Mill — A System of Logic",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:16",
+      "label": "Aristotle — Categories",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "1:R1",
+      "label": "Aristotle — Categories (alt. slot)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "2:20",
+      "label": "Henri Poincaré — Science and Hypothesis",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:3",
+      "label": "Aristotle — Nicomachean Ethics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:7",
+      "label": "Epictetus — Enchiridion",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:9",
+      "label": "Thomas Aquinas — Summa Theologica Part I-II",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:10",
+      "label": "Niccolò Machiavelli — The Prince",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:12",
+      "label": "Benedict de Spinoza — Ethics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:13",
+      "label": "David Hume — Treatise of Human Nature, Book III",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:14",
+      "label": "David Hume — Enquiry Concerning Principles of Morals",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:15",
+      "label": "Immanuel Kant — Groundwork of the Metaphysics of Morals",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:16",
+      "label": "Immanuel Kant — Critique of Practical Reason",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:17",
+      "label": "Jeremy Bentham — Introduction to Principles of Morals and Legislation",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:20",
+      "label": "G.E. Moore — Principia Ethica",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "3:R1",
+      "label": "Plato — Philebus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:3",
+      "label": "Aristotle — Politics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:13",
+      "label": "Jean-Jacques Rousseau — The Social Contract",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:14",
+      "label": "Edmund Burke — Reflections on the Revolution in France",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:18",
+      "label": "John Stuart Mill — Considerations on Representative Government",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:R2",
+      "label": "Herbert Spencer — The Man Versus the State",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "4:R3",
+      "label": "Walter Bagehot — The English Constitution",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:5",
+      "label": "Livy — Ab Urbe Condita",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:6",
+      "label": "Josephus — The Jewish War",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:8",
+      "label": "Tacitus — The Annals",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:9",
+      "label": "Tacitus — The Histories",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:12",
+      "label": "Einhard — Life of Charlemagne",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "5:14",
+      "label": "Edward Gibbon — Decline and Fall of the Roman Empire, Vol. I",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:1",
+      "label": "Confucius — The Analects",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:2",
+      "label": "Plato — Meno",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:3",
+      "label": "Plato — Protagoras",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:4",
+      "label": "Plato — Phaedrus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:8",
+      "label": "Michel de Montaigne — Essays I.26 'On the Education of Children'",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:10",
+      "label": "John Locke — Some Thoughts Concerning Education",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:11",
+      "label": "Jean-Jacques Rousseau — Émile",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:15",
+      "label": "Herbert Spencer — Education: Intellectual, Moral, and Physical",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:16",
+      "label": "Friedrich Nietzsche — Schopenhauer as Educator",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:18",
+      "label": "John Dewey — The School and Society",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "7:R4",
+      "label": "William James — Talks to Teachers on Psychology",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "8:1",
+      "label": "Plato — Timaeus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "8:7",
+      "label": "Galileo Galilei — Dialogues Concerning Two New Sciences",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "8:9",
+      "label": "Robert Boyle — The Sceptical Chymist",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "8:17",
+      "label": "James Clerk Maxwell — Matter and Motion",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "8:R3",
+      "label": "Francis Bacon — Novum Organum (alt. slot for cat 8)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:1",
+      "label": "Xenophon — Oeconomicus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:7",
+      "label": "Adam Smith — The Wealth of Nations",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:8",
+      "label": "Thomas Robert Malthus — An Essay on the Principle of Population",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:9",
+      "label": "David Ricardo — On the Principles of Political Economy and Taxation",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:10",
+      "label": "John Stuart Mill — Principles of Political Economy",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "9:12",
+      "label": "Henry George — Progress and Poverty",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:1",
+      "label": "Plato — Gorgias",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:2",
+      "label": "Aristotle — Rhetoric",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:3",
+      "label": "Aristotle — Poetics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:9",
+      "label": "John Dryden — An Essay of Dramatic Poesy",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:10",
+      "label": "Alexander Pope — An Essay on Criticism",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:11",
+      "label": "Edmund Burke — A Philosophical Enquiry…Sublime and Beautiful",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:15",
+      "label": "Samuel Taylor Coleridge — Biographia Literaria",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:16",
+      "label": "Percy Bysshe Shelley — A Defence of Poetry",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:17",
+      "label": "Matthew Arnold — Essays in Criticism, First Series",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:18",
+      "label": "Oscar Wilde — Intentions",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:19",
+      "label": "Leo Tolstoy — What Is Art?",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:R1",
+      "label": "Plato — Ion",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:R3",
+      "label": "Ben Jonson — Timber, or Discoveries",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "10:R4",
+      "label": "Walter Pater — Appreciations: With an Essay on Style",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:1",
+      "label": "Plato — Symposium",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:2",
+      "label": "Plato — Phaedrus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:3",
+      "label": "Aristotle — Poetics",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:4",
+      "label": "Vitruvius — De Architectura",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:6",
+      "label": "Edmund Burke — A Philosophical Enquiry…Sublime and Beautiful",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:7",
+      "label": "Immanuel Kant — Critique of Judgment",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:9",
+      "label": "Arthur Schopenhauer — The World as Will and Representation, Vol. I",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:12",
+      "label": "John Ruskin — The Stones of Venice, Vol. II: 'The Nature of Gothic'",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:13",
+      "label": "Walter Pater — The Renaissance: Studies in Art and Poetry",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "11:14",
+      "label": "Leo Tolstoy — What Is Art?",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:2",
+      "label": "Dhammapada",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:6",
+      "label": "Augustine of Hippo — The City of God",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:8",
+      "label": "Maimonides — Guide for the Perplexed",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:11",
+      "label": "Martin Luther — On the Freedom of a Christian",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:12",
+      "label": "John Calvin — Institutes of the Christian Religion",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:13",
+      "label": "Baruch Spinoza — Theologico-Political Treatise",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:14",
+      "label": "Blaise Pascal — Pensées",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "12:18",
+      "label": "Julian of Norwich — Revelations of Divine Love",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "13:4",
+      "label": "Henry Sumner Maine — Ancient Law",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "13:5",
+      "label": "Herbert Spencer — The Study of Sociology",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "14:8",
+      "label": "Charles Darwin — The Descent of Man",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "14:9",
+      "label": "Charles Darwin — The Expression of the Emotions in Man and Animals",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "14:10",
+      "label": "Thomas Henry Huxley — Man's Place in Nature",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "14:17",
+      "label": "Francis Galton — Hereditary Genius",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:1",
+      "label": "Hammurabi — Code of Hammurabi",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:2",
+      "label": "Plato — Laws (Nomoi)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:9",
+      "label": "William Blackstone — Commentaries on the Laws of England",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:10",
+      "label": "Jeremy Bentham — Introduction to Principles of Morals and Legislation",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:12",
+      "label": "Henry Sumner Maine — Ancient Law",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:R1",
+      "label": "Thomas Aquinas — Summa Theologica Part II-II (on justice)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:R3",
+      "label": "John Stuart Mill — The Subjection of Women",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "15:R4",
+      "label": "Aristotle — Nicomachean Ethics Book V (on justice)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:10",
+      "label": "Goethe — Faust, Part I",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:11",
+      "label": "William Wordsworth — Preface to Lyrical Ballads",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:12",
+      "label": "Samuel Taylor Coleridge — Biographia Literaria",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:13",
+      "label": "Percy Bysshe Shelley — A Defence of Poetry",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:14",
+      "label": "Matthew Arnold — Essays in Criticism, First Series",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:16",
+      "label": "Oscar Wilde — Intentions",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:17",
+      "label": "Leo Tolstoy — What Is Art?",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:20",
+      "label": "Walter Pater — Appreciations: With an Essay on Style",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:R1",
+      "label": "Sophocles — Oedipus Rex",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "16:R4",
+      "label": "Walter Pater — Appreciations (alt. slot)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "17:1",
+      "label": "Plato — Cratylus",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "17:2",
+      "label": "Aristotle — On Interpretation (De Interpretatione)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "17:18",
+      "label": "Edward Sapir — Language: An Introduction to the Study of Speech",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "19:2",
+      "label": "Aristotle — Politics Book VIII (same as 4:3)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "20:1",
+      "label": "Vitruvius — De Architectura (same as 11:4)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "20:7",
+      "label": "John Ruskin — The Seven Lamps of Architecture",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "20:8",
+      "label": "John Ruskin — The Stones of Venice Vol. II (same as 11:12)",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    },
+    {
+      "item_key": "20:R5",
+      "label": "Ralph Waldo Emerson — 'The American Scholar' and 'Art'",
+      "status": "UNRESOLVED_IDENTIFIER_NO_DOWNLOAD"
+    }
+  ],
+  "identity_corrections": [
+    {
+      "original_id": "pg-310",
+      "original_wrong_catalog_title": "Before Adam",
+      "corrected_id": "pg-57913",
+      "basis": "Exact work title and author match in official Gutenberg catalog; edition metadata retained; not recovery of original historical digital bytes."
+    },
+    {
+      "original_id": "pg-5765",
+      "original_wrong_catalog_title": "Insectivorous Plants",
+      "corrected_id": "pg-2044",
+      "basis": "Exact work title and author match in official Gutenberg catalog; edition metadata retained; not recovery of original historical digital bytes."
+    },
+    {
+      "original_id": "pg-29635",
+      "original_wrong_catalog_title": "Dr. Montessori's Own Handbook",
+      "corrected_id": "pg-39863",
+      "basis": "Exact work title and author match in official Gutenberg catalog; edition metadata retained; not recovery of original historical digital bytes."
+    },
+    {
+      "original_id": "pg-33994",
+      "original_wrong_catalog_title": "Old Farm Fairies: A Summer Campaign In Brownieland Against King Cobweaver's Pixies",
+      "corrected_id": "pg-66048",
+      "basis": "Exact work title and author match in official Gutenberg catalog; edition metadata retained; not recovery of original historical digital bytes."
+    },
+    {
+      "original_id": "pg-41588",
+      "original_wrong_catalog_title": "Europe from a Motor Car",
+      "corrected_id": "pg-41654",
+      "basis": "Exact work title and author match in official Gutenberg catalog; edition metadata retained; not recovery of original historical digital bytes."
+    }
+  ],
+  "blocked_identity_mismatches": [
+    {
+      "id": "pg-895",
+      "title": "History of the Decline and Fall of the Roman Empire — Volume 6",
+      "authors": "Gibbon, Edward, 1737-1794; Milman, Henry Hart, 1791-1868 [Commentator]",
+      "language": "en",
+      "subjects": "Rome -- History -- Empire, 30 B.C.-476 A.D.; Byzantine Empire -- History -- To 527",
+      "catalog_date": "2008-06-07",
+      "source_url": "https://www.gutenberg.org/ebooks/895",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/895/pg895.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "18:12"
+      ],
+      "historical_labels": [
+        "John Wesley Powell — Exploration of the Colorado River of the West"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": null,
+      "blocked_reason": "Historical title/scope does not exactly identify catalog Canyons of the Colorado; require edition review.",
+      "status": "BLOCKED_CATALOG_ID_MISMATCH"
+    },
+    {
+      "id": "pg-5093",
+      "title": "The Little Minister",
+      "authors": "Barrie, J. M. (James Matthew), 1860-1937",
+      "language": "en",
+      "subjects": "Clergy -- Fiction; Scotland -- Fiction; Deception -- Fiction; Romanies -- Fiction; Country life -- Scotland -- Fiction",
+      "catalog_date": "2004-02-01",
+      "source_url": "https://www.gutenberg.org/ebooks/5093",
+      "download_url": "https://gutenberg.pglaf.org/cache/epub/5093/pg5093.txt",
+      "format": "txt",
+      "license": "Project Gutenberg terms; source copyright assertion must be checked in fetched text",
+      "license_url": "https://www.gutenberg.org/policy/license.html",
+      "temporal_status": "HISTORICAL_REFERENCE_NOT_CURRENT_AUTHORITY",
+      "origin": "recovered_pg_id_table",
+      "historical_item_keys": [
+        "4:R4"
+      ],
+      "historical_labels": [
+        "Mikhail Bakunin — God and the State"
+      ],
+      "scope_note": "Whole downloaded work; historical labels may refer to a section, translation or different title. Catalog identity is retained; not a claim of exact historical edition recovery.",
+      "sha256": null,
+      "blocked_reason": "Two catalog editions of God and the State; historical entry does not disambiguate.",
+      "status": "BLOCKED_CATALOG_ID_MISMATCH"
+    }
+  ]
+}
