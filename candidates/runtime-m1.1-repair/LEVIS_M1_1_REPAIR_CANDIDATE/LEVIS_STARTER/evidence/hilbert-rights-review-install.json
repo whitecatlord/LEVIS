@@ -1,0 +1,17 @@
+{
+  "review": {
+    "status": "SUPPLIER_PUBLIC_DOMAIN_USA_CONFIRMED",
+    "source": "https://www.gutenberg.org/ebooks/17384",
+    "reviewed_on": "2026-10-22",
+    "supplier_assertion": "Public domain in the USA",
+    "notice_context": "Translation copyrighted by The Open Court Publishing Co. 1902; original notice retained. Supplier catalog explicitly lists this ebook as US public domain. No worldwide status assertion."
+  },
+  "result": [
+    {
+      "id": "pg-17384",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "5332dc0dc88db30a9a0b5edd07c0baea34e08598812f512bca5d380c4ab5eddd",
+      "bytes": 272498
+    }
+  ]
+}

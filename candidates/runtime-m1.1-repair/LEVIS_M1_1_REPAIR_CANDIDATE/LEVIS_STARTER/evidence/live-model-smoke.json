@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "elapsed_seconds": 10.69,
+  "response": "I am a conversational assistant capable of generating text but without tools, execution powers, or access to external systems.",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "qualification": "One live local response through the actual desktop adapter. Not safety verification or independent review."
+}

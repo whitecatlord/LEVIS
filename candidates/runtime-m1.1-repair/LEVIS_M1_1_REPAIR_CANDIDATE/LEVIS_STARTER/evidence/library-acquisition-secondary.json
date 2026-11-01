@@ -1,0 +1,162 @@
+{
+  "results": [
+    {
+      "id": "python-venv",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "f9dac36833979e1e2885ea9bdb1975548b6ff6fca7f57bb3ba6a77810c93d7ac",
+      "bytes": 7416
+    },
+    {
+      "id": "python-stdlib",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "b21e1b4adf2f2cd0c0c7b218a8562d1a7b3a6a17e06453e246b09d5d6ab7030c",
+      "bytes": 11407
+    },
+    {
+      "id": "python-classes",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "fd28b82a81acda33c4997dc931ab63d5a4fea4ef65d820b579dcf2d4bf7304a4",
+      "bytes": 37042
+    },
+    {
+      "id": "python-errors",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "5abcceab4358053665c35497a23772773718a54325af861bb0640a9efba00f7e",
+      "bytes": 23111
+    },
+    {
+      "id": "python-inputoutput",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "210f867a77f007c622ca3b268c0962fb49550adec8bedea5f7bb2926a6443795",
+      "bytes": 20798
+    },
+    {
+      "id": "python-modules",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "5103a4f1a7571e79382299c36e77fddaffc6744c232616438f8678e123aaac03",
+      "bytes": 25544
+    },
+    {
+      "id": "python-datastructures",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "c83633cfaa116c223eb4eacaf454f444591257f5340bae4f741726335029cf48",
+      "bytes": 24809
+    },
+    {
+      "id": "python-controlflow",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "1e589edc233e3654a8a64073e1cce668304453c1d64e163955df8e08dec73f66",
+      "bytes": 40828
+    },
+    {
+      "id": "python-introduction",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "db919b049a48e7acd17869e2cabeec71060f552fa041a99fc3bf527b7da36a25",
+      "bytes": 18959
+    },
+    {
+      "id": "python-interpreter",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "aad98b0071949d2b97ca2a93a898c5cb1e64347b67b8c7b16053f6a8f3cd87af",
+      "bytes": 6503
+    },
+    {
+      "id": "python-appetite",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "c5766ddd864601b50b54a1882f2fbec67945d421339ddea67cd545d3b0ffad55",
+      "bytes": 4507
+    },
+    {
+      "id": "pg-41654",
+      "status": "FAILED_OR_BLOCKED",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "pg-36884",
+      "status": "FAILED_OR_BLOCKED",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "pg-34901",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "9ecc51191d7ba36f99b0f17b2f60ed54c3929577856f47f0616d8f198422b657",
+      "bytes": 331030
+    },
+    {
+      "id": "pg-66048",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "8973b83e306ba0baeec4c4e60395d9f990a3c81a7354b618cb82a61800dde34a",
+      "bytes": 1273335
+    },
+    {
+      "id": "pg-33504",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "1e25ec2c54fc6e9fa05d7f0a663e05cf2ee671231c65731f4845df2539dfb217",
+      "bytes": 596325
+    },
+    {
+      "id": "pg-39863",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "0427eeb7443e62b65a5a9e2c5364a9e94548fb3cc3bceef7952ddc20d2243261",
+      "bytes": 736646
+    },
+    {
+      "id": "pg-28696",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "4fce7eb0b7049ab49f3692cfd64adf169765b386140e04213f65fe889436ee15",
+      "bytes": 474569
+    },
+    {
+      "id": "pg-22994",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "9fe1790a6bc5b6c7a174db7368019d916b0c26544304000465e3eea1723dd57d",
+      "bytes": 751552
+    },
+    {
+      "id": "pg-17384",
+      "status": "FAILED_OR_BLOCKED",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "pg-15114",
+      "status": "FAILED_OR_BLOCKED",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "pg-11224",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "2b2e413b8df7d42790546a6c636802f10da3ee472cc94a85d3e12204b6385241",
+      "bytes": 183521
+    },
+    {
+      "id": "pg-10615",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "a12707722f72598adffbe3a211403ff9351b3c24db44d009c5debefb10cbc5e2",
+      "bytes": 869788
+    },
+    {
+      "id": "pg-8800",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "3a7dd97b5fec82456c58237b33383a593480c2bfe088aeaaa4a519de2a10d39c",
+      "bytes": 656728
+    },
+    {
+      "id": "pg-7142",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "b7df28eabde17b252e38e808c5d9c287ac69d9503e2958ba74bd316922963b14",
+      "bytes": 1217310
+    },
+    {
+      "id": "pg-6435",
+      "status": "INSTALLED_REFERENCE",
+      "sha256": "1f504a9abe674ee616f13bf1db66ec25cbb1be0ff5fd9bfe70ab8593aa08a3b2",
+      "bytes": 231049
+    },
+    {
+      "id": "pg-6400",
+      "status": "FAILED_OR_BLOCKED",
+      "reason": "UNIQUE constraint failed: sources.id"
+    }
+  ],
+  "qualification": "Second bounded acquisition worker, handling later catalog entries. Final source inventory determines installed state."
+}

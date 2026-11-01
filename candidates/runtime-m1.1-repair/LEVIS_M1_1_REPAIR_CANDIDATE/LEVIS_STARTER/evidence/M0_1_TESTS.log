@@ -1,0 +1,39 @@
+COMMAND: python3 -B -m unittest discover -s . -p test_*.py -v
+test_invalid_and_oversize_are_refused (test_away_work.AwayTests.test_invalid_and_oversize_are_refused) ... ok
+test_questions_resume_and_restart_interrupts (test_away_work.AwayTests.test_questions_resume_and_restart_interrupts) ... ok
+test_snapshot_and_draft_never_modify_original (test_away_work.AwayTests.test_snapshot_and_draft_never_modify_original) ... ok
+test_calculator_rejects_executable_and_unbounded_inputs (test_library_tools.LibraryTests.test_calculator_rejects_executable_and_unbounded_inputs) ... ok
+test_changed_download_does_not_enter_index (test_library_tools.LibraryTests.test_changed_download_does_not_enter_index) ... ok
+test_index_corruption_cannot_impersonate_the_original_source (test_library_tools.LibraryTests.test_index_corruption_cannot_impersonate_the_original_source) ... ok
+test_install_is_pinned_idempotent_and_attributed (test_library_tools.LibraryTests.test_install_is_pinned_idempotent_and_attributed) ... ok
+test_tamper_cannot_be_returned_as_a_reference (test_library_tools.LibraryTests.test_tamper_cannot_be_returned_as_a_reference) ... ok
+test_unpinned_or_wrong_book_refused (test_library_tools.LibraryTests.test_unpinned_or_wrong_book_refused) ... ok
+test_url_and_path_restrictions (test_library_tools.LibraryTests.test_url_and_path_restrictions) ... ok
+test_4000_characters_are_sent_intact (test_workbench.ChatInputIntegrityTests.test_4000_characters_are_sent_intact) ... ok
+test_4001_characters_refused_before_any_api_call (test_workbench.ChatInputIntegrityTests.test_4001_characters_refused_before_any_api_call) ... ok
+test_context_at_boundary_keeps_latest_and_fitting_history (test_workbench.ChatInputIntegrityTests.test_context_at_boundary_keeps_latest_and_fitting_history) ... ok
+test_gui_send_stores_exact_input_before_worker_validation (test_workbench.ChatInputIntegrityTests.test_gui_send_stores_exact_input_before_worker_validation) ... ok
+test_long_older_history_cannot_evict_latest_instruction (test_workbench.ChatInputIntegrityTests.test_long_older_history_cannot_evict_latest_instruction) ... ok
+test_refusal_preserves_full_original_in_reopened_store (test_workbench.ChatInputIntegrityTests.test_refusal_preserves_full_original_in_reopened_store) ... ok
+test_trailing_saved_answer_cannot_displace_newest_user (test_workbench.ChatInputIntegrityTests.test_trailing_saved_answer_cannot_displace_newest_user) ... ok
+test_unicode_budget_counts_characters_not_utf8_bytes (test_workbench.ChatInputIntegrityTests.test_unicode_budget_counts_characters_not_utf8_bytes) ... ok
+test_changed_model_is_refused_before_chat (test_workbench.WorkbenchTests.test_changed_model_is_refused_before_chat) ... ok
+test_disabled_tools_reject_even_a_fabricated_model_call (test_workbench.WorkbenchTests.test_disabled_tools_reject_even_a_fabricated_model_call) ... ok
+test_empty_model_output_not_claimed_as_success (test_workbench.WorkbenchTests.test_empty_model_output_not_claimed_as_success) ... ok
+test_history_survives_reopen_and_sessions_are_separate (test_workbench.WorkbenchTests.test_history_survives_reopen_and_sessions_are_separate) ... ok
+test_model_text_has_no_execution_path (test_workbench.WorkbenchTests.test_model_text_has_no_execution_path) ... ok
+test_task_command_cannot_be_selected_by_free_text (test_workbench.WorkbenchTests.test_task_command_cannot_be_selected_by_free_text) ... ok
+test_tool_call_budget_is_enforced (test_workbench.WorkbenchTests.test_tool_call_budget_is_enforced) ... ok
+test_unknown_model_tool_cannot_execute_a_command (test_workbench.WorkbenchTests.test_unknown_model_tool_cannot_execute_a_command) ... ok
+test_atomic_batch_rejects_excessive_jobs (test_zip_reader.ZipTests.test_atomic_batch_rejects_excessive_jobs) ... ok
+test_bomb_and_corrupt_archives_rejected (test_zip_reader.ZipTests.test_bomb_and_corrupt_archives_rejected) ... ok
+test_changed_archive_and_binary_text_rejected (test_zip_reader.ZipTests.test_changed_archive_and_binary_text_rejected) ... ok
+test_code_chunk_snapshot_provenance_and_no_extraction (test_zip_reader.ZipTests.test_code_chunk_snapshot_provenance_and_no_extraction) ... ok
+test_traversal_duplicate_and_symlink_rejected (test_zip_reader.ZipTests.test_traversal_duplicate_and_symlink_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.241s
+
+OK
+
+EXIT_CODE: 0

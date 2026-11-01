@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "403a449c6e7903a7ed088cfe47dc6633cc446a9f82f56cab1ede91c662110328",
+  "listed_members": 46,
+  "selected_member": "LEVIS_STARTER/levis_desktop.py",
+  "member_sha256": "212804e39c260e5dfe0a5db5be350aefc8e3e5bc809714f086922498aa7030e2",
+  "chunks": 5,
+  "reconstructed_source_exact_match": true,
+  "frozen_foundation_unchanged": true
+}

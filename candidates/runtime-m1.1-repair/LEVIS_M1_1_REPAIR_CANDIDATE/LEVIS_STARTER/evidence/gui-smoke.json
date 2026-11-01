@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "window_constructed",
+    "tabs_and_controls_present",
+    "new_session",
+    "send_message",
+    "background_response",
+    "persisted_transcript"
+  ],
+  "qualification": "Headless interaction with real Tk widgets and mocked model; visual layout not inspected."
+}

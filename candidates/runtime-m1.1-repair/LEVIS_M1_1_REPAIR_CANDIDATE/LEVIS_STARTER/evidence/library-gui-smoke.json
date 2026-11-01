@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "four_tabs_constructed",
+    "installed_catalog_loaded",
+    "actual_local_search_button",
+    "calculator_button",
+    "model_tool_toggle_present"
+  ],
+  "qualification": "Real hidden Tk widgets exercised. Visual layout not inspected; model smoke probes recorded separately."
+}
