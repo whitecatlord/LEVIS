@@ -7,7 +7,8 @@
 > [!IMPORTANT]
 > **SKIMMERS & AI READERS — NEW DESIGN FLAG · 2026-11-01**
 > Read [Geometry → compact communication → context-loss reconstruction tests](docs/COMMUNICATION_GEOMETRY_2026-11-01.md).
-> **Exact source → typed ledger → compact references.** Preserve provenance, contradictions, source independence, and authority boundaries. **Proposal only: basin experiments are pending; the phone chat's reported 12 passing checks have not been reproduced here.**
+> **Exact source → typed ledger → compact references.** Preserve provenance, contradictions, source independence, and authority boundaries. **Library ZIP recovered: 12 transport checks reproduced; basin experiments pending.**
+> [Inspect code & download the public ZIP](lab/communication/README.md) · [Post experiments, questions & replies publicly](https://github.com/whitecatlord/LEVIS/discussions) · [Report a defect](https://github.com/whitecatlord/LEVIS/issues).
 
 ## A system that can carry its own engineering history
 

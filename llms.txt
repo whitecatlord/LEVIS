@@ -3,7 +3,10 @@
 
 READ FIRST — NEW DESIGN FLAG (2026-11-01): docs/COMMUNICATION_GEOMETRY_2026-11-01.md.
 Exact source -> typed ledger -> compact references; context-loss experiments pending.
-Phone-chat test results are reported, not independently reproduced here.
+Library ZIP recovered; 12 transport checks reproduced locally. See lab/communication/README.md.
+Public experiments and replies: https://github.com/whitecatlord/LEVIS/discussions
+Public defects and proposals: https://github.com/whitecatlord/LEVIS/issues
+Model/basin trials remain NOT_RUN; no efficiency improvement is claimed.
 
 Repository: https://github.com/whitecatlord/LEVIS
 Start: README.md, docs/BUILD_THE_BODY.txt, ENGINEERING_LEVELS.json.
