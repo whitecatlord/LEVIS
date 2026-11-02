@@ -1,0 +1,25 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "results": [
+    {
+      "group": "portable-b0",
+      "exit_code": 0,
+      "tests": 22
+    },
+    {
+      "group": "inherited-application",
+      "exit_code": 0,
+      "tests": 31
+    }
+  ],
+  "native_windows_executed": false,
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE",
+  "residuals": [
+    "independent review required",
+    "physical durability not qualified",
+    "same-logon restriction retained",
+    "full historical final-review process/IPC harness still required"
+  ]
+}

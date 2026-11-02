@@ -1,0 +1,27 @@
+test_bad_control (test_b0_ledger.LedgerTests.test_bad_control) ... ok
+test_empty_receipt (test_b0_ledger.LedgerTests.test_empty_receipt) ... ok
+test_event_state (test_b0_ledger.LedgerTests.test_event_state) ... ok
+test_missing_control (test_b0_ledger.LedgerTests.test_missing_control) ... ok
+test_missing_event (test_b0_ledger.LedgerTests.test_missing_event) ... ok
+test_new_and_unclean_restart (test_b0_ledger.LedgerTests.test_new_and_unclean_restart) ... ok
+test_receipt_shapes (test_b0_ledger.LedgerTests.test_receipt_shapes) ... ok
+test_revision_ahead (test_b0_ledger.LedgerTests.test_revision_ahead) ... ok
+test_revision_rollback (test_b0_ledger.LedgerTests.test_revision_rollback) ... ok
+test_valid_historical_replay (test_b0_ledger.LedgerTests.test_valid_historical_replay) ... ok
+test_client_refuses_missing_envelope_before_ack (test_b0_responses.ResponseTests.test_client_refuses_missing_envelope_before_ack) ... ok
+test_client_valid_reply_acknowledged (test_b0_responses.ResponseTests.test_client_valid_reply_acknowledged) ... ok
+test_control_malformed_reply_is_unconfirmed (test_b0_responses.ResponseTests.test_control_malformed_reply_is_unconfirmed) ... ok
+test_control_state_is_command_specific (test_b0_responses.ResponseTests.test_control_state_is_command_specific) ... ok
+test_event_page_and_cursor (test_b0_responses.ResponseTests.test_event_page_and_cursor) ... ok
+test_malformed_envelopes (test_b0_responses.ResponseTests.test_malformed_envelopes) ... ok
+test_refusals_and_attachments (test_b0_responses.ResponseTests.test_refusals_and_attachments) ... ok
+test_typed_storage_failure (test_b0_responses.ResponseTests.test_typed_storage_failure) ... ok
+test_valid_observation_and_historical_outcome (test_b0_responses.ResponseTests.test_valid_observation_and_historical_outcome) ... ok
+test_exit_after_commit_replays_without_reexecution (test_b0_crashes.CrashTests.test_exit_after_commit_replays_without_reexecution) ... ok
+test_exit_before_control_commit_leaves_no_receipt (test_b0_crashes.CrashTests.test_exit_before_control_commit_leaves_no_receipt) ... ok
+test_exit_during_startup_rolls_back_lifecycle (test_b0_crashes.CrashTests.test_exit_during_startup_rolls_back_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 2.138s
+
+OK
