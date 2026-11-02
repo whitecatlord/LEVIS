@@ -1,0 +1,48 @@
+test_cancelled_late_output_cannot_become_proposal (test_draft_bridge.DraftBridgeTests.test_cancelled_late_output_cannot_become_proposal) ... ok
+test_committed_draft_becomes_private_proposal_with_exact_source (test_draft_bridge.DraftBridgeTests.test_committed_draft_becomes_private_proposal_with_exact_source) ... ok
+test_corrupt_output_cannot_be_imported (test_draft_bridge.DraftBridgeTests.test_corrupt_output_cannot_be_imported) ... ok
+test_missing_job_refuses_without_mutating_memory (test_draft_bridge.DraftBridgeTests.test_missing_job_refuses_without_mutating_memory) ... ok
+test_queued_job_cannot_be_imported (test_draft_bridge.DraftBridgeTests.test_queued_job_cannot_be_imported) ... ok
+test_repeat_import_is_idempotent_without_reexecuting_job (test_draft_bridge.DraftBridgeTests.test_repeat_import_is_idempotent_without_reexecuting_job) ... ok
+test_append_successor_uses_new_snapshot_preserving_prior_prefix (test_memory.MemoryTests.test_append_successor_uses_new_snapshot_preserving_prior_prefix) ... ok
+test_authority_upgrade_is_refused (test_memory.MemoryTests.test_authority_upgrade_is_refused) ... ok
+test_citation_must_match_exact_passage (test_memory.MemoryTests.test_citation_must_match_exact_passage) ... ok
+test_citation_range_rejects_bool_and_empty (test_memory.MemoryTests.test_citation_range_rejects_bool_and_empty) ... ok
+test_complete_context_requires_matching_inventory (test_memory.MemoryTests.test_complete_context_requires_matching_inventory) ... ok
+test_complete_line_truncation_requires_external_identity_anchor (test_memory.MemoryTests.test_complete_line_truncation_requires_external_identity_anchor) ... ok
+test_context_loss_exposes_omitted_parent_and_source (test_memory.MemoryTests.test_context_loss_exposes_omitted_parent_and_source) ... ok
+test_contradiction_is_retained_from_both_views (test_memory.MemoryTests.test_contradiction_is_retained_from_both_views) ... ok
+test_declared_shared_origin_groups_different_passages (test_memory.MemoryTests.test_declared_shared_origin_groups_different_passages) ... ok
+test_duplicate_ids_and_unknown_reference_refused (test_memory.MemoryTests.test_duplicate_ids_and_unknown_reference_refused) ... ok
+test_duplicate_keys_truncation_and_nan_refused (test_memory.MemoryTests.test_duplicate_keys_truncation_and_nan_refused) ... ok
+test_explicit_public_fixture_can_export (test_memory.MemoryTests.test_explicit_public_fixture_can_export) ... ok
+test_extra_decoy_is_visible_against_frozen_inventory (test_memory.MemoryTests.test_extra_decoy_is_visible_against_frozen_inventory) ... ok
+test_full_packet_roundtrip_is_exact (test_memory.MemoryTests.test_full_packet_roundtrip_is_exact) ... ok
+test_hypothesis_without_citations_stays_hypothesis (test_memory.MemoryTests.test_hypothesis_without_citations_stays_hypothesis) ... ok
+test_identical_content_with_new_origin_does_not_multiply_roots (test_memory.MemoryTests.test_identical_content_with_new_origin_does_not_multiply_roots) ... ok
+test_immutable_log_roundtrip_and_exclusive_save (test_memory.MemoryTests.test_immutable_log_roundtrip_and_exclusive_save) ... ok
+test_input_and_returned_nodes_cannot_mutate_memory (test_memory.MemoryTests.test_input_and_returned_nodes_cannot_mutate_memory) ... ok
+test_log_mutation_reorder_and_partial_write_refused (test_memory.MemoryTests.test_log_mutation_reorder_and_partial_write_refused) ... ok
+test_missing_source_cannot_become_complete_memory (test_memory.MemoryTests.test_missing_source_cannot_become_complete_memory) ... ok
+test_missing_unreferenced_counterevidence_needs_inventory (test_memory.MemoryTests.test_missing_unreferenced_counterevidence_needs_inventory) ... ok
+test_packet_hash_tamper_refused (test_memory.MemoryTests.test_packet_hash_tamper_refused) ... ok
+test_parent_and_relation_self_reference_refused (test_memory.MemoryTests.test_parent_and_relation_self_reference_refused) ... ok
+test_partial_context_rejects_present_cycle_or_wrong_target_type (test_memory.MemoryTests.test_partial_context_rejects_present_cycle_or_wrong_target_type) ... ok
+test_private_counterevidence_cannot_be_silently_omitted (test_memory.MemoryTests.test_private_counterevidence_cannot_be_silently_omitted) ... ok
+test_private_source_blocks_public_export_even_with_public_claim (test_memory.MemoryTests.test_private_source_blocks_public_export_even_with_public_claim) ... ok
+test_public_label_alone_is_not_export_permission (test_memory.MemoryTests.test_public_label_alone_is_not_export_permission) ... ok
+test_scope_filters_views_without_changing_saved_history (test_memory.MemoryTests.test_scope_filters_views_without_changing_saved_history) ... ok
+test_selection_accepts_one_shot_iterator (test_memory.MemoryTests.test_selection_accepts_one_shot_iterator) ... ok
+test_selection_closes_over_counterevidence_and_sources (test_memory.MemoryTests.test_selection_closes_over_counterevidence_and_sources) ... ok
+test_separate_roots_do_not_claim_verified_independence (test_memory.MemoryTests.test_separate_roots_do_not_claim_verified_independence) ... ok
+test_shared_ancestor_dag_is_traversed_without_duplicate_roots (test_memory.MemoryTests.test_shared_ancestor_dag_is_traversed_without_duplicate_roots) ... ok
+test_successor_keeps_original_and_has_no_truth_effect (test_memory.MemoryTests.test_successor_keeps_original_and_has_no_truth_effect) ... ok
+test_three_repetitions_have_one_provenance_group (test_memory.MemoryTests.test_three_repetitions_have_one_provenance_group) ... ok
+test_unicode_and_citation_offsets_are_codepoints (test_memory.MemoryTests.test_unicode_and_citation_offsets_are_codepoints) ... ok
+test_unknown_dictionary_or_version_refused (test_memory.MemoryTests.test_unknown_dictionary_or_version_refused) ... ok
+test_unsourced_source_statement_refused (test_memory.MemoryTests.test_unsourced_source_statement_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.570s
+
+OK
