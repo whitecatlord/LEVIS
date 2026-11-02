@@ -1,0 +1,17 @@
+test_authority_not_upgraded (__main__.TransportChecks.test_authority_not_upgraded) ... ok
+test_contradiction_kept (__main__.TransportChecks.test_contradiction_kept) ... ok
+test_correction_keeps_history (__main__.TransportChecks.test_correction_keeps_history) ... ok
+test_empty_body_rejected (__main__.TransportChecks.test_empty_body_rejected) ... ok
+test_lineage_not_multiplied (__main__.TransportChecks.test_lineage_not_multiplied) ... ok
+test_missing_source (__main__.TransportChecks.test_missing_source) ... ok
+test_null_and_empty_differ (__main__.TransportChecks.test_null_and_empty_differ) ... ok
+test_roundtrip (__main__.TransportChecks.test_roundtrip) ... ok
+test_tamper_detected (__main__.TransportChecks.test_tamper_detected) ... ok
+test_truncated_record (__main__.TransportChecks.test_truncated_record) ... ok
+test_unicode_and_delimiters (__main__.TransportChecks.test_unicode_and_delimiters) ... ok
+test_unknown_version (__main__.TransportChecks.test_unknown_version) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK

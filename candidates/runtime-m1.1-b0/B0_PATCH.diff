@@ -1,0 +1,264 @@
+--- parent/LEVIS_STARTER/runtime_client.py
++++ candidate/LEVIS_STARTER/runtime_client.py
+@@ -36,8 +36,7 @@
+         try:
+             channel.send(request)
+             reply = channel.receive()
+-            if reply.get('request_id') not in (None, request['request_id']):
+-                raise ValueError('Reply request identity mismatch')
++            protocol.validate_response(reply, request)
+             try:
+                 channel.send({'ack': request['request_id']})
+             except (OSError, TimeoutError):
+--- parent/LEVIS_STARTER/runtime_protocol.py
++++ candidate/LEVIS_STARTER/runtime_protocol.py
+@@ -2,6 +2,7 @@
+ import hashlib
+ import hmac
+ import json
++import math
+ import re
+ import secrets
+ import struct
+@@ -165,3 +166,59 @@
+     else:
+         fields(payload, '')
+     return request
++
++
++def validate_response(reply, request):
++    """Validate an authenticated outcome before ACK or presentation.
++
++    Historical control receipts keep their original generation and revision.
++    A transport reply is not evidence that a lost control did not commit.
++    """
++    def require(value):
++        if not value:
++            raise ValueError('Invalid response envelope')
++
++    require(type(reply) is dict)
++    require(reply.get('request_id') == request['request_id'])
++    require(type(reply.get('runtime_generation')) is str and 0 < len(reply['runtime_generation']) <= 64)
++    status = reply.get('status')
++    require(status in ('OK', 'REFUSED', 'ERROR'))
++    if status == 'ERROR':
++        fields(reply, 'request_id status error runtime_generation')
++        require(reply['error'] == 'STORAGE_FAILURE')
++        return reply
++    names = 'request_id status state revision runtime_generation event_cursor clean_shutdown startup_reason executor_enabled model_enabled'
++    if status == 'REFUSED':
++        names += ' error'
++        require(request['command'] in CONTROLS)
++        require(reply.get('error') in ('REVISION_CONFLICT', 'INVALID_LIFECYCLE', 'REQUEST_ID_CONFLICT'))
++    elif request['command'] == 'events':
++        names += ' events next_cursor'
++    elif request['command'] in ('attach', 'detach'):
++        names += ' attachment'
++    fields(reply, names)
++    require(reply['state'] in ('STARTING', 'RECOVERING', 'PAUSED', 'READY', 'STOPPING', 'STOPPED', 'ERROR'))
++    for key in ('revision', 'event_cursor'):
++        require(type(reply[key]) is int and 0 <= reply[key] < 2**63)
++    require(type(reply['clean_shutdown']) is bool and reply['clean_shutdown'] == (reply['state'] == 'STOPPED'))
++    require(reply['startup_reason'] in ('clean', 'unclean'))
++    require(reply['executor_enabled'] is False and reply['model_enabled'] is False)
++    if status == 'OK' and request['command'] in CONTROLS:
++        require(reply['state'] == {'pause': 'PAUSED', 'resume': 'READY', 'stop': 'STOPPED'}[request['command']])
++    if status == 'OK' and request['command'] in ('attach', 'detach'):
++        require(reply['attachment'] == ('attached' if request['command'] == 'attach' else 'detached'))
++    if status == 'OK' and request['command'] == 'events':
++        rows = reply['events']
++        require(type(rows) is list and len(rows) <= request['payload']['limit'])
++        previous = request['payload']['after']
++        previous_revision = -1
++        for row in rows:
++            fields(row, 'cursor generation state revision at')
++            require(type(row['cursor']) is int and previous < row['cursor'] <= reply['event_cursor'])
++            require(type(row['revision']) is int and previous_revision < row['revision'] <= reply['revision'])
++            require(type(row['generation']) is str and 0 < len(row['generation']) <= 64)
++            require(row['state'] in ('STARTING', 'RECOVERING', 'PAUSED', 'READY', 'STOPPING', 'STOPPED', 'ERROR'))
++            require(type(row['at']) in (int, float) and math.isfinite(row['at']))
++            previous, previous_revision = row['cursor'], row['revision']
++        require(type(reply['next_cursor']) is int and reply['next_cursor'] == previous)
++    return reply
+--- parent/LEVIS_STARTER/runtime_store.py
++++ candidate/LEVIS_STARTER/runtime_store.py
+@@ -2,6 +2,7 @@
+ from concurrent.futures import Future
+ import hashlib
+ import json
++import math
+ import os
+ from pathlib import Path
+ import queue
+@@ -38,6 +39,72 @@
+         return schema_inventory(db)
+     finally:
+         db.close()
++
++
++class LedgerIntegrityError(RuntimeError):
++    """Detectable content inconsistency; original evidence must be preserved."""
++    code = 'LEDGER_INTEGRITY'
++
++
++def validate_contents(db, runtime):
++    def require(condition):
++        if not condition:
++            raise LedgerIntegrityError('LEDGER_INTEGRITY: inconsistent runtime history')
++
++    events = db.execute('SELECT cursor,generation,state,revision,at FROM events ORDER BY cursor').fetchall()
++    by_cursor = {}
++    previous = None
++    generations = set()
++    exits = {'STARTING': {'RECOVERING'}, 'RECOVERING': {'PAUSED'},
++             'PAUSED': {'READY', 'STOPPING'}, 'READY': {'PAUSED', 'STOPPING'},
++             'STOPPING': {'STOPPED'}, 'STOPPED': set(), 'ERROR': set()}
++    for index, event in enumerate(events, 1):
++        cursor, generation, state, revision, at = event
++        require(type(cursor) is int and cursor == index and type(revision) is int and revision == index)
++        require(type(generation) is str and bool(generation) and state in STATES)
++        require(type(at) in (int, float) and math.isfinite(at))
++        if state == 'STARTING':
++            require(generation not in generations)
++            generations.add(generation)
++        else:
++            require(previous is not None and generation == previous[1] and state in exits[previous[2]])
++        previous = event
++        by_cursor[cursor] = event
++    if previous:
++        require((runtime[1], runtime[2], runtime[3]) == (previous[2], previous[3], previous[1]))
++    else:
++        require(runtime == (1, 'STOPPED', 0, '', 1))
++    controls = {}
++    for client, identity, command, revision in db.execute('SELECT client,id,command,revision FROM controls'):
++        require((client, identity) not in controls and command in protocol.CONTROLS)
++        controls[client, identity] = (command, revision)
++    for client, identity, digest, raw in db.execute('SELECT client,id,body_hash,response FROM requests'):
++        try:
++            protocol.hex64(digest)
++            require(type(raw) is str and len(raw.encode('utf-8')) <= protocol.MAX_FRAME)
++            reply = protocol.decode(raw.encode('utf-8'))
++            fields = 'request_id status state revision runtime_generation event_cursor clean_shutdown startup_reason executor_enabled model_enabled'
++            require(type(reply) is dict and reply.get('status') in ('OK', 'REFUSED'))
++            protocol.fields(reply, fields + (' error' if reply['status'] == 'REFUSED' else ''))
++            require(reply['request_id'] == identity)
++            protocol.validate_request(dict(protocol_version=1, client_id=client, request_id=identity,
++                                           expected_revision=0, command='pause', payload={}))
++            cursor, revision = reply['event_cursor'], reply['revision']
++            require(type(cursor) is int and type(revision) is int and cursor in by_cursor)
++            event = by_cursor[cursor]
++            require((reply['state'], revision, reply['runtime_generation']) == (event[2], event[3], event[1]))
++            require(type(reply['clean_shutdown']) is bool and reply['clean_shutdown'] == (event[2] == 'STOPPED'))
++            require(reply['startup_reason'] in ('clean', 'unclean'))
++            require(reply['executor_enabled'] is False and reply['model_enabled'] is False)
++            control = controls.pop((client, identity), None)
++            if reply['status'] == 'OK':
++                require(control is not None and type(control[1]) is int and control[1] == revision)
++                require(reply['state'] == {'pause': 'PAUSED', 'resume': 'READY', 'stop': 'STOPPED'}[control[0]])
++            else:
++                require(control is None and reply['error'] in ('REVISION_CONFLICT', 'INVALID_LIFECYCLE'))
++        except (ValueError, TypeError, KeyError, AttributeError, UnicodeError) as error:
++            raise LedgerIntegrityError('LEDGER_INTEGRITY: invalid stored receipt') from error
++    require(not controls)
+ 
+ 
+ class Store:
+@@ -64,6 +131,8 @@
+             # Caller retains this Store before starting it. Cleanup MUST wait
+             # for the actor to exit before relinquishing profile ownership.
+             self.cancel.set()
++            if isinstance(error, LedgerIntegrityError):
++                raise
+             raise RuntimeError('Runtime storage startup refused') from error
+ 
+     def _check_cancel(self):
+@@ -114,6 +183,7 @@
+                     type(rows[0][2]) is not int or rows[0][2] < 0 or
+                     rows[0][4] != int(rows[0][1] == 'STOPPED')):
+                 raise RuntimeError('Invalid runtime singleton')
++            validate_contents(self.db, rows[0])
+             self._check_cancel()
+             if self.db.execute('PRAGMA journal_mode=WAL').fetchone()[0].lower() != 'wal':
+                 raise RuntimeError('WAL unavailable')
+@@ -154,7 +224,7 @@
+                     if self.db.in_transaction:
+                         self.db.execute('ROLLBACK')
+                     self.failed.set()
+-                    future.set_result({'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation})
++                    future.set_result({'request_id': request['request_id'], 'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation})
+                 except BaseException as error:
+                     if self.db.in_transaction:
+                         self.db.execute('ROLLBACK')
+@@ -188,7 +258,7 @@
+         # This check precedes validation/SQL: no internal arbitrary command API.
+         protocol.validate_request(request)
+         if self.failed.is_set():
+-            return {'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation}
++            return {'request_id': request['request_id'], 'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation}
+         command = request['command']
+         self.db.execute('BEGIN IMMEDIATE' if command in protocol.CONTROLS else 'BEGIN')
+         view = self._view()
+@@ -238,7 +308,7 @@
+         if self.cancel.is_set() or not self.thread.is_alive():
+             raise RuntimeError('Database actor is not available')
+         if self.failed.is_set():
+-            return {'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation}
++            return {'request_id': request['request_id'], 'status': 'ERROR', 'error': 'STORAGE_FAILURE', 'runtime_generation': self.generation}
+         future = Future()
+         self.queue.put((request, future), timeout=.25)
+         # A timeout is an unknown outcome, not proof of rollback. The client
+--- parent/LEVIS_STARTER/test_runtime_b0_windows.py
++++ candidate/LEVIS_STARTER/test_runtime_b0_windows.py
+@@ -0,0 +1,52 @@
++"""Native B0 startup/replay controls. Disposable profiles only."""
++import hashlib
++import json
++import os
++from pathlib import Path
++import sqlite3
++import subprocess
++import sys
++import tempfile
++import unittest
++if os.name == 'nt':
++    from test_runtime_windows import Runtime, ROOT, TEST_PARENT
++
++
++@unittest.skipUnless(os.name == 'nt', 'requires native Windows')
++class NativeB0Tests(unittest.TestCase):
++    def fixture(self):
++        temp = tempfile.TemporaryDirectory(prefix='LEVIS-B0-', dir=TEST_PARENT)
++        self.addCleanup(temp.cleanup)
++        run = Runtime(Path(temp.name) / 'profile'); self.addCleanup(run.kill)
++        state = run.client.request('status')
++        self.revision = state['revision']
++        self.receipt = run.client.request('resume', self.revision, request_id='b0-replay')
++        run.stop()
++        return run
++
++    def refused(self, mutation, parameters=()):
++        run = self.fixture()
++        with sqlite3.connect(run.path / 'runtime.sqlite3') as db: db.execute(mutation, parameters)
++        before = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in run.path.iterdir() if p.is_file()}
++        result = subprocess.run([sys.executable, str(ROOT/'runtime_coordinator.py'), '--profile', str(run.path)],
++                                capture_output=True, text=True, timeout=15)
++        self.assertEqual(result.returncode, 2, result.stderr)
++        after = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in run.path.iterdir() if p.is_file()}
++        self.assertEqual(before, after)
++        self.assertFalse((run.path/'discovery.tmp').exists())
++
++    def test_revision_rollback_refused_before_ready(self): self.refused('UPDATE runtime SET revision=0')
++    def test_damaged_receipt_refused_before_ready(self): self.refused("UPDATE requests SET response='{}' WHERE id='b0-replay'")
++    def test_unknown_receipt_shape_refused(self): self.refused("UPDATE requests SET response=? WHERE id='b0-replay'", ('{"status":"UNKNOWN"}',))
++
++    def test_native_replay_after_restart_remains_historical(self):
++        run = self.fixture()
++        restarted = Runtime(run.path, initialize=False); self.addCleanup(restarted.kill)
++        before = restarted.client.request('status')
++        replay = restarted.client.request('resume', self.revision, request_id='b0-replay')
++        self.assertEqual(replay, self.receipt)
++        self.assertEqual(restarted.client.request('status'), before)
++        restarted.stop()
++
++
++if __name__ == '__main__': unittest.main(verbosity=2)

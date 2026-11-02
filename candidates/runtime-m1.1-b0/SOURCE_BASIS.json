@@ -1,0 +1,41 @@
+{
+  "parent_commit": "bfdf0e13a532192166a9d159f6f871d43e88fe66",
+  "parent_path": "candidates/runtime-m1.1-repair/LEVIS_M1_1_REPAIR_CANDIDATE",
+  "changed_source_files": [
+    {
+      "path": "LEVIS_STARTER/LEVISStarter/collegium/library.sqlite3",
+      "parent_sha256": null,
+      "candidate_sha256": "1bb07e6334baef3c736a4f6c061013ddae0b38f72a7e4b90f48cf51ab8a68556"
+    },
+    {
+      "path": "LEVIS_STARTER/MANIFEST_SHA256.txt",
+      "parent_sha256": "d66e16537e9475cfff56897359eb57677becadd55f60935119e4097cc9330c1c",
+      "candidate_sha256": "7ceb08c084ece5a4cc922dc387acfeaa627bedb4c4e1b8d5e4180ddc8c2a39c7"
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_client.py",
+      "parent_sha256": "90f843e28df56d0f00152b6fe4a4f46e0b9061ad8538f8286b82b5aade4d3cd3",
+      "candidate_sha256": "cf130e813900830775a321dfc856367ab46b3c4a53cb1817de98ae735a0bb581"
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_protocol.py",
+      "parent_sha256": "296e6055bf141710d4af460795eead15b1fc5bbe25b1275483a53259c45da384",
+      "candidate_sha256": "5d2780e4703372da0538dadf0963260f4a7f30c8cba932f7207cf8c3e40c942d"
+    },
+    {
+      "path": "LEVIS_STARTER/runtime_store.py",
+      "parent_sha256": "ae80ea0e2d56267dbb48bafe450be334b8199b9bf9d2c97e39b6a8c2a40353dc",
+      "candidate_sha256": "1faf131b4069e3c6a0da9ea487ffb57974604f8ed40f5882c99951ec1db50fa6"
+    },
+    {
+      "path": "LEVIS_STARTER/test_runtime_b0_windows.py",
+      "parent_sha256": null,
+      "candidate_sha256": "89167de33b620b7ee89e8f8f409dd5c038232827ca9684267fdee849d6f142c2"
+    }
+  ],
+  "builder_reviewer": "same Codex agent/session",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "authority_effect": "NONE",
+  "historical_archive_status": "Inherited archive identities are references, not reverified ZIP hashes"
+}

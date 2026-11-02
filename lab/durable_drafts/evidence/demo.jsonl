@@ -1,0 +1,2 @@
+{"stage": "submitted", "paused": true, "job": "141aad0f2129480590f6a0dac593f0d7"}
+{"stage": "committed", "state": "DRAFT_READY", "artifact": {"attempt": "cdf2a36ae0dd484db634959510d89779", "kind": "draft", "sha256": "54a52544a0e6e5fe2b96fe801b01595bb6c95c0972062ff271f50a42252a14c6", "integrity": "VALID", "text": "FAKE ADAPTER DRAFT: Suggest an improvement without running source"}, "source_input": "print(\"source remains data\")", "model_enabled": false, "executor_enabled": false}

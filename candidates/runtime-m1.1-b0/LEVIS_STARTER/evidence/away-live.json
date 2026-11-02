@@ -1,0 +1,9 @@
+{
+  "id": "cb9165b0256b4f0f83091f2741aec4a6",
+  "goal": "Review this addition function. Propose corrected code and one test. Do not claim to run it.",
+  "state": "DRAFT_READY",
+  "snapshot": "[{\"name\": \"away-input.py\", \"original_path\": \"C:\\\\Users\\\\white\\\\Documents\\\\Codex\\\\2026-10-22\\\\referenced-chatgpt-conversation-this-is-an\\\\work\\\\away-input.py\", \"sha256\": \"828092436119a2bb1f39a167f274196a96fd68a3f31b75e3a54feb776c4a266d\", \"text\": \"def add(a, b):\\r\\n    return a - b\\r\\n\"}]",
+  "answer": "",
+  "result": "work\\away-live\\cb9165b0256b4f0f83091f2741aec4a6\\draft.md",
+  "created": 1792710905.7637393
+}

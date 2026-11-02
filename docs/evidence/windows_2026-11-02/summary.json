@@ -1,0 +1,56 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10",
+  "groups": [
+    {
+      "group": "runtime-b0",
+      "exit_code": 0,
+      "tests": 90,
+      "log": "b0-driver.log"
+    },
+    {
+      "group": "modular-b5",
+      "exit_code": 0,
+      "tests": 21,
+      "log": "modular-b5.log"
+    },
+    {
+      "group": "durable-draft-lab",
+      "exit_code": 0,
+      "tests": 61,
+      "log": "durable-draft-lab.log"
+    },
+    {
+      "group": "evidence-memory-lab",
+      "exit_code": 0,
+      "tests": 43,
+      "log": "evidence-memory-lab.log"
+    },
+    {
+      "group": "communication-transport",
+      "exit_code": 0,
+      "tests": 12,
+      "log": "communication-transport.log"
+    },
+    {
+      "group": "historical-final-review",
+      "exit_code": 0,
+      "tests": 9,
+      "log": "historical-final-review.log"
+    },
+    {
+      "group": "coordinator-crashes",
+      "exit_code": 0,
+      "tests": null,
+      "log": "coordinator-crashes.log",
+      "process_crash_scenarios": 3
+    }
+  ],
+  "tests_run": 236,
+  "process_crash_scenarios": 3,
+  "passed": true,
+  "native_windows_executed": true,
+  "lab_isolated": true,
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE"
+}

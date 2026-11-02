@@ -1,0 +1,5 @@
+SOURCE WORKSPACE\outputs\LEVIS_BUILD_2026-11-02\candidates\runtime-m1.1-b0\LEVIS_STARTER identity=per-file hashes recorded before native crash controls
+CRASH_BEFORE_READY: actual exit 71; INITIALIZING preserved; ordinary reopen refused; all remaining files byte-equal; lock released by OS
+CRASH_AFTER_READY_BEFORE_DISCOVERY: actual exit 72; native restart PAUSED/unclean; secret and metadata unchanged; clean stop
+CRASH_AFTER_COMMIT_BEFORE_REPLY: actual exit 73; original receipt survives; repeated retry returns same outcome; current runtime stays PAUSED; clean stop
+FOLLOWUP_REVIEW_CHECKS_PASS: 3 real process-exit scenarios; candidate source unchanged; no independent acceptance claimed

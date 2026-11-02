@@ -5,6 +5,12 @@
 <p align="center"><a href="#start-building">Start building</a> · <a href="#the-body-map">Architecture</a> · <a href="#what-exists-today">Current status</a> · <a href="docs/CONTRIBUTING.md">Contribute</a> · <a href="../../releases">Downloads</a></p>
 
 > [!IMPORTANT]
+> **NEW WINDOWS CHECKPOINT — 2026-11-02 · START HERE**
+> **236 tests pass + 3 coordinator crash scenarios + a real local-model draft.**
+> [Recovery, Windows evidence & next steps](docs/WINDOWS_CHECKPOINT_2026-11-02.md) · [Durable drafts](lab/durable_drafts/README.md) · [Public questions & replies](https://github.com/whitecatlord/LEVIS/discussions/1).
+> Separate tested candidates and labs; production GUI/coordinator integration and independent acceptance remain open.
+
+> [!IMPORTANT]
 > **SKIMMERS & AI READERS — NEW DESIGN FLAG · 2026-11-01**
 > Read [Geometry → compact communication → context-loss reconstruction tests](docs/COMMUNICATION_GEOMETRY_2026-11-01.md).
 > **Exact source → typed ledger → compact references.** Preserve provenance, contradictions, source independence, and authority boundaries. **Library ZIP recovered: 12 transport checks reproduced; basin experiments pending.**
@@ -46,6 +52,10 @@ Python 3.12+; the tracking and restoration helpers use the standard library.
 | Geometry and cross-model continuity | Recovered design and experimental directions | Build adapters and measure what survives reconstruction |
 
 **M1.1 is HOLD_FOR_REPAIR.** Its supplied 64-test suite passed, but the final review found two additional ledger-content failures. A passing old suite does not close a newer failing control. This repository is a research/source handoff, with candidate status and evidence limits preserved.
+
+### Assembly continuation — 2026-11-02
+
+Two isolated candidates advance the [assembly roadmap](docs/ASSEMBLY_CONTINUATION_2026-11-02.md): the [B0 runtime repair](candidates/runtime-m1.1-b0/REVIEW.md) and [M0/B5 modular continuation](candidates/modular-m0-b5/REVIEW.md). **181 test methods passed on the original recorded platform** across portable runtime controls, inherited application regressions, modular controls, the separate [durable-draft contract lab](lab/durable_drafts/README.md), and the [evidence-memory bridge](lab/evidence_memory/README.md). The subsequent [Windows checkpoint](docs/WINDOWS_CHECKPOINT_2026-11-02.md) records 236 passing methods, three coordinator crash scenarios, and a real-model smoke. Independent review remains pending. Neither candidate is adopted into Base or integrated with the other; M1.2 remains gated.
 
 ## The body map
 

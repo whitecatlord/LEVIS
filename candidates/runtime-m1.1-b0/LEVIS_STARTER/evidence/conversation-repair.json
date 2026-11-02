@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22",
+  "builder": "Codex",
+  "changes": [
+    "Natural greetings and contextual handling of metaphor",
+    "No automatic evidence-audit format",
+    "Human action permission separated from truth and Base admission",
+    "Length-limited responses labeled"
+  ],
+  "base_or_runner_modified": false,
+  "conversation_history_rewritten": false,
+  "model_weights_modified": false,
+  "independent_review": false,
+  "validation": "Five structural tests pass; three live model probes reviewed. Examples do not establish universal compliance.",
+  "activation": "Close and reopen LEVIS; start a new conversation to avoid carrying prior responses into context."
+}

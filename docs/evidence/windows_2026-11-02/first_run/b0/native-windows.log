@@ -1,0 +1,172 @@
+test_AUTH01_unsupported_commands_and_fields (test_runtime_windows.NativeTests.test_AUTH01_unsupported_commands_and_fields) ... ok
+test_DB01_two_processes_alias_and_duplicate_endpoint (test_runtime_windows.NativeTests.test_DB01_two_processes_alias_and_duplicate_endpoint) ... ok
+test_DB03_actor_validates_worker_and_stale_generation_fields (test_runtime_windows.NativeTests.test_DB03_actor_validates_worker_and_stale_generation_fields) ... ok
+test_DB04_commit_failure_injection_no_success_receipt (test_runtime_windows.NativeTests.test_DB04_commit_failure_injection_no_success_receipt) ... ok
+test_DB04_locked_database_no_success_and_error_gate (test_runtime_windows.NativeTests.test_DB04_locked_database_no_success_and_error_gate) ... ok
+test_DB04_sqlite_full_quota_rolls_back (test_runtime_windows.NativeTests.test_DB04_sqlite_full_quota_rolls_back) ... ok
+test_IPC01_bad_secret_and_native_wrong_logon_acl (test_runtime_windows.NativeTests.test_IPC01_bad_secret_and_native_wrong_logon_acl) ... ok
+test_IPC01_effective_peer_user_and_logon_mismatch (test_runtime_windows.NativeTests.test_IPC01_effective_peer_user_and_logon_mismatch) ... ok
+test_IPC02_squatted_namespace_before_database_start (test_runtime_windows.NativeTests.test_IPC02_squatted_namespace_before_database_start) ... ok
+test_IPC02_stale_discovery (test_runtime_windows.NativeTests.test_IPC02_stale_discovery) ... ok
+test_IPC02_wrong_server_proof_native_pipe (test_runtime_windows.NativeTests.test_IPC02_wrong_server_proof_native_pipe) ... ok
+test_IPC03_bad_mac_sequence_json_version_and_lengths (test_runtime_windows.NativeTests.test_IPC03_bad_mac_sequence_json_version_and_lengths) ... ok
+test_IPC03_replay_cross_connection_and_direction (test_runtime_windows.NativeTests.test_IPC03_replay_cross_connection_and_direction) ... ok
+test_IPC04_lost_reply_retry_and_conflict_after_restart (test_runtime_windows.NativeTests.test_IPC04_lost_reply_retry_and_conflict_after_restart) ... ok
+test_LIFE02_idle_LIFE04_attach_detach_and_revision (test_runtime_windows.NativeTests.test_LIFE02_idle_LIFE04_attach_detach_and_revision) ... ok
+test_corrupt_schema_refused (test_runtime_windows.NativeTests.test_corrupt_schema_refused) ... ok
+test_native_pipe_dacl_excludes_instance_creation (test_runtime_windows.NativeTests.test_native_pipe_dacl_excludes_instance_creation) ... ok
+test_no_executor_model_legacy_import_or_working_transition (test_runtime_windows.NativeTests.test_no_executor_model_legacy_import_or_working_transition) ... ok
+test_reserved_control_reachable_during_slow_data_client (test_runtime_windows.NativeTests.test_reserved_control_reachable_during_slow_data_client) ... ok
+test_secret_corruption_and_existing_init_refused (test_runtime_windows.NativeTests.test_secret_corruption_and_existing_init_refused) ... ok
+test_startup_REC01_unclean_recovery_always_paused (test_runtime_windows.NativeTests.test_startup_REC01_unclean_recovery_always_paused) ... ok
+test_P1_delayed_startup_retains_writer_until_cancelled_actor_exits (test_runtime_repairs.RepairTests.test_P1_delayed_startup_retains_writer_until_cancelled_actor_exits) ... ok
+test_P1_empty_and_truncated_ledgers_are_not_initialized (test_runtime_repairs.RepairTests.test_P1_empty_and_truncated_ledgers_are_not_initialized) ... ok
+test_P1_missing_established_ledger_is_not_recreated (test_runtime_repairs.RepairTests.test_P1_missing_established_ledger_is_not_recreated) ... ok
+test_P1_timeout_during_startup_transaction_rolls_back_before_unlock (test_runtime_repairs.RepairTests.test_P1_timeout_during_startup_transaction_rolls_back_before_unlock) ... ok
+test_P2_database_constraints_and_actor_refuse_WORKING (test_runtime_repairs.RepairTests.test_P2_database_constraints_and_actor_refuse_WORKING) ... ok
+test_P2_original_unexpected_trigger_refused_before_startup_mutation (test_runtime_repairs.RepairTests.test_P2_original_unexpected_trigger_refused_before_startup_mutation) ... ok
+test_P2_views_indices_columns_constraints_and_version_refused (test_runtime_repairs.RepairTests.test_P2_views_indices_columns_constraints_and_version_refused) ... ok
+test_creation_refuses_existing_ledger_and_reopen_requires_existing_file (test_runtime_repairs.RepairTests.test_creation_refuses_existing_ledger_and_reopen_requires_existing_file) ... ok
+test_cross_logon_policy_gate_no_rekey_or_ledger_write (test_runtime_repairs.RepairTests.test_cross_logon_policy_gate_no_rekey_or_ledger_write) ... ok
+test_initialization_crash_is_refused_without_secret_overwrite (test_runtime_repairs.RepairTests.test_initialization_crash_is_refused_without_secret_overwrite) ... ok
+test_parent_v1_ledger_is_refused_without_implicit_migration (test_runtime_repairs.RepairTests.test_parent_v1_ledger_is_refused_without_implicit_migration) ... ok
+test_same_logon_reopen_preserves_profile_secret_and_receipts (test_runtime_repairs.RepairTests.test_same_logon_reopen_preserves_profile_secret_and_receipts) ... ok
+test_damaged_receipt_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_damaged_receipt_refused_before_ready) ... FAIL
+test_damaged_receipt_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_damaged_receipt_refused_before_ready) ... ERROR
+test_native_replay_after_restart_remains_historical (test_runtime_b0_windows.NativeB0Tests.test_native_replay_after_restart_remains_historical) ... FAIL
+test_revision_rollback_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_revision_rollback_refused_before_ready) ... FAIL
+test_revision_rollback_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_revision_rollback_refused_before_ready) ... ERROR
+test_unknown_receipt_shape_refused (test_runtime_b0_windows.NativeB0Tests.test_unknown_receipt_shape_refused) ... FAIL
+test_unknown_receipt_shape_refused (test_runtime_b0_windows.NativeB0Tests.test_unknown_receipt_shape_refused) ... ERROR
+
+======================================================================
+ERROR: test_damaged_receipt_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_damaged_receipt_refused_before_ready)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-_v9_u3on\\profile\\runtime.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-_v9_u3on\\profile\\runtime.sqlite3'
+
+======================================================================
+ERROR: test_revision_rollback_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_revision_rollback_refused_before_ready)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-rev9nga0\\profile\\runtime.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-rev9nga0\\profile\\runtime.sqlite3'
+
+======================================================================
+ERROR: test_unknown_receipt_shape_refused (test_runtime_b0_windows.NativeB0Tests.test_unknown_receipt_shape_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-lwt5kar5\\profile\\runtime.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\assembly_windows_2026-11-02\\b0\\profiles\\LEVIS-B0-lwt5kar5\\profile\\runtime.sqlite3'
+
+======================================================================
+FAIL: test_damaged_receipt_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_damaged_receipt_refused_before_ready)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 39, in test_damaged_receipt_refused_before_ready
+    def test_damaged_receipt_refused_before_ready(self): self.refused("UPDATE requests SET response='{}' WHERE id='b0-replay'")
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 35, in refused
+    self.assertEqual(before, after)
+AssertionError: {'dis[272 chars]m': '73bdef80a3de59a59dbb3a11b6b958ae1ca8336c8[278 chars]855'} != {'dis[272 chars]m': 'cef47e8c3924a5888161d4f301f7e2e20d9a3dcb5[278 chars]855'}
+Diff is 721 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_native_replay_after_restart_remains_historical (test_runtime_b0_windows.NativeB0Tests.test_native_replay_after_restart_remains_historical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 48, in test_native_replay_after_restart_remains_historical
+    self.assertEqual(restarted.client.request('status'), before)
+AssertionError: {'cle[101 chars]d': 'b4c2fbde5e624c1aa66a25c9ba2aa9a7', 'revis[123 chars]'OK'} != {'cle[101 chars]d': '9a85a3c22b28472aa334e9cc43b441dc', 'revis[123 chars]'OK'}
+  {'clean_shutdown': False,
+   'event_cursor': 9,
+   'executor_enabled': False,
+   'model_enabled': False,
+-  'request_id': 'b4c2fbde5e624c1aa66a25c9ba2aa9a7',
++  'request_id': '9a85a3c22b28472aa334e9cc43b441dc',
+   'revision': 9,
+   'runtime_generation': '430d42e90ae3483f9580bfef471df54c',
+   'startup_reason': 'clean',
+   'state': 'PAUSED',
+   'status': 'OK'}
+
+======================================================================
+FAIL: test_revision_rollback_refused_before_ready (test_runtime_b0_windows.NativeB0Tests.test_revision_rollback_refused_before_ready)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 38, in test_revision_rollback_refused_before_ready
+    def test_revision_rollback_refused_before_ready(self): self.refused('UPDATE runtime SET revision=0')
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 35, in refused
+    self.assertEqual(before, after)
+AssertionError: {'dis[272 chars]m': 'ed6bb4a8f8af1c2ea02cde2cfa78fe2638aaa6a19[278 chars]855'} != {'dis[272 chars]m': '9887f0db8bac1630bab9b73e7c540579a4717a93c[278 chars]855'}
+Diff is 721 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_unknown_receipt_shape_refused (test_runtime_b0_windows.NativeB0Tests.test_unknown_receipt_shape_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 40, in test_unknown_receipt_shape_refused
+    def test_unknown_receipt_shape_refused(self): self.refused("UPDATE requests SET response=? WHERE id='b0-replay'", ('{"status":"UNKNOWN"}',))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_RECOVERED_2026-11-02\source\LEVIS\candidates\runtime-m1.1-b0\LEVIS_STARTER\test_runtime_b0_windows.py", line 35, in refused
+    self.assertEqual(before, after)
+AssertionError: {'dis[272 chars]m': '3620b5e7fff57759b8b7ec907d6329a08a8eddd8f[278 chars]855'} != {'dis[272 chars]m': '8648168b72ee124c43f58abec5d7b6dd92cf37134[278 chars]855'}
+Diff is 721 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 37 tests in 18.688s
+
+FAILED (failures=4, errors=3)

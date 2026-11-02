@@ -1,0 +1,291 @@
+test_bad_control (test_b0_ledger.LedgerTests.test_bad_control) ... ERROR
+test_empty_receipt (test_b0_ledger.LedgerTests.test_empty_receipt) ... ERROR
+test_event_state (test_b0_ledger.LedgerTests.test_event_state) ... ERROR
+test_missing_control (test_b0_ledger.LedgerTests.test_missing_control) ... ERROR
+test_missing_event (test_b0_ledger.LedgerTests.test_missing_event) ... ERROR
+test_new_and_unclean_restart (test_b0_ledger.LedgerTests.test_new_and_unclean_restart) ... ok
+test_receipt_shapes (test_b0_ledger.LedgerTests.test_receipt_shapes) ... ERROR
+test_revision_ahead (test_b0_ledger.LedgerTests.test_revision_ahead) ... ERROR
+test_revision_rollback (test_b0_ledger.LedgerTests.test_revision_rollback) ... ERROR
+test_valid_historical_replay (test_b0_ledger.LedgerTests.test_valid_historical_replay) ... ok
+test_client_refuses_missing_envelope_before_ack (test_b0_responses.ResponseTests.test_client_refuses_missing_envelope_before_ack) ... ok
+test_client_valid_reply_acknowledged (test_b0_responses.ResponseTests.test_client_valid_reply_acknowledged) ... ok
+test_control_malformed_reply_is_unconfirmed (test_b0_responses.ResponseTests.test_control_malformed_reply_is_unconfirmed) ... ok
+test_control_state_is_command_specific (test_b0_responses.ResponseTests.test_control_state_is_command_specific) ... ok
+test_event_page_and_cursor (test_b0_responses.ResponseTests.test_event_page_and_cursor) ... ok
+test_malformed_envelopes (test_b0_responses.ResponseTests.test_malformed_envelopes) ... ok
+test_refusals_and_attachments (test_b0_responses.ResponseTests.test_refusals_and_attachments) ... ok
+test_typed_storage_failure (test_b0_responses.ResponseTests.test_typed_storage_failure) ... ok
+test_valid_observation_and_historical_outcome (test_b0_responses.ResponseTests.test_valid_observation_and_historical_outcome) ... ok
+test_exit_after_commit_replays_without_reexecution (test_b0_crashes.CrashTests.test_exit_after_commit_replays_without_reexecution) ... ERROR
+test_exit_before_control_commit_leaves_no_receipt (test_b0_crashes.CrashTests.test_exit_before_control_commit_leaves_no_receipt) ... ERROR
+test_exit_during_startup_rolls_back_lifecycle (test_b0_crashes.CrashTests.test_exit_during_startup_rolls_back_lifecycle) ... ERROR
+
+======================================================================
+ERROR: test_bad_control (test_b0_ledger.LedgerTests.test_bad_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpyq0e7z1v\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpyq0e7z1v\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_empty_receipt (test_b0_ledger.LedgerTests.test_empty_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp40ykfquj\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp40ykfquj\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_event_state (test_b0_ledger.LedgerTests.test_event_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpv7x7vzid\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpv7x7vzid\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_missing_control (test_b0_ledger.LedgerTests.test_missing_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp6_edopg9\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp6_edopg9\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_missing_event (test_b0_ledger.LedgerTests.test_missing_event)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpot0jc7r0\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpot0jc7r0\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_receipt_shapes (test_b0_ledger.LedgerTests.test_receipt_shapes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpo5_n46jo\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpo5_n46jo\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_revision_ahead (test_b0_ledger.LedgerTests.test_revision_ahead)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpf87tqtcy\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpf87tqtcy\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_revision_rollback (test_b0_ledger.LedgerTests.test_revision_rollback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpp4iokvty\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpp4iokvty\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_exit_after_commit_replays_without_reexecution (test_b0_crashes.CrashTests.test_exit_after_commit_replays_without_reexecution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpbxqovast\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpbxqovast\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_exit_before_control_commit_leaves_no_receipt (test_b0_crashes.CrashTests.test_exit_before_control_commit_leaves_no_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpg0c3rhie\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmpg0c3rhie\\ledger.sqlite3'
+
+======================================================================
+ERROR: test_exit_during_startup_rolls_back_lifecycle (test_b0_crashes.CrashTests.test_exit_during_startup_rolls_back_lifecycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp5m0_4aam\\ledger.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\AppData\\Local\\Temp\\tmp5m0_4aam\\ledger.sqlite3'
+
+----------------------------------------------------------------------
+Ran 22 tests in 3.205s
+
+FAILED (errors=11)

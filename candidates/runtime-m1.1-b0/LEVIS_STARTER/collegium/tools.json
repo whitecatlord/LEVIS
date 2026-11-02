@@ -1,0 +1,20 @@
+{
+  "schema": "levis.workbench.tools/0.1",
+  "provider": "library_tools.py",
+  "provider_sha256": "cb083a6f6284e886dc1a88a0ee1e81edf89de9b36cd39a6fa5521594834c3538",
+  "model_requestable": [
+    "library_search",
+    "library_read",
+    "calculator"
+  ],
+  "human_only": [
+    "file_hash",
+    "install_pinned_catalog"
+  ],
+  "max_model_calls_per_turn": 2,
+  "no_shell": true,
+  "no_arbitrary_network": true,
+  "base_lease_integration": false,
+  "authority_effect": "NONE",
+  "scope_note": "Workbench allowlist for bounded local reads/computation; not historical Boot Range qualification or a Supervisor production lease."
+}

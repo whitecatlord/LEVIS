@@ -1,0 +1,15 @@
+test_bad_control (__main__.LedgerTests.test_bad_control) ... ok
+test_empty_receipt (__main__.LedgerTests.test_empty_receipt) ... ok
+test_event_state (__main__.LedgerTests.test_event_state) ... ok
+test_missing_control (__main__.LedgerTests.test_missing_control) ... ok
+test_missing_event (__main__.LedgerTests.test_missing_event) ... ok
+test_new_and_unclean_restart (__main__.LedgerTests.test_new_and_unclean_restart) ... ok
+test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) ... ok
+test_revision_ahead (__main__.LedgerTests.test_revision_ahead) ... ok
+test_revision_rollback (__main__.LedgerTests.test_revision_rollback) ... ok
+test_valid_historical_replay (__main__.LedgerTests.test_valid_historical_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.578s
+
+OK

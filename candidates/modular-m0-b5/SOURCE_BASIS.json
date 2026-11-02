@@ -1,0 +1,21 @@
+{
+  "parent_commit": "bfdf0e13a532192166a9d159f6f871d43e88fe66",
+  "parent_path": "candidates/modular-m0/LEVIS_BLUEPRINT_M0_RC1",
+  "changed_source_files": [
+    {
+      "path": "levis_modular/rooms.py",
+      "parent_sha256": null,
+      "candidate_sha256": "d0685129be430b88f25bc4dc5323d5c3b74fa32eb8289c2f07545e08f1c082f0"
+    },
+    {
+      "path": "levis_modular/supervisor.py",
+      "parent_sha256": "8f2a4ee82dd833394bbbe2c9999d6e4130919bbbcf1fa8850ef224c2ebef6402",
+      "candidate_sha256": "e1173f95414f2301fc680f5720b20f6db7c586750dadd189cdc9ee21429d7695"
+    }
+  ],
+  "builder_reviewer": "same Codex agent/session",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "authority_effect": "NONE",
+  "historical_archive_status": "Inherited archive identities are references, not reverified ZIP hashes"
+}

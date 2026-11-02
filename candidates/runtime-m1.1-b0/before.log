@@ -1,0 +1,188 @@
+test_bad_control (__main__.LedgerTests.test_bad_control) ... FAIL
+test_empty_receipt (__main__.LedgerTests.test_empty_receipt) ... FAIL
+test_event_state (__main__.LedgerTests.test_event_state) ... FAIL
+test_missing_control (__main__.LedgerTests.test_missing_control) ... FAIL
+test_missing_event (__main__.LedgerTests.test_missing_event) ... FAIL
+test_new_and_unclean_restart (__main__.LedgerTests.test_new_and_unclean_restart) ... ok
+test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) ... 
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value=[]) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value=None) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'status': 'UNKNOWN'}) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False, 'version': 99}) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'wrong', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False}) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': True, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False}) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'WORKING', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False}) ... FAIL
+  test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': True, 'model_enabled': False}) ... FAIL
+test_revision_ahead (__main__.LedgerTests.test_revision_ahead) ... FAIL
+test_revision_rollback (__main__.LedgerTests.test_revision_rollback) ... FAIL
+test_valid_historical_replay (__main__.LedgerTests.test_valid_historical_replay) ... ok
+
+======================================================================
+FAIL: test_bad_control (__main__.LedgerTests.test_bad_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 74, in test_bad_control
+    self.corrupt("UPDATE controls SET command='pause' WHERE id='resume'")
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_empty_receipt (__main__.LedgerTests.test_empty_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 56, in test_empty_receipt
+    self.corrupt("UPDATE requests SET response='{}' WHERE id='resume'")
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_event_state (__main__.LedgerTests.test_event_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 80, in test_event_state
+    self.corrupt("UPDATE events SET state='READY' WHERE cursor=2")
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_missing_control (__main__.LedgerTests.test_missing_control)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 71, in test_missing_control
+    self.corrupt("DELETE FROM controls WHERE id='resume'")
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_missing_event (__main__.LedgerTests.test_missing_event)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 77, in test_missing_event
+    self.corrupt('DELETE FROM events WHERE cursor=2')
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'status': 'UNKNOWN'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False, 'version': 99})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'wrong', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': True, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'WORKING', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': False, 'model_enabled': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_receipt_shapes (__main__.LedgerTests.test_receipt_shapes) (value={'request_id': 'resume', 'status': 'OK', 'state': 'READY', 'revision': 4, 'runtime_generation': 'first', 'event_cursor': 4, 'clean_shutdown': False, 'startup_reason': 'clean', 'executor_enabled': True, 'model_enabled': False})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 68, in test_receipt_shapes
+    self.corrupt("UPDATE requests SET response=? WHERE id='resume'", (json.dumps(value),))
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_revision_ahead (__main__.LedgerTests.test_revision_ahead)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 53, in test_revision_ahead
+    self.corrupt('UPDATE runtime SET revision=100')
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_revision_rollback (__main__.LedgerTests.test_revision_rollback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 50, in test_revision_rollback
+    self.corrupt('UPDATE runtime SET revision=0')
+  File "/workspace/scratch/cc3af3921bc0/LEVIS/candidates/runtime-m1.1-b0/test_b0_ledger.py", line 42, in corrupt
+    with self.assertRaises(RuntimeError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.078s
+
+FAILED (failures=15)

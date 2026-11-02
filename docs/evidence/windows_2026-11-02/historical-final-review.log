@@ -1,0 +1,14 @@
+test_DB01_cancel_at_schema_COMMIT_retains_lock (__main__.FinalControls.test_DB01_cancel_at_schema_COMMIT_retains_lock) ... ok
+test_DB01_established_start_timeout_blocks_real_second_process (__main__.FinalControls.test_DB01_established_start_timeout_blocks_real_second_process) ... ok
+test_IPC_truncated_frames_do_not_mutate_and_control_survives (__main__.FinalControls.test_IPC_truncated_frames_do_not_mutate_and_control_survives) ... ok
+test_corrupt_receipt_outcome_must_be_refused_before_ready (__main__.FinalControls.test_corrupt_receipt_outcome_must_be_refused_before_ready) ... ok
+test_crash_before_control_commit_rolls_back_then_explicit_retry (__main__.FinalControls.test_crash_before_control_commit_rolls_back_then_explicit_retry) ... ok
+test_disconnect_after_stop_commit_without_ACK_exits_and_receipt_survives (__main__.FinalControls.test_disconnect_after_stop_commit_without_ACK_exits_and_receipt_survives) ... ok
+test_ids_stale_revisions_and_event_receipt_consistency_after_restart (__main__.FinalControls.test_ids_stale_revisions_and_event_receipt_consistency_after_restart) ... ok
+test_revision_rollback_with_valid_schema_must_be_refused (__main__.FinalControls.test_revision_rollback_with_valid_schema_must_be_refused) ... ok
+test_singleton_invalid_state_and_revision_content_are_refused (__main__.FinalControls.test_singleton_invalid_state_and_revision_content_are_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 11.520s
+
+OK

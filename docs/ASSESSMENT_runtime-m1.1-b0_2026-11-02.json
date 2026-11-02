@@ -1,0 +1,50 @@
+{
+  "level_id": "runtime/M1.1",
+  "assessor": "Codex; builder and reviewer are the same agent/session",
+  "artifact_sha256": "2f156cf9e37cfc6c004362f2f8d660221635e90103c120ac78840f5995fdb8ed",
+  "artifact_kind": "SHA256 inventory file identifying candidate bytes, not ZIP hash",
+  "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+  "verification": "PORTABLE_CONTROLS_PASS_NATIVE_OR_ISOLATION_QUALIFICATION_PENDING",
+  "acceptance": "NOT_GRANTED",
+  "completion": "PARTIAL",
+  "scope": "Candidate continuation only; historical parent disposition unchanged",
+  "gate_results": [
+    {
+      "gate": "portable_controls",
+      "result": "PASS",
+      "evidence_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "gate": "independent_review",
+      "result": "NOT_RUN"
+    },
+    {
+      "gate": "native_or_process_isolation_qualification",
+      "result": "NOT_RUN"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "candidates/runtime-m1.1-b0/evidence/portable-b0.log",
+      "expected_sha256": "b672ab7c8df2714a23d506810208d68dec3744709f79e12d86f1381eeec08bc5",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "runtime/M1.1 isolated candidate; not acceptance"
+    },
+    {
+      "path": "candidates/runtime-m1.1-b0/evidence/inherited-application.log",
+      "expected_sha256": "d48cb1c62326df5546ed2c8e350b528601ab85499c5c3466ad2fb905fd16589a",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "runtime/M1.1 isolated candidate; not acceptance"
+    },
+    {
+      "path": "candidates/runtime-m1.1-b0/REVIEW.md",
+      "expected_sha256": "fe0dda447b5c47d0d9043a528f1d1a30106101239cb5e033689daf3b8db5ae75",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "runtime/M1.1 isolated candidate; not acceptance"
+    }
+  ],
+  "authority_effect": "NONE"
+}

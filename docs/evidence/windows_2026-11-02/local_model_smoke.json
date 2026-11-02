@@ -1,0 +1,40 @@
+{
+  "job": {
+    "id": "18bb4dc2a2e549c7b89d00f2eeeaacb6",
+    "goal": "Write three short sentences identifying each role, retaining the no-execution rule and uncertainty about truth.",
+    "state": "DRAFT_READY",
+    "display_state": "DRAFT_READY",
+    "completed": true,
+    "cancel_requested": false,
+    "artifacts": [
+      {
+        "attempt": "55a7bf5bac4748289c1bdbe310f4f4c1",
+        "kind": "draft",
+        "sha256": "1591d65e7d1f0903c5cbaa3cc9fd8d26682e12f46a969c2853270e6fc1c5b1fe",
+        "integrity": "VALID"
+      }
+    ]
+  },
+  "model_run": {
+    "model": "qwen3.5:4b",
+    "expected_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "pin_check": "MATCHED_BEFORE_AND_AFTER_NOT_ATOMIC",
+    "prompt_sha256": "93c1a57139e7159e2385311230bd9d71a79abcc54474ad20c85d738288752935",
+    "system_sha256": "bcda43ea1f68d568745fa833330cf5e750c9194235e96c74e7df67eddd6df400",
+    "output_sha256": "1591d65e7d1f0903c5cbaa3cc9fd8d26682e12f46a969c2853270e6fc1c5b1fe",
+    "prompt_eval_count": 206,
+    "eval_count": 55,
+    "done_reason": "stop",
+    "classification": "UNVERIFIED_DRAFT",
+    "authority_effect": "NONE"
+  },
+  "executor_enabled": false,
+  "production_integration": false,
+  "artifact": {
+    "attempt": "55a7bf5bac4748289c1bdbe310f4f4c1",
+    "kind": "draft",
+    "sha256": "1591d65e7d1f0903c5cbaa3cc9fd8d26682e12f46a969c2853270e6fc1c5b1fe",
+    "integrity": "VALID",
+    "text": "The LEVIS local model defines a synthetic smoke fixture where Aster proposes, Birch reviews, and Cedar archives rejected changes. No participant may execute the resulting draft under this no-execution rule. Consequently, the review process does not confirm that every claim within the text is true."
+  }
+}

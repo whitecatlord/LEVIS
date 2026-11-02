@@ -1,0 +1,10 @@
+test_changed_model_is_refused_before_chat (__main__.WorkbenchTests.test_changed_model_is_refused_before_chat) ... ok
+test_empty_model_output_not_claimed_as_success (__main__.WorkbenchTests.test_empty_model_output_not_claimed_as_success) ... ok
+test_history_survives_reopen_and_sessions_are_separate (__main__.WorkbenchTests.test_history_survives_reopen_and_sessions_are_separate) ... ok
+test_model_text_has_no_execution_path (__main__.WorkbenchTests.test_model_text_has_no_execution_path) ... ok
+test_task_command_cannot_be_selected_by_free_text (__main__.WorkbenchTests.test_task_command_cannot_be_selected_by_free_text) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.047s
+
+OK

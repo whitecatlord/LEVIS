@@ -1,0 +1,16 @@
+{
+  "state": "NEEDS_ANSWER",
+  "snapshot": [
+    {
+      "name": "LEVIS_STARTER/test_away_work.py",
+      "archive_path": "C:\\Users\\white\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\outputs\\LEVIS_STARTER_2026-10-22.zip",
+      "archive_sha256": "403a449c6e7903a7ed088cfe47dc6633cc446a9f82f56cab1ede91c662110328",
+      "sha256": "de1b9b972c476eab700edbcea6de29a9bb6c574050ed71aeb48f4b36518f23bf",
+      "part": 1,
+      "parts": 1,
+      "character_offset": 0,
+      "text": "import tempfile,unittest,json\nfrom pathlib import Path\nfrom away_work import Jobs\nclass AwayTests(unittest.TestCase):\n def test_snapshot_and_draft_never_modify_original(self):\n  with tempfile.TemporaryDirectory() as d:\n   p=Path(d)/'code.py';p.write_text('print(1)')\n   q=Jobs(Path(d)/'jobs');jid=q.add('Improve code',[p]);p.write_text('print(2)')\n   q.run_one(lambda j:{'kind':'draft','text':json.loads(j['snapshot'])[0]['text']})\n   self.assertEqual(p.read_text(),'print(2)');self.assertIn('print(1)',Path(q.rows()[0]['result']).read_text());self.assertEqual(q.rows()[0]['state'],'DRAFT_READY')\n def test_questions_resume_and_restart_interrupts(self):\n  with tempfile.TemporaryDirectory() as d:\n   q=Jobs(d);jid=q.add('Need clarification',[]);q.run_one(lambda j:{'kind':'question','text':'Which version?'})\n   self.assertEqual(q.rows()[0]['state'],'NEEDS_ANSWER');q.update(jid,'RUNNING');self.assertEqual(Jobs(d).rows()[0]['state'],'INTERRUPTED')\n def test_invalid_and_oversize_are_refused(self):\n  with tempfile.TemporaryDirectory() as d:\n   q=Jobs(Path(d)/'jobs');p=Path(d)/'large.py';p.write_text('a'*10001)\n   with self.assertRaises(ValueError):q.add('Read',[p])\n   q.add('Draft',[]);q.run_one(lambda j:{'kind':'execute','text':'cmd.exe'})\n   self.assertEqual(q.rows()[0]['state'],'FAILED');self.assertFalse(list((Path(d)/'jobs').glob('*/draft.md')))\nif __name__=='__main__':unittest.main()\r\n"
+    }
+  ],
+  "result": "C:\\Users\\white\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\zip-live\\6169b1f3568246d0bce50f10bbf06db4\\question.md"
+}

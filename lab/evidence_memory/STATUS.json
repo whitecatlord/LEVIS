@@ -1,0 +1,17 @@
+{
+  "status": "ISOLATED_LAB_PROTOTYPE",
+  "checkpoint_source_commit": "4aff1388ccf83d6a5230a80a1e6cd2242374a1b6",
+  "checkpoint_package_sha256": "95e24456b8f244874006f73d9a4a7c794e76097632f29f682ad3f5c94b752674",
+  "restored_local_commit": "34f1732d5fd6d7c776c52d4edd738c1196bd4f09",
+  "design": "docs/COMMUNICATION_GEOMETRY_2026-11-01.md",
+  "design_sha256": "ccbf47f5992e444023060915fec0d2843b2a40fec55e1e366a50d04caec49a78",
+  "tests_passed": 43,
+  "combined_tests_passed": 181,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "independent_model_trials": "NOT_RUN",
+  "native_windows": "NOT_RUN",
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE",
+  "builder_reviewer": "same Codex agent/session"
+}

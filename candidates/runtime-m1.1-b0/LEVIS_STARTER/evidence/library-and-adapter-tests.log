@@ -1,0 +1,20 @@
+test_calculator_rejects_executable_and_unbounded_inputs (test_library_tools.LibraryTests.test_calculator_rejects_executable_and_unbounded_inputs) ... ok
+test_changed_download_does_not_enter_index (test_library_tools.LibraryTests.test_changed_download_does_not_enter_index) ... ok
+test_index_corruption_cannot_impersonate_the_original_source (test_library_tools.LibraryTests.test_index_corruption_cannot_impersonate_the_original_source) ... ok
+test_install_is_pinned_idempotent_and_attributed (test_library_tools.LibraryTests.test_install_is_pinned_idempotent_and_attributed) ... ok
+test_tamper_cannot_be_returned_as_a_reference (test_library_tools.LibraryTests.test_tamper_cannot_be_returned_as_a_reference) ... ok
+test_unpinned_or_wrong_book_refused (test_library_tools.LibraryTests.test_unpinned_or_wrong_book_refused) ... ok
+test_url_and_path_restrictions (test_library_tools.LibraryTests.test_url_and_path_restrictions) ... ok
+test_changed_model_is_refused_before_chat (test_workbench.WorkbenchTests.test_changed_model_is_refused_before_chat) ... ok
+test_disabled_tools_reject_even_a_fabricated_model_call (test_workbench.WorkbenchTests.test_disabled_tools_reject_even_a_fabricated_model_call) ... ok
+test_empty_model_output_not_claimed_as_success (test_workbench.WorkbenchTests.test_empty_model_output_not_claimed_as_success) ... ok
+test_history_survives_reopen_and_sessions_are_separate (test_workbench.WorkbenchTests.test_history_survives_reopen_and_sessions_are_separate) ... ok
+test_model_text_has_no_execution_path (test_workbench.WorkbenchTests.test_model_text_has_no_execution_path) ... ok
+test_task_command_cannot_be_selected_by_free_text (test_workbench.WorkbenchTests.test_task_command_cannot_be_selected_by_free_text) ... ok
+test_tool_call_budget_is_enforced (test_workbench.WorkbenchTests.test_tool_call_budget_is_enforced) ... ok
+test_unknown_model_tool_cannot_execute_a_command (test_workbench.WorkbenchTests.test_unknown_model_tool_cannot_execute_a_command) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.154s
+
+OK
