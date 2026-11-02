@@ -1,3 +1,8 @@
+NEW QT WORKBENCH CANDIDATE: candidates/qt-workbench/README.md.
+14 native tests pass. Actual viewport capture and fixture-marker pixel analysis.
+Read MIGRATION_PLAN.md, REVIEW.md, evidence and SOURCE_BASIS.json.
+Live engine scene, general model vision, legacy chat migration and independent acceptance remain open.
+
 CURRENT M1.2 CANDIDATE: candidates/runtime-m1.2-drafts/README.md.
 78 passes, 1 explicit M1.1 scope skip; real synthetic Ollama commit smoke.
 One coordinator/SQLite actor; immutable input and provider lineage; paused crash recovery.

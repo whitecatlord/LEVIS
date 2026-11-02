@@ -1,0 +1,40 @@
+[
+  {
+    "requested_logical": [
+      1366,
+      768
+    ],
+    "actual_logical": [
+      1366,
+      768
+    ],
+    "device_pixel_ratio": 1.0,
+    "captured_pixels": [
+      1366,
+      768
+    ],
+    "viewport_logical": [
+      729,
+      253
+    ]
+  },
+  {
+    "requested_logical": [
+      1920,
+      1080
+    ],
+    "actual_logical": [
+      1920,
+      1080
+    ],
+    "device_pixel_ratio": 1.0,
+    "captured_pixels": [
+      1920,
+      1080
+    ],
+    "viewport_logical": [
+      1283,
+      565
+    ]
+  }
+]

@@ -1908,6 +1908,156 @@
         }
       ],
       "scope": "supervisor lifecycle"
+    },
+    {
+      "id": "gui/GUI-1",
+      "title": "Modern shell and accessible docking",
+      "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "runtime/M1.2"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "gui/GUI-2",
+      "title": "Passive fixture geometry viewport",
+      "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "gui/GUI-1"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "gui/GUI-3",
+      "title": "Actual viewport capture and image inspection",
+      "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "gui/GUI-2"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "gui/GUI-4",
+      "title": "Expected / observed comparison evidence",
+      "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "gui/GUI-3"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "gui/GUI-5",
+      "title": "Runtime and source/proposal integrations",
+      "implementation": "PARTIAL_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "gui/GUI-4"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "gui/GUI-6",
+      "title": "Performance, recovery and end-to-end qualification",
+      "implementation": "PARTIAL_ISOLATED_CANDIDATE",
+      "verification": "PASS_BOUNDED_WINDOWS_CONTROLS",
+      "acceptance": "NOT_GRANTED",
+      "completion": "PARTIAL",
+      "depends_on": [
+        "gui/GUI-5"
+      ],
+      "required_gates": [
+        "exact_artifact_review",
+        "bounded_native_controls",
+        "independent_review",
+        "explicit_scoped_acceptance"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/qt-workbench/REVIEW.md",
+          "sha256": "b3f84b42fe4d01be853520e025961b7fbf384917ff7914574f386e9c1cd0ed53"
+        }
+      ],
+      "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
     }
   ],
   "publication_scope": "Code, design memos and engineering lineage only; historical account chat exports excluded. Source path labels normalized to artifact filenames; artifact hashes unchanged."
