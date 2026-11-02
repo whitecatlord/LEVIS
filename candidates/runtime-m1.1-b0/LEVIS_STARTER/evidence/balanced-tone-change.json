@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22",
+  "builder": "Codex",
+  "reason": "User requested middle ground between rigid interrogation and flowery therapeutic replies.",
+  "change": "Plain colleague-like language, tentative interpretation, no invented feelings or metaphorical praise.",
+  "source_sha256": "f9222fa78551674705c5e72099ba797d5e6e5dcfb1e171fe3ff4e282ece3a6f2",
+  "base_or_execution_policy_changed": false,
+  "model_weights_changed": false,
+  "history_rewritten": false,
+  "independent_review": false,
+  "prior_package_snapshot": "Retained in work/LEVIS_STARTER_before_balanced_tone.zip",
+  "activation": "Restart LEVIS and begin a new conversation."
+}

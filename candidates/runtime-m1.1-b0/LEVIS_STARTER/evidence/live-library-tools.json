@@ -1,0 +1,19 @@
+{
+  "qualification": "Live local smoke tests; inspected alongside deterministic tool receipts, not general compliance proof.",
+  "probes": [
+    {
+      "prompt": "Use your calculator to compute (127+83)*19.",
+      "response": "The result of (127+83)*19 is 3990.\n\n[Local tools: calculator]",
+      "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "seconds": 48.94,
+      "status": "RESPONSE_RECEIVED"
+    },
+    {
+      "prompt": "Search your installed library for what John Milton says about Paradise Lost. Give one short excerpt and its source ID.",
+      "response": "From the search results, here is a short excerpt from *Paradise Lost* by John Milton:\n\n> **Excerpt:** \"Paradise Lost\" by John Milton (1608\u20131674)  \n> **Source ID:** pg-26  \n> **Offset:** 839  \n\nThe text provided is the table of contents and introduction to the work, not a direct quote from the poem itself. The actual verses would be found further in the document at the indicated offset.\n\n[Local tools: library_search]",
+      "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "seconds": 77.02,
+      "status": "RESPONSE_RECEIVED"
+    }
+  ]
+}

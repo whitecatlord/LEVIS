@@ -1,0 +1,7 @@
+{
+  "status": "RESPONSE_RECEIVED",
+  "response": "From *Paradise Lost* (pg-26), offset 5000:\n> Moved our grand parents, in that happy state,\n\nThis is a short line from the text at that location.\n\n[Local tools: library_read]",
+  "seconds": 65.84,
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "qualification": "Live source-reader smoke probe; does not establish universal citation accuracy."
+}

@@ -1,0 +1,68 @@
+{
+  "status": "RUNNABLE_LIBRARY_AND_DRAFT_QUEUE_STARTER",
+  "library_sources_installed": 67,
+  "historical_works": 56,
+  "versioned_python_tutorial_sources": 11,
+  "unresolved_historical_identifiers": 118,
+  "blocked_identity_edition_entries": 2,
+  "historical_id_corrections": 5,
+  "tool_manifest": "collegium/tools.json",
+  "model_requestable": [
+    "library_search",
+    "library_read",
+    "calculator"
+  ],
+  "human_only": [
+    "file_hash",
+    "pinned_catalog_install",
+    "existing_stock_task"
+  ],
+  "max_model_calls_per_reply": 2,
+  "automatic_installer": "Fixed catalog only, not model-directed code installation",
+  "tests_passed": 18,
+  "source_hash_and_index_integrity": "PASS: 67 sources, 27900 passages",
+  "gui_interaction_smoke": "PASS with real hidden widgets; no visual layout inspection",
+  "live_calculator": "PASS: actual tool result 3990",
+  "live_library_search": "PASS: actual invocation and attributed results; relevance remains keyword-based",
+  "live_source_reader": "PASS: returned quoted line checked against actual source passage",
+  "base_archive_changed": false,
+  "new_base_supervisor_lease_integration": false,
+  "boot_range_qualified": false,
+  "independent_review": false,
+  "safety_verification": false,
+  "authority_effect": "NONE",
+  "corpus_stored_separately": "%LOCALAPPDATA%/LEVISStarter/collegium",
+  "residuals": [
+    "Initial subset, not complete Collegium",
+    "User-account bootstrap and local metadata/index remain trusted",
+    "Sources and model interpretations may be wrong",
+    "Tool output is not Base admission",
+    "TeX figures/HTML layout not fully reproduced",
+    "Upstream changes require a new reviewed snapshot",
+    "Prior failed acquisition/race receipts remain preserved"
+  ],
+  "away_work": {
+    "automated_tests": "18 total PASS",
+    "live_model": "DRAFT_READY: corrected sample add function; proposed tests not executed",
+    "gui": "hidden widget construction PASS; no visual inspection",
+    "execution_authority": false,
+    "original_file_editing": false,
+    "background": "minimized app, awake logged-in PC; no service/startup registration",
+    "long_duration_soak_test": false
+  },
+  "zip_reader": {
+    "automated_suite": "23 total PASS",
+    "actual_package_intake": "Desktop source reconstructed exactly from 5 ZIP segments",
+    "ui": "ZIP selection and saved queue snapshot PASS (hidden widgets)",
+    "extraction_or_execution": false,
+    "whole_repository_context_or_self_modification": false,
+    "live_model": "Source reached model; unnecessary question then resumed to DRAFT_READY. Interpretation was incorrect: model overlooked fixture write before draft. Transport/output verified; code-review accuracy NOT verified.",
+    "safety_qualification": false
+  },
+  "task_controls": {
+    "new_task": "labelled top instruction box and Start task or Ctrl+Enter",
+    "zip_from_normal_file_picker": "PASS hidden-widget test",
+    "reply_without_question": "disabled; PASS hidden-widget test",
+    "test_suite": "23 PASS"
+  }
+}
