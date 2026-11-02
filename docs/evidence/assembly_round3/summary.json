@@ -1,0 +1,42 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "groups": [
+    {
+      "group": "runtime-b0",
+      "exit_code": 0,
+      "tests": 53,
+      "log": "b0-driver.log"
+    },
+    {
+      "group": "modular-b5",
+      "exit_code": 0,
+      "tests": 21,
+      "log": "modular-b5.log"
+    },
+    {
+      "group": "durable-draft-lab",
+      "exit_code": 0,
+      "tests": 52,
+      "log": "durable-draft-lab.log"
+    },
+    {
+      "group": "evidence-memory-lab",
+      "exit_code": 0,
+      "tests": 43,
+      "log": "evidence-memory-lab.log"
+    },
+    {
+      "group": "communication-transport",
+      "exit_code": 0,
+      "tests": 12,
+      "log": "communication-transport.log"
+    }
+  ],
+  "tests_run": 181,
+  "passed": true,
+  "native_windows_executed": false,
+  "lab_isolated": true,
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE"
+}
