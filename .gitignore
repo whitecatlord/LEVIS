@@ -11,3 +11,6 @@ __pycache__/
 RESTORED_M11/
 restored_m11/
 release-assets/
+
+**/LEVIS_WORKBENCH_PRIVATE/
+**/LEVIS_QT_TEST_PRIVATE/

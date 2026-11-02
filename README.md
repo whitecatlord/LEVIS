@@ -1,3 +1,7 @@
+> **NEW — Qt workbench and actual canvas observation (2026-11-02)**  
+> A separate Windows GUI candidate: one window, adjustable docks, passive fixture geometry, real viewport PNG capture, bounded marker analysis, durable job IPC, selected read-only sources and draft proposal review. **14 native tests passed.**  
+> [Source, launch instructions and screenshots](candidates/qt-workbench/README.md) · [Migration plan and architecture](candidates/qt-workbench/MIGRATION_PLAN.md) · [Evidence and limits](candidates/qt-workbench/REVIEW.md). Geometry is a fixture; this is not general model vision or Base acceptance.
+
 > **NEW — M1.2 durable drafts candidate (2026-11-02)**  
 > Jobs now belong to the Windows coordinator and one database actor. Clients can detach and retrieve committed drafts later; crash recovery pauses interrupted work. **78 tests passed; 1 inherited M1.1-only assertion explicitly skipped.** One synthetic local Ollama job completed.  
 > [Read the candidate and run it](candidates/runtime-m1.2-drafts/README.md) · [Exact evidence and limits](candidates/runtime-m1.2-drafts/REVIEW.md) · [Download candidate](https://github.com/whitecatlord/LEVIS/releases/tag/m1.2-draft-candidate-2026-11-02). Production GUI/chat migration and independent acceptance remain open.

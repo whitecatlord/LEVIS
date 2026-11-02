@@ -9,3 +9,5 @@ Other recovered documents and records are published for source/provenance inspec
 The newly authored Windows continuation files `lab/durable_drafts/ollama_adapter.py`, `lab/durable_drafts/test_ollama_adapter.py`, `lab/durable_drafts/run_local_model.py`, and `docs/WINDOWS_CHECKPOINT_2026-11-02.md` are also MIT licensed under LICENSE-HANDOFF-MIT.txt. Inherited labs and ported historical review harnesses retain their existing provenance and terms.
 
 M1.2 candidate provenance and scoped terms: `candidates/runtime-m1.2-drafts/LICENSES.md`. No blanket relicensing of inherited material or model weights.
+
+Qt workbench scoped source/dependency terms: candidates/qt-workbench/LICENSES.md. No Qt binaries are bundled.
