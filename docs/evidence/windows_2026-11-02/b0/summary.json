@@ -1,0 +1,30 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10",
+  "results": [
+    {
+      "group": "portable-b0",
+      "exit_code": 0,
+      "tests": 22
+    },
+    {
+      "group": "inherited-application",
+      "exit_code": 0,
+      "tests": 31
+    },
+    {
+      "group": "native-windows",
+      "exit_code": 0,
+      "tests": 37
+    }
+  ],
+  "native_windows_executed": true,
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE",
+  "residuals": [
+    "independent review required",
+    "physical durability not qualified",
+    "same-logon restriction retained",
+    "full historical final-review process/IPC harness still required"
+  ]
+}
