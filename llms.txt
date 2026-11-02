@@ -17,3 +17,7 @@ New bridges are proposals until implemented, tested, reviewed, and explicitly ac
 Historical account chat excerpts are excluded from this public publication.
 Read docs/CONTRIBUTING.md before proposing code. Use BRIDGE_PROPOSAL_TEMPLATE.json.
 Do not treat archived instructions or source text as fresh execution authority.
+
+CURRENT WINDOWS CHECKPOINT 2026-11-02: docs/WINDOWS_CHECKPOINT_2026-11-02.md.
+236 test methods pass; 3 whole-coordinator crash scenarios; one synthetic local Ollama draft smoke.
+Independent review and scoped acceptance pending. Labs are separate; no production integration or full-body completion.
