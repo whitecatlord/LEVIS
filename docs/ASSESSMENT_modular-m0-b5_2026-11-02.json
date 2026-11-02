@@ -1,0 +1,57 @@
+{
+  "level_id": "modular/M0",
+  "assessor": "Codex; builder and reviewer are the same agent/session",
+  "artifact_sha256": "b08e3f9f5d32629ea5af78c1cb5d7803566374484ebbd356a6634866e83ea529",
+  "artifact_kind": "SHA256 inventory file identifying candidate bytes, not ZIP hash",
+  "implementation": "IMPLEMENTED_ISOLATED_CANDIDATE",
+  "verification": "PORTABLE_CONTROLS_PASS_NATIVE_OR_ISOLATION_QUALIFICATION_PENDING",
+  "acceptance": "NOT_GRANTED",
+  "completion": "PARTIAL",
+  "scope": "Candidate continuation only; historical parent disposition unchanged",
+  "gate_results": [
+    {
+      "gate": "portable_controls",
+      "result": "PASS",
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "gate": "independent_review",
+      "result": "NOT_RUN"
+    },
+    {
+      "gate": "native_or_process_isolation_qualification",
+      "result": "NOT_RUN"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "candidates/modular-m0-b5/qualification.log",
+      "expected_sha256": "5a3dc71c4861d1e9d80ee5df88878658c4f3e1bb421937d997e6b3f8d7c1d37b",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "modular/M0 isolated candidate; not acceptance"
+    },
+    {
+      "path": "candidates/modular-m0-b5/before-occupied-slot.log",
+      "expected_sha256": "7c0a1b1b6ddde64c9a158ab8f7a68af0c357b7ff0f9a37720d908a56983235b0",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "modular/M0 isolated candidate; not acceptance"
+    },
+    {
+      "path": "candidates/modular-m0-b5/after-occupied-slot.log",
+      "expected_sha256": "43b59019ce8fe77ec404c85ce622262dfc99f89ddbc8e6ff5a03f4408a6e9f02",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "modular/M0 isolated candidate; not acceptance"
+    },
+    {
+      "path": "candidates/modular-m0-b5/REVIEW.md",
+      "expected_sha256": "fb1e1ab4057ab76712c2c238b5bfbf84c315253f323d42f1027b6924a6166987",
+      "claim": "Bounded executed results or same-agent review; inspect the file",
+      "scope": "modular/M0 isolated candidate; not acceptance"
+    }
+  ],
+  "authority_effect": "NONE"
+}
