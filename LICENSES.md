@@ -11,3 +11,5 @@ The newly authored Windows continuation files `lab/durable_drafts/ollama_adapter
 M1.2 candidate provenance and scoped terms: `candidates/runtime-m1.2-drafts/LICENSES.md`. No blanket relicensing of inherited material or model weights.
 
 Qt workbench scoped source/dependency terms: candidates/qt-workbench/LICENSES.md. No Qt binaries are bundled.
+
+Integrated body source/dependency provenance: candidates/body-assembly/LICENSES.md and ASSEMBLY_PARENT.json.

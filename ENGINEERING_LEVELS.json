@@ -7,7 +7,8 @@
     "runtime": "October desktop runtime extraction",
     "modular": "September reconciled capability blueprint",
     "base": "pinned bounded floor and its component status",
-    "compiler": "historical plate compiler"
+    "compiler": "historical plate compiler",
+    "assembly": "Connections between available bounded candidates; not implied completion of future engineering milestones"
   },
   "levels": [
     {
@@ -2058,6 +2059,33 @@
         }
       ],
       "scope": "Qt workbench candidate; fixture geometry; no governed Base promotion"
+    },
+    {
+      "id": "assembly/B1",
+      "title": "Available-component observational body assembly",
+      "implementation": "IMPLEMENTED_INTEGRATED_AVAILABLE_COMPONENTS",
+      "verification": "PASS_101_WINDOWS_CONTROLS_AND_REAL_LOCAL_MODEL_SMOKE",
+      "acceptance": "NEW_ASSEMBLY_REVIEW_NOT_RECORDED",
+      "completion": "PARTIAL_ROADMAP_AVAILABLE_COMPONENTS_CONNECTED",
+      "depends_on": [
+        "runtime/M1.2",
+        "gui/GUI-5"
+      ],
+      "required_gates": [
+        "available_component_connections",
+        "native_integration_controls",
+        "private_memory_boundaries",
+        "exact_artifact_review",
+        "independent_review"
+      ],
+      "requires_acceptance": true,
+      "evidence": [
+        {
+          "source": "candidates/body-assembly/REVIEW.md",
+          "sha256": "33b6d785549cdad4331db933538832155fd7cd53de8fb78b35f51be6a288052a"
+        }
+      ],
+      "scope": "Observational body; authoritative engine and later isolation/migration gates remain open"
     }
   ],
   "publication_scope": "Code, design memos and engineering lineage only; historical account chat exports excluded. Source path labels normalized to artifact filenames; artifact hashes unchanged."
