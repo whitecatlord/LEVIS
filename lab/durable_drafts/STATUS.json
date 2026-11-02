@@ -1,0 +1,25 @@
+{
+  "namespace": "lab/durable-draft-contracts",
+  "status": "ISOLATED_CONTRACT_PROTOTYPE",
+  "acceptance": "NOT_GRANTED",
+  "authority_effect": "NONE",
+  "source_parent_commit": "8234626c3ab62a91dd0c9099578866c2f641e857",
+  "design": "docs/LEVIS_M1_0_PERSISTENT_RUNTIME_DESIGN.md",
+  "design_sha256": "b64796f07caaf8e675812221e5bbeaf4369603c176e2fb230ca04a9d5e01b68a",
+  "source_sha256": {
+    "demo.py": "77c67ac37b23252e22856176c3eab336d0fc665c5be05450e69999ed53f1310f",
+    "draft_lane.py": "b13827dcdbaedf5f4f3b5649859ee40e271d68dc8b5a86f7bac8d14aa54bb353",
+    "draft_store.py": "a2a2af97a57b4f3ef94688553a08d2fcc71b3a5c2d93b7eda3ea635df3c14ac6",
+    "test_draft_crashes.py": "16c9f31a309810a1f7ad8c8b780be1b230fef3f8eb4662bae0e305f0ec480643",
+    "test_draft_lane.py": "33ca87112f05b178e4577e767a34a5fd51bff19aaa1ef0bd3451df23153820a8",
+    "test_draft_store.py": "cb2aa960f2d7e1c44c799df218fd4507fd5eef3c6442c1d181dd6b80e9721e79"
+  },
+  "verification": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14",
+    "tests_passed": 52,
+    "native_windows_executed": false,
+    "actual_model_executed": false
+  },
+  "builder_reviewer": "same Codex agent/session"
+}
