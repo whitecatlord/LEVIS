@@ -1,0 +1,24 @@
+{
+  "synthetic_input": "Synthetic fixture: Aster proposes, Birch reviews, Cedar archives. Drafts must never be executed.",
+  "goal": "Write three short sentences preserving these roles and the no-execution boundary.",
+  "job": "a4f3cc849d6f4ae98212212edd1e6005",
+  "completed": true,
+  "artifact": {
+    "attempt": "a27e97bf49b54057af9d5481ab50f4ad",
+    "integrity": "VALID",
+    "kind": "draft",
+    "provider": {
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "kind": "ollama",
+      "model": "qwen3.5:4b"
+    },
+    "sha256": "756e70564c1dc41a1c7b2ddd404d451692100b0c7d3feb8430f47e27e58156b5",
+    "text": "Aster proposes the draft.\nBirch reviews the content.\nCedar archives the final version.\nThe draft remains unexecuted as required by the boundary."
+  },
+  "job_count": 1,
+  "same_database": true,
+  "adapter": "ollama",
+  "executor_enabled": false,
+  "production_profile_used": false,
+  "authority_effect": "NONE"
+}
