@@ -1,0 +1,26 @@
+test_base_import_boundary (test_modular_b5.ModularTests.test_base_import_boundary) ... ok
+test_canonical_claim_remains_noncanonical_payload (test_modular_b5.ModularTests.test_canonical_claim_remains_noncanonical_payload) ... ok
+test_declaration_is_not_grant (test_modular_b5.ModularTests.test_declaration_is_not_grant) ... ok
+test_delegation_cannot_expand_and_revocation_cascades (test_modular_b5.ModularTests.test_delegation_cannot_expand_and_revocation_cascades) ... ok
+test_failed_snapshot_does_not_replace_saved_structure (test_modular_b5.ModularTests.test_failed_snapshot_does_not_replace_saved_structure) ... ok
+test_grant_shape_cannot_be_string_or_empty (test_modular_b5.ModularTests.test_grant_shape_cannot_be_string_or_empty) ... ok
+test_malformed_or_authority_bearing_snapshot_refused (test_modular_b5.ModularTests.test_malformed_or_authority_bearing_snapshot_refused) ... ok
+test_mapping_copy_failure_is_typed (test_modular_b5.ModularTests.test_mapping_copy_failure_is_typed) ... ok
+test_missing_provider (test_modular_b5.ModularTests.test_missing_provider) ... ok
+test_module_failure_is_typed (test_modular_b5.ModularTests.test_module_failure_is_typed) ... ok
+test_nonmapping_output_is_refused (test_modular_b5.ModularTests.test_nonmapping_output_is_refused) ... ok
+test_occupied_slot_cannot_orphan_authorized_provider (test_modular_b5.ModularTests.test_occupied_slot_cannot_orphan_authorized_provider) ... ok
+test_out_of_scope (test_modular_b5.ModularTests.test_out_of_scope) ... ok
+test_revoked_lease (test_modular_b5.ModularTests.test_revoked_lease) ... ok
+test_schema_mismatch (test_modular_b5.ModularTests.test_schema_mismatch) ... ok
+test_scoped_route_is_noncanonical (test_modular_b5.ModularTests.test_scoped_route_is_noncanonical) ... ok
+test_structure_restart_never_restores_authority (test_modular_b5.ModularTests.test_structure_restart_never_restores_authority) ... ok
+test_unknown_provider_cannot_receive_lease (test_modular_b5.ModularTests.test_unknown_provider_cannot_receive_lease) ... ok
+test_unknown_work_order (test_modular_b5.ModularTests.test_unknown_work_order) ... ok
+test_unmount_preserves_room_slot_and_invalidates_old_route (test_modular_b5.ModularTests.test_unmount_preserves_room_slot_and_invalidates_old_route) ... ok
+test_zero_module_boot (test_modular_b5.ModularTests.test_zero_module_boot) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.077s
+
+OK

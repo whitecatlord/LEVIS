@@ -1,0 +1,148 @@
+--- parent/levis_modular/rooms.py
++++ candidate/levis_modular/rooms.py
+@@ -0,0 +1,75 @@
++"""Explicit structure-only snapshots. Restoring rooms never restores grants."""
++import json
++import os
++from pathlib import Path
++import tempfile
++from .base import BaseRuntime, Room, ModuleSlot
++
++MAX_SNAPSHOT_BYTES = 1024 * 1024
++
++
++def _decode(raw):
++    def pairs(items):
++        result = {}
++        for key, value in items:
++            if key in result: raise ValueError('Duplicate snapshot key')
++            result[key] = value
++        return result
++    return json.loads(raw, object_pairs_hook=pairs)
++
++
++def _identifier(value):
++    if type(value) is not str or not 0 < len(value) <= 128 or any(ord(c) < 32 for c in value):
++        raise ValueError('Invalid room/slot/capability identity')
++    return value
++
++
++def restore_rooms(raw):
++    if type(raw) is not bytes or len(raw) > MAX_SNAPSHOT_BYTES: raise ValueError('Snapshot size limit')
++    try: data = _decode(raw.decode('utf-8'))
++    except (UnicodeError, RecursionError) as error: raise ValueError('Invalid room snapshot') from error
++    if type(data) is not dict or set(data) != {'version', 'rooms'} or type(data['version']) is not int or data['version'] != 1:
++        raise ValueError('Unsupported room snapshot')
++    if type(data['rooms']) is not list or len(data['rooms']) > 256: raise ValueError('Room count limit')
++    rooms = []
++    for room in data['rooms']:
++        if type(room) is not dict or set(room) != {'room_id', 'purpose', 'slots'}: raise ValueError('Room fields')
++        _identifier(room['room_id'])
++        if type(room['purpose']) is not str or len(room['purpose']) > 4096: raise ValueError('Room purpose')
++        if type(room['slots']) is not list or len(room['slots']) > 64: raise ValueError('Slot count limit')
++        restored = Room(room['room_id'], room['purpose'])
++        for slot in room['slots']:
++            if type(slot) is not dict or set(slot) != {'slot_id', 'required_capabilities'}: raise ValueError('Slot fields')
++            _identifier(slot['slot_id']); capabilities = slot['required_capabilities']
++            if type(capabilities) is not list or len(capabilities) > 64: raise ValueError('Capability count limit')
++            for value in capabilities: _identifier(value)
++            if len(set(capabilities)) != len(capabilities): raise ValueError('Duplicate capability')
++            restored = restored.with_slot(ModuleSlot(slot['slot_id'], frozenset(capabilities)))
++        rooms.append(restored)
++    return BaseRuntime(tuple(rooms))
++
++
++def snapshot_rooms(base):
++    data = dict(version=1, rooms=[dict(room_id=r.room_id, purpose=r.purpose,
++                slots=[dict(slot_id=s.slot_id, required_capabilities=sorted(s.required_capabilities)) for s in r.slots])
++                for r in base.rooms])
++    raw = json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(',', ':'), allow_nan=False).encode('utf-8')
++    restore_rooms(raw)  # The writer and reader agree on all shape/size limits.
++    return raw
++
++
++def save_rooms(base, path):
++    """Explicit operator persistence, atomic replacement; no OS ownership claim."""
++    raw = snapshot_rooms(base); path = Path(path)
++    fd, temporary = tempfile.mkstemp(prefix='.rooms-', dir=path.parent)
++    try:
++        with os.fdopen(fd, 'wb') as output:
++            output.write(raw); output.flush(); os.fsync(output.fileno())
++        os.replace(temporary, path)
++    finally:
++        Path(temporary).unlink(missing_ok=True)
++
++
++def load_rooms(path):
++    with Path(path).open('rb') as source: raw = source.read(MAX_SNAPSHOT_BYTES + 1)
++    return restore_rooms(raw)
+--- parent/levis_modular/supervisor.py
++++ candidate/levis_modular/supervisor.py
+@@ -39,6 +39,7 @@
+         self._modules: dict[str, tuple[ModuleDeclaration, Module]] = {}
+         self._leases: dict[str, _Lease] = {}
+         self._work_orders: dict[str, frozenset[str]] = {}
++        self._parents: dict[str, str] = {}
+         self._lock = threading.RLock()
+ 
+     def approve_capability(self, capability_id: str, provider_id: str, schema_hash: str) -> None:
+@@ -54,6 +55,8 @@
+                 raise KeyError(f"unknown room: {room_id}")
+             if not any(s.slot_id == slot_id for s in room.slots):
+                 raise KeyError(f"unknown slot: {slot_id}")
++            if any(s.slot_id == slot_id and s.occupant_id is not None for s in room.slots):
++                raise ValueError("slot is occupied; explicitly unmount before replacement")
+             # The runtime key is supervisor-assigned. A module's declared ID is
+             # retained as descriptive metadata and cannot select its own grant.
+             provider_id = secrets.token_hex(16)
+@@ -89,12 +92,38 @@
+ 
+     def issue_work_order(self, capability_ids: set[str] | frozenset[str]) -> str:
+         """Create a root grant through the supervisor control surface."""
+-        if not capability_ids:
+-            raise ValueError("work order must grant at least one capability")
++        if (type(capability_ids) not in (set, frozenset) or not capability_ids or
++                any(type(value) is not str or not value for value in capability_ids)):
++            raise ValueError("work order must grant a nonempty set of capability IDs")
+         handle = secrets.token_urlsafe(32)
+         with self._lock:
+             self._work_orders[handle] = frozenset(capability_ids)
+         return handle
++
++    def derive_work_order(self, parent_handle: str, capability_ids: set[str] | frozenset[str]) -> str:
++        """Control-plane delegation: a child may only narrow its parent's grant."""
++        with self._lock:
++            parent = self._work_orders.get(parent_handle)
++            if (parent is None or type(capability_ids) not in (set, frozenset) or
++                    not capability_ids or not frozenset(capability_ids) <= parent):
++                raise ValueError("delegation exceeds parent scope")
++            # Store ancestry so revoking a parent invalidates descendants.
++            handle = self.issue_work_order(capability_ids)
++            self._parents[handle] = parent_handle
++            return handle
++
++    def revoke_work_order(self, handle: str) -> None:
++        with self._lock:
++            pending = [handle]
++            while pending:
++                current = pending.pop()
++                pending.extend(child for child, parent in tuple(self._parents.items()) if parent == current)
++                self._work_orders.pop(current, None)
++                self._parents.pop(current, None)
++
++    def revoke_lease(self, lease_id: str) -> None:
++        with self._lock:
++            self._leases.pop(lease_id, None)
+ 
+     def invoke(self, request: CapabilityRequest) -> ModuleOutput | CapabilityUnavailable:
+         with self._lock:
+@@ -120,7 +149,8 @@
+             payload = module.invoke(request.capability_id, request.payload, request.input_artifact_refs)
+             if not isinstance(payload, Mapping):
+                 raise TypeError("module response payload must be a mapping")
++            result = ModuleOutput(provider_id, request.capability_id, dict(payload))
+         except Exception as exc:
+             return CapabilityUnavailable(request.capability_id, UnavailableReason.MODULE_FAILED, type(exc).__name__)
+-        return ModuleOutput(provider_id, request.capability_id, dict(payload))
++        return result
+ 
