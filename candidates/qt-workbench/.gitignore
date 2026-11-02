@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+LEVIS_WORKBENCH_PRIVATE/
+LEVIS_QT_TEST_PRIVATE/
