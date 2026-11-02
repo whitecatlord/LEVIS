@@ -1,0 +1,30 @@
+test_launcher_job_memory_projection_capture_packet_and_reopen (test_body.BodyEndToEnd.test_launcher_job_memory_projection_capture_packet_and_reopen) ... ok
+test_exclusive_writer_and_restart (test_body.MemoryControls.test_exclusive_writer_and_restart) ... ok
+test_head_hash_refuses_corruption (test_body.MemoryControls.test_head_hash_refuses_corruption) ... ok
+test_idempotent_import_and_conflict_atomicity (test_body.MemoryControls.test_idempotent_import_and_conflict_atomicity) ... ok
+test_legacy_copy_literal_mapping_and_idempotent_import (test_body.MemoryControls.test_legacy_copy_literal_mapping_and_idempotent_import) ... ok
+test_legacy_with_journal_refused_and_no_partial_memory (test_body.MemoryControls.test_legacy_with_journal_refused_and_no_partial_memory) ... ok
+test_module_route_and_revoked_lease (test_body.MemoryControls.test_module_route_and_revoked_lease) ... ok
+test_non_completed_or_corrupt_draft_refused (test_body.MemoryControls.test_non_completed_or_corrupt_draft_refused) ... ok
+test_private_transport_roundtrip_and_public_refusal (test_body.MemoryControls.test_private_transport_roundtrip_and_public_refusal) ... ok
+test_projection_is_observed_records_and_exposes_bounds (test_body.MemoryControls.test_projection_is_observed_records_and_exposes_bounds) ... ok
+test_selected_chunk_preserves_exact_preview_and_byte_hash (test_body.MemoryControls.test_selected_chunk_preserves_exact_preview_and_byte_hash) ... ok
+test_catalog_pages_are_bounded (test_workbench.FileTests.test_catalog_pages_are_bounded) ... ok
+test_linked_scope_refused (test_workbench.FileTests.test_linked_scope_refused) ... ok
+test_scope_traversal_and_ads_refused (test_workbench.FileTests.test_scope_traversal_and_ads_refused) ... ok
+test_sparse_five_gib_streaming_without_loading_whole_file (test_workbench.FileTests.test_sparse_five_gib_streaming_without_loading_whole_file) ... ok
+test_actual_canvas_capture_provenance_and_known_shape (test_workbench.GuiTests.test_actual_canvas_capture_provenance_and_known_shape) ... ok
+test_detached_and_failed_analysis_are_unavailable (test_workbench.GuiTests.test_detached_and_failed_analysis_are_unavailable) ... ok
+test_history_and_layout_survive_reopen (test_workbench.GuiTests.test_history_and_layout_survive_reopen) ... ok
+test_inspect_proposal_without_approval_and_no_source_overwrite (test_workbench.GuiTests.test_inspect_proposal_without_approval_and_no_source_overwrite) ... ok
+test_local_only_frontend_operations (test_workbench.GuiTests.test_local_only_frontend_operations) ... ok
+test_long_logs_and_search_bounded (test_workbench.GuiTests.test_long_logs_and_search_bounded) ... ok
+test_missing_marker_detected_without_changing_expected_scene (test_workbench.GuiTests.test_missing_marker_detected_without_changing_expected_scene) ... ok
+test_observation_disable_and_backpressure (test_workbench.GuiTests.test_observation_disable_and_backpressure) ... ok
+test_responsive_sizes_and_saved_screenshots (test_workbench.GuiTests.test_responsive_sizes_and_saved_screenshots) ... ok
+test_gui_close_reopen_preserves_running_durable_job_and_paused_start (test_workbench.NativeIntegration.test_gui_close_reopen_preserves_running_durable_job_and_paused_start) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 27.688s
+
+OK

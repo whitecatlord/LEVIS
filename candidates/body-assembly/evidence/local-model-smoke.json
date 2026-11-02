@@ -1,0 +1,52 @@
+{
+  "adapter": "ollama",
+  "job": "2fcfa6c747274a27b706bf20c45d019a",
+  "completed": true,
+  "artifact": {
+    "attempt": "84ba70f71934406abf718a16d9c4defd",
+    "integrity": "VALID",
+    "kind": "draft",
+    "provider": {
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "kind": "ollama",
+      "model": "qwen3.5:4b"
+    },
+    "sha256": "3ea08a8962bf0cb14b68b6f57ac7379ee9955ee342b89b1ac9bbf440766264b9",
+    "text": "Draft Summary:\nBased on the provided input data from \"roles.txt\" (SHA256: ad8569f9e319113c78b9414b18b9df2c7e7da5b1942d0c52091101a70915a191), the following synthetic roles are defined: Aster proposes, Birch reviews, and Cedar archives. A critical constraint is that nothing is executed; this process operates strictly as a data-handling boundary without execution."
+  },
+  "memory_nodes": 9,
+  "memory_head": {
+    "sequence": 3,
+    "file": "memory_00000003_adda04136f5e40b6891cb4ae7a4994f1.jsonl",
+    "sha256": "727fed385aaf624b8f44a212e0d828a54806ae521195294621f1d6cc371da150",
+    "previous_sha256": "4628679202343a7eeaaa12b4f5cc0dc83f87d9fb4d13e83dccb074b4dc1cbd7c"
+  },
+  "packet_round_trip": true,
+  "module": {
+    "provider": "35fc14cd3ae534c9d84822d422ed679c",
+    "classification": "NONCANONICAL_MODULE_OUTPUT",
+    "payload": {
+      "nodes": 9,
+      "sources": 5,
+      "proposals": 1,
+      "authority": "NONE",
+      "classification": "OBSERVATIONAL_MEMORY_COUNTS"
+    },
+    "isolation": "IN_PROCESS_PROTOTYPE_NOT_OS_SANDBOX"
+  },
+  "frame_id": "00000001-78149b677bd5495db3d2bba7a1899ee6",
+  "png_sha256": "1cddfa06936187fff0ce9c38e29c571754f57bd2f8bb13b6efa09c56fea3bdf4",
+  "comparison": {
+    "status": "MEASURED_FIXTURE_MARKERS",
+    "expected": 10,
+    "observed": 10,
+    "missing": [],
+    "unexpected": [],
+    "shape_changes": [],
+    "limitations": "Counts refer to eligible viewport markers, not semantic nodes, edges, basins or truth."
+  },
+  "scene_source": "ASSEMBLY OBSERVATION PROJECTION \u2014 NOT CANONICAL BASE GEOMETRY",
+  "synthetic_only": true,
+  "authority_effect": "NONE",
+  "base_promoted": false
+}
