@@ -1,3 +1,8 @@
+CURRENT M1.2 CANDIDATE: candidates/runtime-m1.2-drafts/README.md.
+78 passes, 1 explicit M1.1 scope skip; real synthetic Ollama commit smoke.
+One coordinator/SQLite actor; immutable input and provider lineage; paused crash recovery.
+Not production GUI integration or independent acceptance. Read REVIEW.md and evidence.
+
 # LEVIS
 > Public research source for portable AI memory, evidence-aware knowledge geometry, provenance, and governed agent architecture.
 

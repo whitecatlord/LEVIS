@@ -1,0 +1,236 @@
+test_active_cancel_retains_output_as_cancelled_not_completed (test_m12_windows.NativeM12Tests.test_active_cancel_retains_output_as_cancelled_not_completed) ... ERROR
+test_client_process_closure_does_not_stop_authorized_job (test_m12_windows.NativeM12Tests.test_client_process_closure_does_not_stop_authorized_job) ... ERROR
+test_completed_receipt_survives_restart_and_artifact_hash_matches (test_m12_windows.NativeM12Tests.test_completed_receipt_survives_restart_and_artifact_hash_matches) ... ERROR
+test_corrupt_job_receipt_is_refused_before_recovery (test_m12_windows.NativeM12Tests.test_corrupt_job_receipt_is_refused_before_recovery) ... ERROR
+test_internal_commands_and_jobs_on_control_endpoint_refused (test_m12_windows.NativeM12Tests.test_internal_commands_and_jobs_on_control_endpoint_refused) ... ERROR
+test_killed_coordinator_recovers_interrupted_without_rerun (test_m12_windows.NativeM12Tests.test_killed_coordinator_recovers_interrupted_without_rerun) ... ERROR
+test_lost_submit_reply_replays_one_job (test_m12_windows.NativeM12Tests.test_lost_submit_reply_replays_one_job) ... ERROR
+test_pause_drains_and_prevents_second_job (test_m12_windows.NativeM12Tests.test_pause_drains_and_prevents_second_job) ... ERROR
+test_second_coordinator_denied_while_attempt_active (test_m12_windows.NativeM12Tests.test_second_coordinator_denied_while_attempt_active) ... ERROR
+test_stop_drains_then_exits_with_draft (test_m12_windows.NativeM12Tests.test_stop_drains_then_exits_with_draft) ... ERROR
+test_stop_timeout_keeps_writer_lock_until_lane_exits (test_m12_windows.NativeM12Tests.test_stop_timeout_keeps_writer_lock_until_lane_exits) ... ERROR
+
+======================================================================
+ERROR: test_active_cancel_retains_output_as_cancelled_not_completed (test_m12_windows.NativeM12Tests.test_active_cancel_retains_output_as_cancelled_not_completed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 105, in test_active_cancel_retains_output_as_cancelled_not_completed
+    run=self.run_runtime(delay=2);job=run.submit();run.control('resume');run.wait_job(job,'RUNNING')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_client_process_closure_does_not_stop_authorized_job (test_m12_windows.NativeM12Tests.test_client_process_closure_does_not_stop_authorized_job)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 76, in test_client_process_closure_does_not_stop_authorized_job
+    run=self.run_runtime(delay=.8)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_completed_receipt_survives_restart_and_artifact_hash_matches (test_m12_windows.NativeM12Tests.test_completed_receipt_survives_restart_and_artifact_hash_matches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 131, in test_completed_receipt_survives_restart_and_artifact_hash_matches
+    run=self.run_runtime();job=run.submit(identity='once');run.control('resume');row=run.wait_job(job,'DRAFT_READY')
+        ^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_corrupt_job_receipt_is_refused_before_recovery (test_m12_windows.NativeM12Tests.test_corrupt_job_receipt_is_refused_before_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 139, in test_corrupt_job_receipt_is_refused_before_recovery
+    run=self.run_runtime();run.submit();run.stop()
+        ^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_internal_commands_and_jobs_on_control_endpoint_refused (test_m12_windows.NativeM12Tests.test_internal_commands_and_jobs_on_control_endpoint_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 124, in test_internal_commands_and_jobs_on_control_endpoint_refused
+    run=self.run_runtime()
+        ^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_killed_coordinator_recovers_interrupted_without_rerun (test_m12_windows.NativeM12Tests.test_killed_coordinator_recovers_interrupted_without_rerun)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 111, in test_killed_coordinator_recovers_interrupted_without_rerun
+    run=self.run_runtime(delay=10);job=run.submit();run.control('resume');old=run.wait_job(job,'RUNNING');run.kill()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_lost_submit_reply_replays_one_job (test_m12_windows.NativeM12Tests.test_lost_submit_reply_replays_one_job)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 146, in test_lost_submit_reply_replays_one_job
+    run=self.run_runtime();revision=run.jobs()['revision']
+        ^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_pause_drains_and_prevents_second_job (test_m12_windows.NativeM12Tests.test_pause_drains_and_prevents_second_job)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 89, in test_pause_drains_and_prevents_second_job
+    run=self.run_runtime(delay=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_second_coordinator_denied_while_attempt_active (test_m12_windows.NativeM12Tests.test_second_coordinator_denied_while_attempt_active)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 119, in test_second_coordinator_denied_while_attempt_active
+    run=self.run_runtime(delay=1);job=run.submit();run.control('resume');run.wait_job(job,'RUNNING')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_stop_drains_then_exits_with_draft (test_m12_windows.NativeM12Tests.test_stop_drains_then_exits_with_draft)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 97, in test_stop_drains_then_exits_with_draft
+    run=self.run_runtime(delay=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+======================================================================
+ERROR: test_stop_timeout_keeps_writer_lock_until_lane_exits (test_m12_windows.NativeM12Tests.test_stop_timeout_keeps_writer_lock_until_lane_exits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 163, in test_stop_timeout_keeps_writer_lock_until_lane_exits
+    run=self.run_runtime(child=child);job=run.submit();run.control('resume');run.wait_job(job,'RUNNING');run.control('stop')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 73, in run_runtime
+    runtime=Running(self.base/'profile',**kwargs);self.addCleanup(runtime.kill);return runtime
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\test_m12_windows.py", line 33, in __init__
+    self.client=Client(path,'test');self.client.request('status');return
+                ^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_M1_2_CANDIDATE_2026-11-02\runtime_profile.py", line 26, in load
+    raise ValueError('Profile contains unknown/legacy files')
+ValueError: Profile contains unknown/legacy files
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.548s
+
+FAILED (errors=11)

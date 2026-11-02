@@ -1,0 +1,19 @@
+{
+  "public_parent_commit": "0ba4dea34939b69198ef1e1e036d5f2dc2b0de1a",
+  "parent_local_commit": "f79cc2d2639576f32ebd3ade521c507717a9414d",
+  "base_candidate": "runtime-m1.1-b0",
+  "scope": "M1.2 isolated schema-v3 candidate; no production profile migration",
+  "authority_effect": "NONE",
+  "files": {
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_cli.py": "8a98ab85231e47cd801a102aabd4683fdff33ac7846a29dd24c133e13c4b6125",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_client.py": "cf130e813900830775a321dfc856367ab46b3c4a53cb1817de98ae735a0bb581",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_coordinator.py": "1611db48f2432e69bd1defa66a964308622ed4f094eaad848007b5a7e28537a6",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_ipc_windows.py": "387ecacc317631a9219b7de784ae527178c838383d35e4c14559dbea029955e3",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_profile.py": "f6a480c28e0cadbb29c8b25300f1d791a0a3b9c1d73d33f6a74fabc896e84f8c",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_protocol.py": "5d2780e4703372da0538dadf0963260f4a7f30c8cba932f7207cf8c3e40c942d",
+    "candidates/runtime-m1.1-b0/LEVIS_STARTER/runtime_store.py": "1faf131b4069e3c6a0da9ea487ffb57974604f8ed40f5882c99951ec1db50fa6",
+    "lab/durable_drafts/draft_store.py": "a2a2af97a57b4f3ef94688553a08d2fcc71b3a5c2d93b7eda3ea635df3c14ac6",
+    "lab/durable_drafts/draft_lane.py": "b13827dcdbaedf5f4f3b5649859ee40e271d68dc8b5a86f7bac8d14aa54bb353",
+    "lab/durable_drafts/ollama_adapter.py": "0f1823acf1b0d6e62954ea514712bfca413845146ff77a9483894b351e0bda4b"
+  }
+}

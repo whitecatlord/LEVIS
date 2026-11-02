@@ -1,3 +1,7 @@
+> **NEW — M1.2 durable drafts candidate (2026-11-02)**  
+> Jobs now belong to the Windows coordinator and one database actor. Clients can detach and retrieve committed drafts later; crash recovery pauses interrupted work. **78 tests passed; 1 inherited M1.1-only assertion explicitly skipped.** One synthetic local Ollama job completed.  
+> [Read the candidate and run it](candidates/runtime-m1.2-drafts/README.md) · [Exact evidence and limits](candidates/runtime-m1.2-drafts/REVIEW.md) · [Download candidate](https://github.com/whitecatlord/LEVIS/releases/tag/m1.2-draft-candidate-2026-11-02). Production GUI/chat migration and independent acceptance remain open.
+
 <p align="center"><img src="assets/levis-banner.svg" alt="LEVIS — Build the body. Keep the lineage." width="100%"></p>
 
 <p align="center"><strong>A research architecture for portable AI memory, evidence-aware knowledge, and governed agents.</strong></p>
