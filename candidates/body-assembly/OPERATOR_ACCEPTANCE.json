@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-11-02T23:44:42.076865+00:00",
+  "operator_statement": "Accepted assemble all the body parts",
+  "accepted_artifact": "LEVIS_QT_WORKBENCH_2026-11-02.zip",
+  "accepted_zip_sha256": "3b32e8e7887452925c633c8c0b74b8328a7d1f18fa49955daa1a930615cdaa0b",
+  "accepted_manifest_sha256": "a4e2e5fad29c2bb1fc1f4a6ff3721ebf3b811f921bc6a9dd6d5152075f064b91",
+  "acceptance": "EXPLICIT_OPERATOR_ACCEPTANCE_OF_DEMONSTRATED_WORKBENCH_SCOPE",
+  "assembly_authorization": "GRANTED",
+  "scope": "The prior workbench and its documented 14-test demonstrated boundaries; unfinished technical gates are not independently verified by acceptance",
+  "new_assembly_disposition": "NEW_INTEGRATED_CANDIDATE_WITH_EXECUTED_EVIDENCE",
+  "base_promotion": false,
+  "independent_review": "NOT_RUN"
+}

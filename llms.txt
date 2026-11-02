@@ -1,3 +1,8 @@
+ASSEMBLED BODY ENTRYPOINT: candidates/body-assembly/README.md and assemble.py.
+101 tests pass plus a synthetic real local-model integration smoke.
+Runtime, Qt, private observational memory, codec, modular inspector, actual canvas capture and explicit legacy intake are connected.
+Operator acceptance binds the prior Qt artifact. Read REVIEW.md for unfinished gates; no canonical Base promotion.
+
 NEW QT WORKBENCH CANDIDATE: candidates/qt-workbench/README.md.
 14 native tests pass. Actual viewport capture and fixture-marker pixel analysis.
 Read MIGRATION_PLAN.md, REVIEW.md, evidence and SOURCE_BASIS.json.

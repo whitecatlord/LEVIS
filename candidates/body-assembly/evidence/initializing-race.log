@@ -1,0 +1,73 @@
+test_launcher_job_memory_projection_capture_packet_and_reopen (test_body.BodyEndToEnd.test_launcher_job_memory_projection_capture_packet_and_reopen) ... ERROR
+test_exclusive_writer_and_restart (test_body.MemoryControls.test_exclusive_writer_and_restart) ... ok
+test_head_hash_refuses_corruption (test_body.MemoryControls.test_head_hash_refuses_corruption) ... ok
+test_idempotent_import_and_conflict_atomicity (test_body.MemoryControls.test_idempotent_import_and_conflict_atomicity) ... ok
+test_module_route_and_revoked_lease (test_body.MemoryControls.test_module_route_and_revoked_lease) ... ok
+test_non_completed_or_corrupt_draft_refused (test_body.MemoryControls.test_non_completed_or_corrupt_draft_refused) ... ok
+test_private_transport_roundtrip_and_public_refusal (test_body.MemoryControls.test_private_transport_roundtrip_and_public_refusal) ... ok
+test_projection_is_observed_records_and_exposes_bounds (test_body.MemoryControls.test_projection_is_observed_records_and_exposes_bounds) ... ok
+test_selected_chunk_preserves_exact_preview_and_byte_hash (test_body.MemoryControls.test_selected_chunk_preserves_exact_preview_and_byte_hash) ... ok
+test_catalog_pages_are_bounded (test_workbench.FileTests.test_catalog_pages_are_bounded) ... ok
+test_linked_scope_refused (test_workbench.FileTests.test_linked_scope_refused) ... ok
+test_scope_traversal_and_ads_refused (test_workbench.FileTests.test_scope_traversal_and_ads_refused) ... ok
+test_sparse_five_gib_streaming_without_loading_whole_file (test_workbench.FileTests.test_sparse_five_gib_streaming_without_loading_whole_file) ... ok
+test_actual_canvas_capture_provenance_and_known_shape (test_workbench.GuiTests.test_actual_canvas_capture_provenance_and_known_shape) ... ok
+test_detached_and_failed_analysis_are_unavailable (test_workbench.GuiTests.test_detached_and_failed_analysis_are_unavailable) ... ok
+test_history_and_layout_survive_reopen (test_workbench.GuiTests.test_history_and_layout_survive_reopen) ... ok
+test_inspect_proposal_without_approval_and_no_source_overwrite (test_workbench.GuiTests.test_inspect_proposal_without_approval_and_no_source_overwrite) ... ok
+test_local_only_frontend_operations (test_workbench.GuiTests.test_local_only_frontend_operations) ... ok
+test_long_logs_and_search_bounded (test_workbench.GuiTests.test_long_logs_and_search_bounded) ... ok
+test_missing_marker_detected_without_changing_expected_scene (test_workbench.GuiTests.test_missing_marker_detected_without_changing_expected_scene) ... ok
+test_observation_disable_and_backpressure (test_workbench.GuiTests.test_observation_disable_and_backpressure) ... ok
+test_responsive_sizes_and_saved_screenshots (test_workbench.GuiTests.test_responsive_sizes_and_saved_screenshots) ... ok
+test_gui_close_reopen_preserves_running_durable_job_and_paused_start (test_workbench.NativeIntegration.test_gui_close_reopen_preserves_running_durable_job_and_paused_start) ... ok
+
+======================================================================
+ERROR: test_launcher_job_memory_projection_capture_packet_and_reopen (test_body.BodyEndToEnd.test_launcher_job_memory_projection_capture_packet_and_reopen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_BODY_2026-11-02\test_body.py", line 59, in test_launcher_job_memory_projection_capture_packet_and_reopen
+    home=Path(td);result=ensure_runtime(home,'fake');process=_children[result['pid']];client=Client(Path(result['profile']),'body-test');w=None
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_BODY_2026-11-02\assemble.py", line 34, in ensure_runtime
+    client=Client(profile,'body-launcher');status=client.request('status')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_BODY_2026-11-02\runtime\runtime_client.py", line 18, in __init__
+    self.profile, self.who, self.secret = profile_api.load(path)
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\LEVIS_BODY_2026-11-02\runtime\runtime_profile.py", line 48, in load
+    raise RuntimeError('Profile initialization incomplete or incompatible with startup mode')
+RuntimeError: Profile initialization incomplete or incompatible with startup mode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\body_test_final\\tmptr_sd55x\\runtime-logs\\1793662619313474800.stderr.log'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\LEVIS_BODY_2026-11-02\test_body.py", line 58, in test_launcher_job_memory_projection_capture_packet_and_reopen
+    with tempfile.TemporaryDirectory(dir=BASE) as td:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\Users\white\AppData\Local\Programs\Python\Python312\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\white\\Documents\\Codex\\2026-10-31\\i-x20\\work\\body_test_final\\tmptr_sd55x\\runtime-logs\\1793662619313474800.stderr.log'
+
+----------------------------------------------------------------------
+Ran 23 tests in 15.826s
+
+FAILED (errors=1)

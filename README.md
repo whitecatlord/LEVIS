@@ -1,3 +1,7 @@
+> **ASSEMBLED BODY — 2026-11-02 · START HERE**  
+> Qt workbench + durable coordinator + local-model drafts + private evidence memory + communication transport + modular inspection + actual canvas capture + selected source/draft review + explicit legacy-chat intake now connect. **101 tests passed**, plus a real local-model integration smoke.  
+> [Launch the assembled body](candidates/body-assembly/README.md) · [Connections, evidence and limits](candidates/body-assembly/REVIEW.md) · [Recorded Operator acceptance](candidates/body-assembly/OPERATOR_ACCEPTANCE.json). Available components are assembled; future roadmap milestones and canonical Base promotion are not implied.
+
 > **NEW — Qt workbench and actual canvas observation (2026-11-02)**  
 > A separate Windows GUI candidate: one window, adjustable docks, passive fixture geometry, real viewport PNG capture, bounded marker analysis, durable job IPC, selected read-only sources and draft proposal review. **14 native tests passed.**  
 > [Source, launch instructions and screenshots](candidates/qt-workbench/README.md) · [Migration plan and architecture](candidates/qt-workbench/MIGRATION_PLAN.md) · [Evidence and limits](candidates/qt-workbench/REVIEW.md). Geometry is a fixture; this is not general model vision or Base acceptance.

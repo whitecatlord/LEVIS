@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "parent_public_commit": "ffe33e17f500f6eb20c94be8eb0f7ccea04e9744",
+  "parent_candidate": "candidates/runtime-m1.2-drafts",
+  "unchanged_bundled_runtime": {
+    "draft_lane.py": "75b386dfe5c83b504a3c6204380be077133b2e06a9bcedf08657b3920db32f8d",
+    "draft_repository.py": "f284cb4283220b67fb0936803387dbb3b357fe707bf401ddaef7a689202f794a",
+    "MODEL_LICENSE.txt": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "MODEL_LOCK.json": "d8ba36a922752833cfba559a4176f854879e267ce4e63d9a0ca243f18c1b6f20",
+    "ollama_adapter.py": "0f1823acf1b0d6e62954ea514712bfca413845146ff77a9483894b351e0bda4b",
+    "runtime_cli.py": "d1dbc14a59376241dca5d08a612f54decc209738326a265b77c080f073d6c1f3",
+    "runtime_client.py": "662afe6bd1aa8505b7a5b6fc3e2d5d5a8e7195694bb681608d8ef784984eb589",
+    "runtime_coordinator.py": "a2ae0fba08e4f3675437a1853e0deb890811f61bb0d77069e7014292683b286f",
+    "runtime_ipc_windows.py": "387ecacc317631a9219b7de784ae527178c838383d35e4c14559dbea029955e3",
+    "runtime_profile.py": "1a58026eada473ab9fa57506ae9891b99bebcefe8cd128e2a673e60bf046a340",
+    "runtime_protocol.py": "265f936dd359c2968e37c13c76078e4fb78948507d8a24a70da8df2f5a6a293c",
+    "runtime_store.py": "d075ee49e4637eaf66134d833bc4d3c9971ea378c309cfc60eb1ad0e69622c21"
+  },
+  "old_gui_replaced": false,
+  "production_profile_used": false,
+  "authority_effect": "NONE",
+  "acceptance": "NOT_GRANTED"
+}
