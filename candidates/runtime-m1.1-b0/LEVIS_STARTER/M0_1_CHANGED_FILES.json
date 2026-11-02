@@ -1,0 +1,59 @@
+{
+  "authority_effect": "NONE",
+  "parent_sha256": "8e0d45eacef2815b592d96d01fa072f48efec1b59431520150edcff3d656f786",
+  "removed": [],
+  "hash_exclusions": [
+    "M0_1_CHANGED_FILES.json",
+    "MANIFEST_SHA256.txt"
+  ],
+  "files": [
+    {
+      "path": "M0_1_CHANGED_FILES.json",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": null
+    },
+    {
+      "path": "M0_1_CHANGE_REPORT.md",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "a14eb10c486c9abd866a51a6bd431cb603e2391a5e3ffda8286b71db6de6da40"
+    },
+    {
+      "path": "M0_1_PATCH.diff",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "aad075eed719871182a0d5d5454225342048e5fb83cb65ec06912251675aaab2"
+    },
+    {
+      "path": "MANIFEST_SHA256.txt",
+      "status": "changed",
+      "old_sha256": "ac132d6b55276dd4d430c65ab0d1d70f2c9dd67aa4cc77090ba879c1cc0131e7",
+      "new_sha256": null
+    },
+    {
+      "path": "evidence/M0_1_BASELINE_REGRESSIONS.log",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "3fb623f4de9ab0a7aa34a5068e5d2226522d92f1b86c1fc4553398f598342d6c"
+    },
+    {
+      "path": "evidence/M0_1_TESTS.log",
+      "status": "added",
+      "old_sha256": null,
+      "new_sha256": "21d6b09049e16e2a28b005e008d4a1d3fadcbe5a230012b8eea85f3356f631e0"
+    },
+    {
+      "path": "levis_desktop.py",
+      "status": "changed",
+      "old_sha256": "89b6b2951ff457a2cd45e5fe1f3512c0ca290d6baf35ef26c7aae8b27bce49a4",
+      "new_sha256": "8db9cfb74ae370f516972bdb98eb511268e510463ae31c8a7ca836863e045c7e"
+    },
+    {
+      "path": "test_workbench.py",
+      "status": "changed",
+      "old_sha256": "21c3ebae85ebb1b58691a61be94bdcecede7227fc02c2409952a5bcad4a8fe48",
+      "new_sha256": "0a08f390dd5d854946afb98f078828adc2dc1367988149d5085640816fc69882"
+    }
+  ]
+}
