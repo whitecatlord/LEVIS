@@ -10,6 +10,9 @@
 > **Exact source → typed ledger → compact references.** Preserve provenance, contradictions, source independence, and authority boundaries. **Library ZIP recovered: 12 transport checks reproduced; basin experiments pending.**
 > [Inspect code & download the public ZIP](lab/communication/README.md) · [Post experiments, questions & replies publicly](https://github.com/whitecatlord/LEVIS/discussions) · [Report a defect](https://github.com/whitecatlord/LEVIS/issues).
 
+> [!IMPORTANT]
+> **LEVIS Workbench security update** · [Fixes, verification and source download](SECURITY_HARDENING.md)
+
 ## A system that can carry its own engineering history
 
 LEVIS explores how code, memory, evidence, relationships, and decisions can remain reconstructable as models, sessions, and components change. Its source handoff carries the skeleton, the reasons behind it, and explicit proposals for connecting the next parts.
